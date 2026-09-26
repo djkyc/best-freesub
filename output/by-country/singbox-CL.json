@@ -5,36 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
-      "server": "platform102.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 02 - xiaohe",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 03 - xiaohe",
-      "server": "platform109.golnamakcert.top",
+      "tag": "🇨🇱 智利 (Chile) 01 - Djbadboy",
+      "server": "64.176.13.207",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -47,32 +19,60 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 04 - xiaohe",
-      "server": "platform108.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform108",
-        "headers": {
-          "Host": "platform108.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 05 - xiaohe",
+      "tag": "🇨🇱 智利 (Chile) 02 - Djbadboy",
       "server": "platform115.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform115"
+        "path": "/platform115",
+        "headers": {
+          "Host": "platform115.halalkhor.info"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 06 - xiaohe",
+      "tag": "🇨🇱 智利 (Chile) 03 - Djbadboy",
+      "server": "64.176.3.179",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 04 - Djbadboy",
+      "server": "platform106.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform106"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 05 - Djbadboy",
+      "server": "64.176.24.245",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 06 - Djbadboy",
       "server": "platform101.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -86,35 +86,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 07 - xiaohe",
-      "server": "platform117.golnamakcert.top",
+      "tag": "🇨🇱 智利 (Chile) 07 - Djbadboy",
+      "server": "64.176.20.232",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform117",
+        "path": "/platform118",
         "headers": {
-          "Host": "platform117.halalkhor.info"
+          "Host": "platform118.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 08 - xiaohe",
-      "server": "platform106.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform106",
-        "headers": {
-          "Host": "platform106.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 09 - xiaohe",
+      "tag": "🇨🇱 智利 (Chile) 08 - Djbadboy",
       "server": "platform103.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -128,15 +114,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 10 - xiaohe",
-      "server": "platform113.golnamakcert.top",
+      "tag": "🇨🇱 智利 (Chile) 09 - Djbadboy",
+      "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113",
+        "path": "/platform117",
         "headers": {
-          "Host": "platform113.halalkhor.info"
+          "Host": "platform117.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 10 - Djbadboy",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107",
+        "headers": {
+          "Host": "platform107.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 11 - Djbadboy",
+      "server": "platform108.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform108",
+        "headers": {
+          "Host": "platform108.halalkhor.info"
         }
       }
     },
@@ -145,32 +159,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - xiaohe",
-        "🇨🇱 智利 (Chile) 02 - xiaohe",
-        "🇨🇱 智利 (Chile) 03 - xiaohe",
-        "🇨🇱 智利 (Chile) 04 - xiaohe",
-        "🇨🇱 智利 (Chile) 05 - xiaohe",
-        "🇨🇱 智利 (Chile) 06 - xiaohe",
-        "🇨🇱 智利 (Chile) 07 - xiaohe",
-        "🇨🇱 智利 (Chile) 08 - xiaohe",
-        "🇨🇱 智利 (Chile) 09 - xiaohe",
-        "🇨🇱 智利 (Chile) 10 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - Djbadboy",
+        "🇨🇱 智利 (Chile) 02 - Djbadboy",
+        "🇨🇱 智利 (Chile) 03 - Djbadboy",
+        "🇨🇱 智利 (Chile) 04 - Djbadboy",
+        "🇨🇱 智利 (Chile) 05 - Djbadboy",
+        "🇨🇱 智利 (Chile) 06 - Djbadboy",
+        "🇨🇱 智利 (Chile) 07 - Djbadboy",
+        "🇨🇱 智利 (Chile) 08 - Djbadboy",
+        "🇨🇱 智利 (Chile) 09 - Djbadboy",
+        "🇨🇱 智利 (Chile) 10 - Djbadboy",
+        "🇨🇱 智利 (Chile) 11 - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - xiaohe",
-        "🇨🇱 智利 (Chile) 02 - xiaohe",
-        "🇨🇱 智利 (Chile) 03 - xiaohe",
-        "🇨🇱 智利 (Chile) 04 - xiaohe",
-        "🇨🇱 智利 (Chile) 05 - xiaohe",
-        "🇨🇱 智利 (Chile) 06 - xiaohe",
-        "🇨🇱 智利 (Chile) 07 - xiaohe",
-        "🇨🇱 智利 (Chile) 08 - xiaohe",
-        "🇨🇱 智利 (Chile) 09 - xiaohe",
-        "🇨🇱 智利 (Chile) 10 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - Djbadboy",
+        "🇨🇱 智利 (Chile) 02 - Djbadboy",
+        "🇨🇱 智利 (Chile) 03 - Djbadboy",
+        "🇨🇱 智利 (Chile) 04 - Djbadboy",
+        "🇨🇱 智利 (Chile) 05 - Djbadboy",
+        "🇨🇱 智利 (Chile) 06 - Djbadboy",
+        "🇨🇱 智利 (Chile) 07 - Djbadboy",
+        "🇨🇱 智利 (Chile) 08 - Djbadboy",
+        "🇨🇱 智利 (Chile) 09 - Djbadboy",
+        "🇨🇱 智利 (Chile) 10 - Djbadboy",
+        "🇨🇱 智利 (Chile) 11 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
