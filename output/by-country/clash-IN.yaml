@@ -25,7 +25,7 @@ proxies:
   sni: hyfuuf6.wsone.icu
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - Djbadboy
-  server: tttyder.wsone.icu
+  server: 35.244.28.130
   port: 443
   udp: true
   type: trojan

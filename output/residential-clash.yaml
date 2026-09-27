@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
-  server: 104.18.34.14
-  port: 8080
+- name: 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
+  server: 162.159.0.53
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,30 +15,86 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy
-  server: 151.101.65.57
-  port: 80
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - Djbadboy
+  server: 162.159.0.53
+  port: 2086
   udp: true
   type: vless
-  uuid: 66fc196d-3623-4ba5-92ae-101a069af5b1
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: '/?ed=2560security=tls '
     headers:
-      Host: simorghtrr.global.ssl.fastly.net
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - Djbadboy
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - Djbadboy
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - Djbadboy
+  server: 144.31.243.120
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  tls: true
+  servername: yf.962456.xyz
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=kr.william.us.ci
+    headers:
+      Host: yf.962456.xyz
+- name: 🇺🇸 美国 (United States) 07 (家宽) - Djbadboy
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - Djbadboy
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 07 (家宽) - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - Djbadboy
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 07 (家宽) - Djbadboy
 rules:
 - MATCH,PROXIES
