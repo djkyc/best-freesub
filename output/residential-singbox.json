@@ -4,15 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy",
-      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
-        "insecure": false
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy",
+      "server": "104.18.34.14",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy",
+      "server": "151.101.65.57",
+      "server_port": 80,
+      "uuid": "66fc196d-3623-4ba5-92ae-101a069af5b1",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "simorghtrr.global.ssl.fastly.net"
+        }
       }
     },
     {
@@ -20,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -39,18 +39,6 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - Djbadboy",
-      "server": "77.110.104.238",
-      "server_port": 443,
-      "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
-      "tls": {
-        "enabled": true,
-        "server_name": "ch2-hy2.veilvpn.life",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - Djbadboy",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -65,6 +53,42 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - Djbadboy",
+      "server": "82.38.64.235",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - Djbadboy",
+      "server": "77.110.104.238",
+      "server_port": 443,
+      "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch2-hy2.veilvpn.life",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - Djbadboy",
+      "server": "31.76.104.152",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -72,7 +96,9 @@
         "🇨🇭 瑞士 (Switzerland) 01 - Djbadboy",
         "🇨🇭 瑞士 (Switzerland) 02 - Djbadboy",
         "🇨🇭 瑞士 (Switzerland) 03 - Djbadboy",
-        "🇨🇭 瑞士 (Switzerland) 04 - Djbadboy"
+        "🇨🇭 瑞士 (Switzerland) 04 - Djbadboy",
+        "🇨🇭 瑞士 (Switzerland) 05 - Djbadboy",
+        "🇨🇭 瑞士 (Switzerland) 06 - Djbadboy"
       ]
     },
     {
@@ -82,7 +108,9 @@
         "🇨🇭 瑞士 (Switzerland) 01 - Djbadboy",
         "🇨🇭 瑞士 (Switzerland) 02 - Djbadboy",
         "🇨🇭 瑞士 (Switzerland) 03 - Djbadboy",
-        "🇨🇭 瑞士 (Switzerland) 04 - Djbadboy"
+        "🇨🇭 瑞士 (Switzerland) 04 - Djbadboy",
+        "🇨🇭 瑞士 (Switzerland) 05 - Djbadboy",
+        "🇨🇭 瑞士 (Switzerland) 06 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

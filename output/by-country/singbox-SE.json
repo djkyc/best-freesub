@@ -4,57 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - Djbadboy",
-      "server": "79.141.174.147",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
+      "server": "13.51.242.39",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - Djbadboy",
-      "server": "91.193.17.156",
-      "server_port": 9458,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
+      "server": "13.62.228.76",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - Djbadboy",
-      "server": "16.170.221.224",
+      "server": "13.49.76.55",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -62,15 +30,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - Djbadboy",
-      "server": "70.34.212.124",
-      "server_port": 8388,
+      "server": "172.238.244.13",
+      "server_port": 17000,
       "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - Djbadboy",
-      "server": "16.170.214.108",
+      "server": "51.20.122.188",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -78,7 +46,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - Djbadboy",
-      "server": "51.20.86.152",
+      "server": "13.49.64.122",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -86,7 +54,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 07 - Djbadboy",
-      "server": "13.61.0.108",
+      "server": "16.170.163.124",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -115,7 +83,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 09 - Djbadboy",
-      "server": "51.20.72.15",
+      "server": "16.170.221.224",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -123,7 +91,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 10 - Djbadboy",
-      "server": "51.20.96.231",
+      "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -131,15 +99,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 11 - Djbadboy",
-      "server": "13.60.213.145",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 12 - Djbadboy",
-      "server": "16.170.163.124",
+      "server": "13.61.0.108",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -147,7 +115,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 13 - Djbadboy",
-      "server": "51.20.122.188",
+      "server": "51.20.86.152",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -155,61 +123,67 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 14 - Djbadboy",
-      "server": "172.238.244.13",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 15 - Djbadboy",
       "server": "13.48.104.64",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 16 - Djbadboy",
-      "server": "se5-node.rumedia-cdn.com",
-      "server_port": 2096,
-      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
-      "tls": {
-        "enabled": true,
-        "server_name": "stf7697.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "stf7697.rumedia-cdn.com"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 17 - Djbadboy",
-      "server": "13.49.76.55",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 18 - Djbadboy",
+      "tag": "🇸🇪 瑞典 (Sweden) 15 - Djbadboy",
       "server": "16.171.55.2",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 16 - Djbadboy",
+      "server": "51.20.96.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 17 - Djbadboy",
+      "server": "16.170.214.108",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 18 - Djbadboy",
+      "server": "161.104.107.97",
+      "server_port": 443,
+      "uuid": "dc0d27ba-34d2-4c8b-9cba-9ddbbb632748",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6DsIO1Bnyj5xLsTtYzyz2KGkkpgpt7I3L-SN06Du1Y",
+          "short_id": "348b9654fcb1"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 19 - Djbadboy",
+      "server": "13.60.213.145",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 20 - Djbadboy",
       "server": "94.103.2.224",
       "server_port": 50445,
       "uuid": "d2761575-3f08-41ae-9dd1-33ccf86dddd1",
@@ -227,6 +201,35 @@
           "short_id": ""
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 21 - Djbadboy",
+      "server": "2.26.101.148",
+      "server_port": 443,
+      "uuid": "68d89911-b92d-46fe-9007-3645c3b285f0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.chick-chirik.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8",
+          "short_id": "e9eb910e5af883e3"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 22 - Djbadboy",
+      "server": "45.138.103.4",
+      "server_port": 1443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "N2YzM"
     },
     {
       "type": "selector",
@@ -251,7 +254,10 @@
         "🇸🇪 瑞典 (Sweden) 16 - Djbadboy",
         "🇸🇪 瑞典 (Sweden) 17 - Djbadboy",
         "🇸🇪 瑞典 (Sweden) 18 - Djbadboy",
-        "🇸🇪 瑞典 (Sweden) 19 - Djbadboy"
+        "🇸🇪 瑞典 (Sweden) 19 - Djbadboy",
+        "🇸🇪 瑞典 (Sweden) 20 - Djbadboy",
+        "🇸🇪 瑞典 (Sweden) 21 - Djbadboy",
+        "🇸🇪 瑞典 (Sweden) 22 - Djbadboy"
       ]
     },
     {
@@ -276,7 +282,10 @@
         "🇸🇪 瑞典 (Sweden) 16 - Djbadboy",
         "🇸🇪 瑞典 (Sweden) 17 - Djbadboy",
         "🇸🇪 瑞典 (Sweden) 18 - Djbadboy",
-        "🇸🇪 瑞典 (Sweden) 19 - Djbadboy"
+        "🇸🇪 瑞典 (Sweden) 19 - Djbadboy",
+        "🇸🇪 瑞典 (Sweden) 20 - Djbadboy",
+        "🇸🇪 瑞典 (Sweden) 21 - Djbadboy",
+        "🇸🇪 瑞典 (Sweden) 22 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -26,14 +26,6 @@ proxies:
   sni: 140.238.213.114
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - Djbadboy
-  server: 77.110.104.238
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5413edfb-08d6-4fba-b51c-809c04feb127
-  sni: ch2-hy2.veilvpn.life
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04 - Djbadboy
   server: 152.67.75.161
   port: 443
   udp: true
@@ -43,6 +35,30 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: 🇨🇭 瑞士 (Switzerland) 04 - Djbadboy
+  server: 82.38.64.235
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 05 - Djbadboy
+  server: 77.110.104.238
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 06 - Djbadboy
+  server: 31.76.104.152
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +68,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - Djbadboy
   - 🇨🇭 瑞士 (Switzerland) 03 - Djbadboy
   - 🇨🇭 瑞士 (Switzerland) 04 - Djbadboy
+  - 🇨🇭 瑞士 (Switzerland) 05 - Djbadboy
+  - 🇨🇭 瑞士 (Switzerland) 06 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +79,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - Djbadboy
   - 🇨🇭 瑞士 (Switzerland) 03 - Djbadboy
   - 🇨🇭 瑞士 (Switzerland) 04 - Djbadboy
+  - 🇨🇭 瑞士 (Switzerland) 05 - Djbadboy
+  - 🇨🇭 瑞士 (Switzerland) 06 - Djbadboy
 rules:
 - MATCH,PROXIES
