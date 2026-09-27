@@ -4,8 +4,77 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - Djbadboy",
+      "server": "188.114.97.1",
+      "server_port": 2053,
+      "uuid": "0b3e7958-e5c4-498f-ab21-b49686f95d2d",
+      "tls": {
+        "enabled": true,
+        "server_name": "bold-term-4edd.mbigspot.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "bold-term-4edd.mbigspot.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 02 - Djbadboy",
+      "server": "95.133.236.241",
+      "server_port": 443,
+      "uuid": "c40ec629-cd50-4569-8ea7-ea7c498423fd",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BzI9KKxbdc7fbgZpK0WX9p6jgJBVJo44dj6D15uW5HA",
+          "short_id": "77d4e9e5a5243324"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 03 - Djbadboy",
+      "server": "192.248.179.81",
+      "server_port": 80,
+      "uuid": "2787849c-1a49-4457-9db7-efcdb2578268",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 04 - Djbadboy",
+      "server": "169.150.210.233",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 05 - Djbadboy",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 06 - Djbadboy",
       "server": "199.232.78.101",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -30,74 +99,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 02 - Djbadboy",
-      "server": "8.209.74.72",
-      "server_port": 20001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "PWpjPo3tqhPN4yRZ"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 - Djbadboy",
-      "server": "159.69.89.23",
-      "server_port": 80,
-      "uuid": "ca78a1a9-68d2-4373-8ea3-5d85fb61700d",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 - Djbadboy",
-      "server": "91.107.181.197",
-      "server_port": 8080,
-      "uuid": "11af1c47-865a-47c6-92ff-118013655d78",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 - Djbadboy",
-      "server": "169.150.210.233",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 06 - Djbadboy",
-      "server": "2.58.81.221",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
-    },
-    {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 07 - Djbadboy",
-      "server": "2.26.51.75",
-      "server_port": 443,
-      "uuid": "57e2a48b-0cc2-4b60-aacd-b36358fcba96",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "4pda.to",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM",
-          "short_id": "d4f6a8c1b2e3f9aa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 08 - Djbadboy",
       "server": "162.55.242.208",
       "server_port": 2053,
       "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
@@ -106,7 +109,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -116,36 +119,27 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 09 - Djbadboy",
-      "server": "dggg.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "dggg.wsone.icu",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 10 - Djbadboy",
-      "server": "209.46.102.22",
-      "server_port": 8388,
+      "tag": "🇩🇪 德国 (Germany) 08 - Djbadboy",
+      "server": "8.209.74.72",
+      "server_port": 20001,
       "method": "chacha20-ietf-poly1305",
-      "password": "1hhrqrokj3ag"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 11 - Djbadboy",
-      "server": "206.189.52.4",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+      "password": "PWpjPo3tqhPN4yRZ"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 12 - Djbadboy",
+      "tag": "🇩🇪 德国 (Germany) 09 - Djbadboy",
+      "server": "163.8.195.241",
+      "server_port": 2087,
+      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
+      "transport": {
+        "type": "ws",
+        "path": "/29c8fed7ca22"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 10 - Djbadboy",
       "server": "31.77.161.15",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -165,171 +159,132 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 13 - Djbadboy",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 14 - Djbadboy",
-      "server": "51.195.126.38",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2YdE4lFOid5a"
-    },
-    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 15 - Djbadboy",
-      "server": "91.107.190.175",
-      "server_port": 8080,
-      "uuid": "11af1c47-865a-47c6-92ff-118013655d78",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 16 - Djbadboy",
-      "server": "45.32.157.84",
-      "server_port": 443,
-      "password": "Tg3RnK7Xp8B1",
-      "tls": {
-        "enabled": true,
-        "server_name": "ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com#🪐23@oneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 17 - Djbadboy",
-      "server": "82.39.171.142",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 18 - Djbadboy",
-      "server": "188.245.24.225",
-      "server_port": 80,
-      "uuid": "acfc7e1f-85c1-4b75-bfc6-fc815a5550c6",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 19 - Djbadboy",
-      "server": "139.100.236.74",
-      "server_port": 2,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WxYpOK1iPSJySbVNMMJDtw"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 20 - Djbadboy",
-      "server": "82.39.171.12",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 21 - Djbadboy",
-      "server": "31.76.100.41",
-      "server_port": 443,
-      "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dzen.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
-          "short_id": "a1b2c3d4e5f67890"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 22 - Djbadboy",
-      "server": "159.69.103.251",
-      "server_port": 80,
-      "uuid": "1bbef2cd-2851-4f00-b37e-a2478a1e5a70",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms",
-          "short_id": "253126232f9bb9be"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 23 - Djbadboy",
-      "server": "82.118.19.153",
-      "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇩🇪 德国 (Germany) 11 - Djbadboy",
+      "server": "185.246.223.239",
+      "server_port": 8443,
+      "uuid": "12062839-c99a-4084-b4de-e98be8b86c2d",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
+          "public_key": "b_nCO2c_TY_BPP0aASYW9E7N85gYUCscv_PCaHSW82Y",
+          "short_id": "c7ea63625cdbc1df"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "a56a576410"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 12 - Djbadboy",
+      "server": "213.202.208.199",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 13 - Djbadboy",
+      "server": "206.189.52.4",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 14 - Djbadboy",
+      "server": "178.105.120.168",
+      "server_port": 80,
+      "uuid": "1d9cbbf4-bb99-4b09-8750-1cc22d510018",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 15 - Djbadboy",
+      "server": "95.85.252.78",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 24 - Djbadboy",
+      "tag": "🇩🇪 德国 (Germany) 16 - Djbadboy",
+      "server": "104.143.223.230",
+      "server_port": 2085,
+      "uuid": "9bb5dd4e-bd32-4bdb-a60d-9368433f3885",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 17 - Djbadboy",
+      "server": "45.77.143.204",
+      "server_port": 80,
+      "uuid": "8ccc4581-eba9-4226-abbc-64e7d8fb415e",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 18 - Djbadboy",
+      "server": "130.61.232.1",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "UoUzY5YlcUBJpgXi/Z3PEaf58E+++FJ+3AKry5V7J9Y="
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 19 - Djbadboy",
+      "server": "dggg.wsone.icu",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "dggg.wsone.icu",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 20 - Djbadboy",
+      "server": "2.58.81.221",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 21 - Djbadboy",
+      "server": "188.34.184.151",
+      "server_port": 80,
+      "uuid": "dc31fe25-d91d-4691-94cb-1085d31ab4f8",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 22 - Djbadboy",
       "server": "89.169.53.176",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -350,7 +305,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 25 - Djbadboy",
+      "tag": "🇩🇪 德国 (Germany) 23 - Djbadboy",
+      "server": "82.118.19.153",
+      "server_port": 443,
+      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+          "short_id": "670ed9f350bd8ee0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 24 - Djbadboy",
       "server": "77.91.76.156",
       "server_port": 57160,
       "uuid": "68ad9a6d-2463-4c31-92a7-31547b9d4783",
@@ -370,16 +346,51 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 25 - Djbadboy",
+      "server": "hikvision-plus.com",
+      "server_port": 2052,
+      "uuid": "b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 26 - Djbadboy",
-      "server": "2.58.81.221",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 27 - Djbadboy",
+      "server": "159.69.103.251",
       "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
+      "uuid": "1bbef2cd-2851-4f00-b37e-a2478a1e5a70",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms",
+          "short_id": "253126232f9bb9be"
+        }
+      }
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 27 - Djbadboy",
+      "tag": "🇩🇪 德国 (Germany) 28 - Djbadboy",
       "server": "node8.quaxly.com",
       "server_port": 25040,
       "password": "Km/pIG4AGCjCOiGWj5FsWA==",
@@ -393,31 +404,23 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 28 - Djbadboy",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 29 - Djbadboy",
-      "server": "185.249.153.108",
+      "server": "82.39.171.142",
       "server_port": 443,
-      "uuid": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.nordivablog.ru",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw",
-          "short_id": "73c9e31ccafda20e"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
@@ -442,76 +445,101 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 31 - Djbadboy",
+      "server": "82.39.171.12",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 32 - Djbadboy",
+      "server": "51.195.126.38",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2YdE4lFOid5a"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 33 - Djbadboy",
+      "server": "2.26.51.75",
+      "server_port": 443,
+      "uuid": "57e2a48b-0cc2-4b60-aacd-b36358fcba96",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "4pda.to",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM",
+          "short_id": "d4f6a8c1b2e3f9aa"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 34 - Djbadboy",
       "server": "de1.xiaoliyu.cyou",
       "server_port": 4433,
       "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "de1.xiaoliyu.cyou",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 32 - Djbadboy",
-      "server": "104.27.88.172",
-      "server_port": 80,
-      "uuid": "50414e45-4c5f-5a45-5553-52108a2d5224",
-      "transport": {
-        "type": "ws",
-        "path": "/api/ws",
-        "headers": {
-          "Host": "web-app-nr6wpa.app-tp57xz.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 33 - Djbadboy",
-      "server": "95.133.236.241",
-      "server_port": 443,
-      "uuid": "c40ec629-cd50-4569-8ea7-ea7c498423fd",
+      "tag": "🇩🇪 德国 (Germany) 35 - Djbadboy",
+      "server": "de18.bexait.ir",
+      "server_port": 2434,
+      "uuid": "8dfc237e-0376-48b4-9822-5f4e627d41f1",
       "tls": {
         "enabled": true,
-        "server_name": "ads.x5.ru",
+        "server_name": "icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "BzI9KKxbdc7fbgZpK0WX9p6jgJBVJo44dj6D15uW5HA",
-          "short_id": "77d4e9e5a5243324"
+          "public_key": "yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0",
+          "short_id": "9de041877612a718"
         }
-      },
-      "transport": {
-        "type": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 34 - Djbadboy",
-      "server": "rubifen.adaspoloandco.com",
-      "server_port": 443,
-      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
-      "tls": {
-        "enabled": true,
-        "server_name": "rubifen.adaspoloandco.com",
-        "insecure": false
-      },
+      "tag": "🇩🇪 德国 (Germany) 36 - Djbadboy",
+      "server": "82.24.203.20",
+      "server_port": 2087,
+      "uuid": "5fcdc9b7-e70f-4a5c-85c3-e018ad818326",
       "transport": {
         "type": "ws",
-        "path": "/GOrbEh",
-        "headers": {
-          "Host": "rubifen.adaspoloandco.com"
-        }
+        "path": "/fd5ba98a3970"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 35 - Djbadboy",
+      "tag": "🇩🇪 德国 (Germany) 37 - Djbadboy",
       "server": "64.118.158.56",
       "server_port": 443,
       "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
@@ -532,37 +560,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 36 - Djbadboy",
-      "server": "82.24.203.20",
-      "server_port": 2087,
-      "uuid": "5fcdc9b7-e70f-4a5c-85c3-e018ad818326",
-      "transport": {
-        "type": "ws",
-        "path": "/fd5ba98a3970"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 37 - Djbadboy",
-      "server": "freeman.curtvip.ir",
-      "server_port": 20410,
-      "uuid": "442581ff-646e-4e99-af3e-a9d9a636a44b",
-      "tls": {
-        "enabled": true,
-        "server_name": "secureconnect-pa.mtls.clients6.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI",
-          "short_id": "e2ce3e050232978c"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 38 - Djbadboy",
       "server": "104.27.122.195",
       "server_port": 443,
@@ -573,7 +570,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         }
       },
       "transport": {
@@ -587,53 +584,190 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 39 - Djbadboy",
-      "server": "140.150.238.49",
-      "server_port": 8445,
-      "uuid": "aac5beba-02a7-4cf0-8d33-f724c1bda5c6",
+      "server": "31.76.100.41",
+      "server_port": 443,
+      "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hetzner.com",
+        "server_name": "dzen.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
-          "public_key": "_UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8",
-          "short_id": "6ba85179e30d4fc2"
+          "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
+          "short_id": "a1b2c3d4e5f67890"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "Google"
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 40 - Djbadboy",
-      "server": "216.106.187.60",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d90f043-ed7f-40c9-ac2f-352987904958",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "ov-germany1.09vpn.com"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 41 - Djbadboy",
-      "server": "172.67.204.153",
-      "server_port": 2052,
-      "uuid": "b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "18535741-e8b3-4b43-9348-785b55936751",
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
+        "path": "/vless/"
       }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 42 - Djbadboy",
-      "server": "hikvision-plus.com",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "18535741-e8b3-4b43-9348-785b55936751",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "57.129.41.216"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 43 - Djbadboy",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "18535741-e8b3-4b43-9348-785b55936751",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 44 - Djbadboy",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "18535741-e8b3-4b43-9348-785b55936751",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 45 - Djbadboy",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 46 - Djbadboy",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "ov-germany1.09vpn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 47 - Djbadboy",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "ov-germany1.09vpn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 48 - Djbadboy",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d90f043-ed7f-40c9-ac2f-352987904958",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 49 - Djbadboy",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d90f043-ed7f-40c9-ac2f-352987904958",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "ov-germany1.09vpn.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 50 - Djbadboy",
+      "server": "kentspark.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "kentspark.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 51 - Djbadboy",
+      "server": "rubifen.adaspoloandco.com",
+      "server_port": 443,
+      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
+      "tls": {
+        "enabled": true,
+        "server_name": "rubifen.adaspoloandco.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/GOrbEh"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 52 - Djbadboy",
+      "server": "cctvhikvision.center",
       "server_port": 2053,
       "uuid": "b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df",
       "tls": {
@@ -651,19 +785,31 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 43 - Djbadboy",
-      "server": "kentspark.org",
+      "tag": "🇩🇪 德国 (Germany) 53 - Djbadboy",
+      "server": "216.106.187.60",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 54 - Djbadboy",
+      "server": "167.233.191.98",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
+      "uuid": "6289ae55-053b-470c-a2f8-e0841a567b48",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kentspark.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws"
+        "server_name": "www.sony.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qI8F1K9Ev5BUzjsuzUCQSBiq7B-6C503e5LIQez3ZjU",
+          "short_id": "dd878b254cfa"
+        }
       }
     },
     {
@@ -713,7 +859,18 @@
         "🇩🇪 德国 (Germany) 40 - Djbadboy",
         "🇩🇪 德国 (Germany) 41 - Djbadboy",
         "🇩🇪 德国 (Germany) 42 - Djbadboy",
-        "🇩🇪 德国 (Germany) 43 - Djbadboy"
+        "🇩🇪 德国 (Germany) 43 - Djbadboy",
+        "🇩🇪 德国 (Germany) 44 - Djbadboy",
+        "🇩🇪 德国 (Germany) 45 - Djbadboy",
+        "🇩🇪 德国 (Germany) 46 - Djbadboy",
+        "🇩🇪 德国 (Germany) 47 - Djbadboy",
+        "🇩🇪 德国 (Germany) 48 - Djbadboy",
+        "🇩🇪 德国 (Germany) 49 - Djbadboy",
+        "🇩🇪 德国 (Germany) 50 - Djbadboy",
+        "🇩🇪 德国 (Germany) 51 - Djbadboy",
+        "🇩🇪 德国 (Germany) 52 - Djbadboy",
+        "🇩🇪 德国 (Germany) 53 - Djbadboy",
+        "🇩🇪 德国 (Germany) 54 - Djbadboy"
       ]
     },
     {
@@ -762,7 +919,18 @@
         "🇩🇪 德国 (Germany) 40 - Djbadboy",
         "🇩🇪 德国 (Germany) 41 - Djbadboy",
         "🇩🇪 德国 (Germany) 42 - Djbadboy",
-        "🇩🇪 德国 (Germany) 43 - Djbadboy"
+        "🇩🇪 德国 (Germany) 43 - Djbadboy",
+        "🇩🇪 德国 (Germany) 44 - Djbadboy",
+        "🇩🇪 德国 (Germany) 45 - Djbadboy",
+        "🇩🇪 德国 (Germany) 46 - Djbadboy",
+        "🇩🇪 德国 (Germany) 47 - Djbadboy",
+        "🇩🇪 德国 (Germany) 48 - Djbadboy",
+        "🇩🇪 德国 (Germany) 49 - Djbadboy",
+        "🇩🇪 德国 (Germany) 50 - Djbadboy",
+        "🇩🇪 德国 (Germany) 51 - Djbadboy",
+        "🇩🇪 德国 (Germany) 52 - Djbadboy",
+        "🇩🇪 德国 (Germany) 53 - Djbadboy",
+        "🇩🇪 德国 (Germany) 54 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,20 +4,36 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - Djbadboy",
-      "server": "217.30.10.44",
-      "server_port": 9076,
-      "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "server": "185.223.57.10",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - Djbadboy",
       "server": "217.30.10.44",
-      "server_port": 9041,
+      "server_port": 9052,
       "method": "aes-256-cfb",
-      "password": "U6qnYRhfyDmn8sgn"
+      "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "hysteria2",
@@ -32,50 +48,41 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - Djbadboy",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - Djbadboy",
-      "server": "185.223.57.10",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tag": "🇵🇱 波兰 (Poland) 04 - Djbadboy",
+      "server": "185.229.9.160",
+      "server_port": 443,
+      "uuid": "9e4f675b-d6bf-42d1-be55-389f622783af",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "smartcaptcha.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
+          "public_key": "4Y0QLEasqtkWqfbrRedWqrZSPTnB14FDfI9q1v5SsHs",
+          "short_id": "0afbd1d3"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
+        "type": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - Djbadboy",
-      "server": "144.31.131.38",
+      "tag": "🇵🇱 波兰 (Poland) 05 - Djbadboy",
+      "server": "2.59.253.251",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "prod.pl-node-01.security-sbrf.ru",
+        "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -86,11 +93,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 06 - Djbadboy",
+      "server": "217.30.10.44",
+      "server_port": 9095,
+      "method": "aes-256-cfb",
+      "password": "N7j3pdTYkKmsy8CR"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 07 - Djbadboy",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "shadowsocks",
@@ -104,36 +119,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 09 - Djbadboy",
       "server": "217.30.10.44",
-      "server_port": 9052,
+      "server_port": 9099,
       "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10 - Djbadboy",
-      "server": "185.229.9.157",
-      "server_port": 443,
-      "uuid": "9e4f675b-d6bf-42d1-be55-389f622783af",
-      "tls": {
-        "enabled": true,
-        "server_name": "360.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k",
-          "short_id": "27e53bbcab7593d7"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
+      "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 11 - Djbadboy",
+      "tag": "🇵🇱 波兰 (Poland) 10 - Djbadboy",
       "server": "217.30.10.44",
       "server_port": 9006,
       "method": "aes-256-cfb",
@@ -141,31 +133,39 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 11 - Djbadboy",
+      "server": "217.30.10.44",
+      "server_port": 9041,
+      "method": "aes-256-cfb",
+      "password": "U6qnYRhfyDmn8sgn"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 12 - Djbadboy",
       "server": "217.30.10.44",
-      "server_port": 9099,
+      "server_port": 9062,
       "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
+      "password": "tkhHVxxfM2QErBWe"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 13 - Djbadboy",
+      "server": "217.30.10.44",
+      "server_port": 9071,
+      "method": "aes-256-cfb",
+      "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 13 - Djbadboy",
-      "server": "45.192.12.93",
+      "tag": "🇵🇱 波兰 (Poland) 14 - Djbadboy",
+      "server": "go.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
+        "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 14 - Djbadboy",
-      "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "vless",
@@ -189,8 +189,33 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 16 - Djbadboy",
+      "server": "146.59.116.19",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 17 - Djbadboy",
+      "server": "50.7.249.174",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "polik.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 18 - Djbadboy",
       "server": "pl-waw.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -200,7 +225,7 @@
         "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -210,52 +235,62 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 17 - Djbadboy",
-      "server": "146.59.116.19",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 18 - Djbadboy",
-      "server": "150.251.113.34",
+      "tag": "🇵🇱 波兰 (Poland) 19 - Djbadboy",
+      "server": "pl4.moritech.net",
       "server_port": 443,
-      "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "pl4.moritech.net",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8",
-          "short_id": "150a627d15154cf2"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 19 - Djbadboy",
-      "server": "188.114.96.19",
-      "server_port": 80,
-      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 20 - Djbadboy",
+      "server": "plandland.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "plandland.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 21 - Djbadboy",
+      "server": "pl3.moritech.net",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl3.moritech.net",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 22 - Djbadboy",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -298,7 +333,9 @@
         "🇵🇱 波兰 (Poland) 17 - Djbadboy",
         "🇵🇱 波兰 (Poland) 18 - Djbadboy",
         "🇵🇱 波兰 (Poland) 19 - Djbadboy",
-        "🇵🇱 波兰 (Poland) 20 - Djbadboy"
+        "🇵🇱 波兰 (Poland) 20 - Djbadboy",
+        "🇵🇱 波兰 (Poland) 21 - Djbadboy",
+        "🇵🇱 波兰 (Poland) 22 - Djbadboy"
       ]
     },
     {
@@ -324,7 +361,9 @@
         "🇵🇱 波兰 (Poland) 17 - Djbadboy",
         "🇵🇱 波兰 (Poland) 18 - Djbadboy",
         "🇵🇱 波兰 (Poland) 19 - Djbadboy",
-        "🇵🇱 波兰 (Poland) 20 - Djbadboy"
+        "🇵🇱 波兰 (Poland) 20 - Djbadboy",
+        "🇵🇱 波兰 (Poland) 21 - Djbadboy",
+        "🇵🇱 波兰 (Poland) 22 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

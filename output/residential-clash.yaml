@@ -4,23 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Djbadboy
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
 rules:
 - MATCH,PROXIES

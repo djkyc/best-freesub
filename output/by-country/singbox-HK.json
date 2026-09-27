@@ -4,52 +4,166 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - Djbadboy",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - Djbadboy",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - Djbadboy",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - Djbadboy",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - Djbadboy",
       "server": "sth.free-outline.giize.com",
       "server_port": 1081,
       "method": "chacha20-ietf-poly1305",
       "password": "v7qnj9jvxtnpmj4l"
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - Djbadboy",
+      "server": "47.244.120.197",
+      "server_port": 44867,
+      "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/arki"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - Djbadboy",
+      "server": "119.246.1.143",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "119.246.1.143",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - Djbadboy",
+      "server": "122.10.117.1",
+      "server_port": 11365,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "TmjQqVqztHiRk6Q5rKnTiQ=="
+    },
+    {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - Djbadboy",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - Djbadboy",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - Djbadboy",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy",
+      "server": "2.27.109.179",
+      "server_port": 45464,
+      "password": "XuMweB2PWs",
+      "tls": {
+        "enabled": true,
+        "server_name": "2.27.109.179.sslip.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy",
+      "server": "xg1.mangshe.xyz",
+      "server_port": 2060,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "xg1.mangshe.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy",
+      "server": "mz.hkychina.com",
+      "server_port": 8443,
+      "password": "HysTeria2026!Proxy",
+      "tls": {
+        "enabled": true,
+        "server_name": "mz.hkychina.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy",
+      "server": "47.239.6.251",
+      "server_port": 13779,
+      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+          "short_id": "af1bdd293097b664"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - Djbadboy",
+      "server": "122.10.117.1",
+      "server_port": 11674,
+      "uuid": "fe40f32a-b03d-4ada-8bee-00f41b766098",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F-yU1O5Q00eeyUdst7ZGDsgo4xS5mrdNwg0UcfsrVQs",
+          "short_id": "d889b977"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - Djbadboy",
       "server": "hk2.xiaoliyu.cyou",
       "server_port": 4433,
       "password": "19f72087-4591-4d72-930b-2697078ec2be",
@@ -61,84 +175,18 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - Djbadboy",
-      "server": "mz.hkychina.com",
-      "server_port": 8443,
-      "password": "HysTeria2026!Proxy",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 14 - Djbadboy",
+      "server": "nas.aizhzo.com",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "mz.hkychina.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - Djbadboy",
-      "server": "2.27.109.179",
-      "server_port": 45464,
-      "password": "XuMweB2PWs",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.27.109.179.sslip.io",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy",
-      "server": "champion.xn--kivt58h.lol",
-      "server_port": 80,
-      "uuid": "ed2864f9-37b3-4222-8c54-014aedc400a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ak.mcdonaldshamburgergoodgoodgood.xyz"
-        }
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy",
-      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy",
-      "server": "47.238.210.5",
-      "server_port": 13779,
-      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
-      "tls": {
-        "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
-          "short_id": "af1bdd293097b664"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy",
-      "server": "119.246.1.143",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me%2fripaojiedian",
+        "server_name": "nas.aizhzo.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
       }
     },
     {
@@ -156,7 +204,10 @@
         "🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy",
-        "🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy"
+        "🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 12 - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 13 - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 14 - Djbadboy"
       ]
     },
     {
@@ -173,7 +224,10 @@
         "🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy",
-        "🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy"
+        "🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 12 - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 13 - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 14 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -14,42 +14,20 @@
     {
       "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 02 - Djbadboy",
-      "server": "platform113.golnamakcert.top",
+      "server": "platform108.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113",
+        "path": "/platform108",
         "headers": {
-          "Host": "platform113.halalkhor.info"
+          "Host": "platform108.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 03 - Djbadboy",
-      "server": "platform109.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109",
-        "headers": {
-          "Host": "platform109.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 04 - Djbadboy",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 05 - Djbadboy",
       "server": "platform102.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -63,35 +41,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 06 - Djbadboy",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 07 - Djbadboy",
-      "server": "platform107.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107",
-        "headers": {
-          "Host": "platform107.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 08 - Djbadboy",
+      "tag": "🇿🇦 南非 (South Africa) 04 - Djbadboy",
       "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -104,8 +54,27 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 05 - Djbadboy",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 09 - Djbadboy",
+      "tag": "🇿🇦 南非 (South Africa) 06 - Djbadboy",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 07 - Djbadboy",
       "server": "platform101.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -116,7 +85,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 10 - Djbadboy",
+      "tag": "🇿🇦 南非 (South Africa) 08 - Djbadboy",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "['platform113.halalkhor.info']"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 09 - Djbadboy",
       "server": "platform118.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -130,21 +113,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 11 - Djbadboy",
-      "server": "platform103.golnamakcert.top",
+      "tag": "🇿🇦 南非 (South Africa) 10 - Djbadboy",
+      "server": "platform107.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform103",
+        "path": "/platform107",
         "headers": {
-          "Host": "platform103.halalkhor.info"
+          "Host": "platform107.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 12 - Djbadboy",
+      "tag": "🇿🇦 南非 (South Africa) 11 - Djbadboy",
       "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -158,16 +141,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 13 - Djbadboy",
-      "server": "platform108.golnamakcert.top",
+      "tag": "🇿🇦 南非 (South Africa) 12 - Djbadboy",
+      "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform108",
+        "path": "/platform109",
         "headers": {
-          "Host": "platform108.halalkhor.info"
+          "Host": "['platform109.halalkhor.info']"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 13 - Djbadboy",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115"
       }
     },
     {

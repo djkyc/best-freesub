@@ -5,6 +5,58 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - Djbadboy
+  server: 188.114.97.1
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  tls: true
+  servername: bold-term-4edd.mbigspot.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
+- name: 🇩🇪 德国 (Germany) 02 - Djbadboy
+  server: 95.133.236.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: c40ec629-cd50-4569-8ea7-ea7c498423fd
+  tls: true
+  reality-opts:
+    public-key: BzI9KKxbdc7fbgZpK0WX9p6jgJBVJo44dj6D15uW5HA
+    short-id: 77d4e9e5a5243324
+  servername: ads.x5.ru
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪 德国 (Germany) 03 - Djbadboy
+  server: 192.248.179.81
+  port: 80
+  udp: true
+  type: vless
+  uuid: 2787849c-1a49-4457-9db7-efcdb2578268
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 04 - Djbadboy
+  server: 169.150.210.233
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 05 - Djbadboy
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 06 - Djbadboy
   server: 199.232.78.101
   port: 443
   udp: true
@@ -15,59 +67,7 @@ proxies:
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇩🇪 德国 (Germany) 02 - Djbadboy
-  server: 8.209.74.72
-  port: 20001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 03 - Djbadboy
-  server: 159.69.89.23
-  port: 80
-  udp: true
-  type: vless
-  uuid: ca78a1a9-68d2-4373-8ea3-5d85fb61700d
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 04 - Djbadboy
-  server: 91.107.181.197
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 05 - Djbadboy
-  server: 169.150.210.233
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 06 - Djbadboy
-  server: 2.58.81.221
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
 - name: 🇩🇪 德国 (Germany) 07 - Djbadboy
-  server: 2.26.51.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
-    short-id: d4f6a8c1b2e3f9aa
-  servername: 4pda.to
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08 - Djbadboy
   server: 162.55.242.208
   port: 2053
   udp: true
@@ -78,30 +78,24 @@ proxies:
     public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
     short-id: 4d14da19b19cfc8c
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 09 - Djbadboy
-  server: dggg.wsone.icu
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: dggg.wsone.icu
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 10 - Djbadboy
-  server: 209.46.102.22
-  port: 8388
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 08 - Djbadboy
+  server: 8.209.74.72
+  port: 20001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: 🇩🇪 德国 (Germany) 11 - Djbadboy
-  server: 206.189.52.4
-  port: 17000
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 09 - Djbadboy
+  server: 163.8.195.241
+  port: 2087
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇩🇪 德国 (Germany) 12 - Djbadboy
+  type: vless
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+- name: 🇩🇪 德国 (Germany) 10 - Djbadboy
   server: 31.77.161.15
   port: 443
   udp: true
@@ -114,104 +108,113 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 13 - Djbadboy
-  server: 185.226.172.8
-  port: 8008
+- name: 🇩🇪 德国 (Germany) 11 - Djbadboy
+  server: 185.246.223.239
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 12062839-c99a-4084-b4de-e98be8b86c2d
+  tls: true
+  reality-opts:
+    public-key: b_nCO2c_TY_BPP0aASYW9E7N85gYUCscv_PCaHSW82Y
+    short-id: c7ea63625cdbc1df
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: a56a576410
+- name: 🇩🇪 德国 (Germany) 12 - Djbadboy
+  server: 213.202.208.199
+  port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 14 - Djbadboy
-  server: 51.195.126.38
-  port: 8388
+  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 13 - Djbadboy
+  server: 206.189.52.4
+  port: 17000
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 (Germany) 15 - Djbadboy
-  server: 91.107.190.175
-  port: 8080
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+- name: 🇩🇪 德国 (Germany) 14 - Djbadboy
+  server: 178.105.120.168
+  port: 80
   udp: true
   type: vless
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
+  uuid: 1d9cbbf4-bb99-4b09-8750-1cc22d510018
   network: ws
   ws-opts:
     path: /
+- name: 🇩🇪 德国 (Germany) 15 - Djbadboy
+  server: 95.85.252.78
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 16 - Djbadboy
-  server: 45.32.157.84
+  server: 104.143.223.230
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 9bb5dd4e-bd32-4bdb-a60d-9368433f3885
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇩🇪 德国 (Germany) 17 - Djbadboy
+  server: 45.77.143.204
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8ccc4581-eba9-4226-abbc-64e7d8fb415e
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 18 - Djbadboy
+  server: 130.61.232.1
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: UoUzY5YlcUBJpgXi/Z3PEaf58E+++FJ+3AKry5V7J9Y=
+- name: 🇩🇪 德国 (Germany) 19 - Djbadboy
+  server: dggg.wsone.icu
   port: 443
   udp: true
   type: trojan
-  password: Tg3RnK7Xp8B1
-  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com#🪐23@oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 17 - Djbadboy
-  server: 82.39.171.142
-  port: 443
+  password: M7v%w11Se*
+  sni: dggg.wsone.icu
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 20 - Djbadboy
+  server: 2.58.81.221
+  port: 80
   udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 - Djbadboy
-  server: 188.245.24.225
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 21 - Djbadboy
+  server: 188.34.184.151
   port: 80
   udp: true
   type: vless
-  uuid: acfc7e1f-85c1-4b75-bfc6-fc815a5550c6
+  uuid: dc31fe25-d91d-4691-94cb-1085d31ab4f8
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 19 - Djbadboy
-  server: 139.100.236.74
-  port: 2
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WxYpOK1iPSJySbVNMMJDtw
-- name: 🇩🇪 德国 (Germany) 20 - Djbadboy
-  server: 82.39.171.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 21 - Djbadboy
-  server: 31.76.100.41
-  port: 443
-  udp: true
-  type: vless
-  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
-    short-id: a1b2c3d4e5f67890
-  servername: dzen.ru
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 22 - Djbadboy
-  server: 159.69.103.251
-  port: 80
+  server: 89.169.53.176
+  port: 4443
   udp: true
   type: vless
-  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
-    short-id: 253126232f9bb9be
-  servername: www.yahoo.com
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 23 - Djbadboy
   server: 82.118.19.153
@@ -225,21 +228,8 @@ proxies:
     public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
     short-id: 670ed9f350bd8ee0
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇩🇪 德国 (Germany) 24 - Djbadboy
-  server: 89.169.53.176
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 25 - Djbadboy
   server: 77.91.76.156
   port: 57160
   udp: true
@@ -252,14 +242,38 @@ proxies:
     short-id: 77b5
   servername: funpay.com
   client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 25 - Djbadboy
+  server: hikvision-plus.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 - name: 🇩🇪 德国 (Germany) 26 - Djbadboy
-  server: 2.58.81.221
-  port: 80
+  server: 209.46.102.22
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
 - name: 🇩🇪 德国 (Germany) 27 - Djbadboy
+  server: 159.69.103.251
+  port: 80
+  udp: true
+  type: vless
+  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
+    short-id: 253126232f9bb9be
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 28 - Djbadboy
   server: node8.quaxly.com
   port: 25040
   udp: true
@@ -270,26 +284,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 28 - Djbadboy
-  server: 213.202.208.199
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
 - name: 🇩🇪 德国 (Germany) 29 - Djbadboy
-  server: 185.249.153.108
+  server: 82.39.171.142
   port: 443
   udp: true
   type: vless
-  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw
-    short-id: 73c9e31ccafda20e
-  servername: www.nordivablog.ru
-  client-fingerprint: qq
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 30 - Djbadboy
   server: 193.108.117.54
   port: 443
@@ -307,54 +314,68 @@ proxies:
     headers:
       Host: aidrivercat.org
 - name: 🇩🇪 德国 (Germany) 31 - Djbadboy
+  server: 82.39.171.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 32 - Djbadboy
+  server: 51.195.126.38
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 33 - Djbadboy
+  server: 2.26.51.75
+  port: 443
+  udp: true
+  type: vless
+  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
+    short-id: d4f6a8c1b2e3f9aa
+  servername: 4pda.to
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 34 - Djbadboy
   server: de1.xiaoliyu.cyou
   port: 4433
   udp: true
   type: hysteria2
   password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  sni: 'off'
+  sni: de1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 32 - Djbadboy
-  server: 104.27.88.172
-  port: 80
+- name: 🇩🇪 德国 (Germany) 35 - Djbadboy
+  server: de18.bexait.ir
+  port: 2434
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
-- name: 🇩🇪 德国 (Germany) 33 - Djbadboy
-  server: 95.133.236.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: c40ec629-cd50-4569-8ea7-ea7c498423fd
+  uuid: 8dfc237e-0376-48b4-9822-5f4e627d41f1
   tls: true
   reality-opts:
-    public-key: BzI9KKxbdc7fbgZpK0WX9p6jgJBVJo44dj6D15uW5HA
-    short-id: 77d4e9e5a5243324
-  servername: ads.x5.ru
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇩🇪 德国 (Germany) 34 - Djbadboy
-  server: rubifen.adaspoloandco.com
-  port: 443
+    public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
+    short-id: 9de041877612a718
+  servername: icloud.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 36 - Djbadboy
+  server: 82.24.203.20
+  port: 2087
   udp: true
   type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
+  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
   network: ws
   ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 35 - Djbadboy
+    path: /fd5ba98a3970
+- name: 🇩🇪 德国 (Germany) 37 - Djbadboy
   server: 64.118.158.56
   port: 443
   udp: true
@@ -367,27 +388,6 @@ proxies:
     short-id: 5c6481cdd4
   servername: buckeye-retail-website.amazon.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 36 - Djbadboy
-  server: 82.24.203.20
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
-  network: ws
-  ws-opts:
-    path: /fd5ba98a3970
-- name: 🇩🇪 德国 (Germany) 37 - Djbadboy
-  server: freeman.curtvip.ir
-  port: 20410
-  udp: true
-  type: vless
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
-  tls: true
-  reality-opts:
-    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
-    short-id: e2ce3e050232978c
-  servername: secureconnect-pa.mtls.clients6.google.com
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 38 - Djbadboy
   server: 104.27.122.195
   port: 443
@@ -397,61 +397,126 @@ proxies:
   tls: true
   servername: zeus-panel-0mvqo2.zeus-y14qx2.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /stream/PANEL_ZEUS/6f00f7d92039/loc-0
     headers:
       Host: zeus-panel-0mvqo2.zeus-y14qx2.workers.dev
 - name: 🇩🇪 德国 (Germany) 39 - Djbadboy
-  server: 140.150.238.49
-  port: 8445
+  server: 31.76.100.41
+  port: 443
   udp: true
   type: vless
-  uuid: aac5beba-02a7-4cf0-8d33-f724c1bda5c6
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
-    short-id: 6ba85179e30d4fc2
-  servername: hetzner.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Google
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: ''
 - name: 🇩🇪 德国 (Germany) 40 - Djbadboy
-  server: 216.106.187.60
-  port: 22324
+  server: 57.129.41.216
+  port: 80
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 41 - Djbadboy
-  server: 172.67.204.153
-  port: 2052
+  server: 57.129.41.216
+  port: 80
   udp: true
   type: vless
-  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+    path: /vless/
 - name: 🇩🇪 德国 (Germany) 42 - Djbadboy
-  server: hikvision-plus.com
-  port: 2053
+  server: 57.129.41.216
+  port: 80
   udp: true
   type: vless
-  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /vless/
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: 57.129.41.216
 - name: 🇩🇪 德国 (Germany) 43 - Djbadboy
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 44 - Djbadboy
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 45 - Djbadboy
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 46 - Djbadboy
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 47 - Djbadboy
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 48 - Djbadboy
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 49 - Djbadboy
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 50 - Djbadboy
   server: kentspark.org
   port: 443
   udp: true
@@ -465,6 +530,54 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
+- name: 🇩🇪 德国 (Germany) 51 - Djbadboy
+  server: rubifen.adaspoloandco.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+- name: 🇩🇪 德国 (Germany) 52 - Djbadboy
+  server: cctvhikvision.center
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 53 - Djbadboy
+  server: 216.106.187.60
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 54 - Djbadboy
+  server: 167.233.191.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6289ae55-053b-470c-a2f8-e0841a567b48
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qI8F1K9Ev5BUzjsuzUCQSBiq7B-6C503e5LIQez3ZjU
+    short-id: dd878b254cfa
+  servername: www.sony.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -513,6 +626,17 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 41 - Djbadboy
   - 🇩🇪 德国 (Germany) 42 - Djbadboy
   - 🇩🇪 德国 (Germany) 43 - Djbadboy
+  - 🇩🇪 德国 (Germany) 44 - Djbadboy
+  - 🇩🇪 德国 (Germany) 45 - Djbadboy
+  - 🇩🇪 德国 (Germany) 46 - Djbadboy
+  - 🇩🇪 德国 (Germany) 47 - Djbadboy
+  - 🇩🇪 德国 (Germany) 48 - Djbadboy
+  - 🇩🇪 德国 (Germany) 49 - Djbadboy
+  - 🇩🇪 德国 (Germany) 50 - Djbadboy
+  - 🇩🇪 德国 (Germany) 51 - Djbadboy
+  - 🇩🇪 德国 (Germany) 52 - Djbadboy
+  - 🇩🇪 德国 (Germany) 53 - Djbadboy
+  - 🇩🇪 德国 (Germany) 54 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -561,5 +685,16 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 41 - Djbadboy
   - 🇩🇪 德国 (Germany) 42 - Djbadboy
   - 🇩🇪 德国 (Germany) 43 - Djbadboy
+  - 🇩🇪 德国 (Germany) 44 - Djbadboy
+  - 🇩🇪 德国 (Germany) 45 - Djbadboy
+  - 🇩🇪 德国 (Germany) 46 - Djbadboy
+  - 🇩🇪 德国 (Germany) 47 - Djbadboy
+  - 🇩🇪 德国 (Germany) 48 - Djbadboy
+  - 🇩🇪 德国 (Germany) 49 - Djbadboy
+  - 🇩🇪 德国 (Germany) 50 - Djbadboy
+  - 🇩🇪 德国 (Germany) 51 - Djbadboy
+  - 🇩🇪 德国 (Germany) 52 - Djbadboy
+  - 🇩🇪 德国 (Germany) 53 - Djbadboy
+  - 🇩🇪 德国 (Germany) 54 - Djbadboy
 rules:
 - MATCH,PROXIES
