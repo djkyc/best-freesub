@@ -4,52 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇭🇺 匈牙利 (Hungary) 01 - Djbadboy",
-      "server": "185.225.68.232",
+      "server": "45.9.168.211",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "7de5e70d-b95e-4019-affb-636151647b52",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
+        "server_name": "mzone.hu.3cloudhost.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8",
+          "short_id": ""
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇺 匈牙利 (Hungary) 02 - Djbadboy",
-      "server": "185.225.68.232",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇺 匈牙利 (Hungary) 03 - Djbadboy",
-      "server": "185.225.68.232",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {
@@ -57,18 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - Djbadboy",
-        "🇭🇺 匈牙利 (Hungary) 02 - Djbadboy",
-        "🇭🇺 匈牙利 (Hungary) 03 - Djbadboy"
+        "🇭🇺 匈牙利 (Hungary) 01 - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - Djbadboy",
-        "🇭🇺 匈牙利 (Hungary) 02 - Djbadboy",
-        "🇭🇺 匈牙利 (Hungary) 03 - Djbadboy"
+        "🇭🇺 匈牙利 (Hungary) 01 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

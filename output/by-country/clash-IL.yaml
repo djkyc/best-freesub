@@ -29,9 +29,9 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 03 - Djbadboy
-  server: 193.202.10.137
+  server: de2.dzvn.space
   port: 2291
   udp: true
   type: vless
@@ -42,16 +42,8 @@ proxies:
     public-key: tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 04 - Djbadboy
-  server: 129.159.156.109
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇮🇱 以色列 (Israel) 05 - Djbadboy
   server: 193.169.229.145
   port: 443
   udp: true
@@ -73,7 +65,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - Djbadboy
   - 🇮🇱 以色列 (Israel) 03 - Djbadboy
   - 🇮🇱 以色列 (Israel) 04 - Djbadboy
-  - 🇮🇱 以色列 (Israel) 05 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,6 +74,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - Djbadboy
   - 🇮🇱 以色列 (Israel) 03 - Djbadboy
   - 🇮🇱 以色列 (Israel) 04 - Djbadboy
-  - 🇮🇱 以色列 (Israel) 05 - Djbadboy
 rules:
 - MATCH,PROXIES

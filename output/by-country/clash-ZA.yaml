@@ -5,140 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - Djbadboy
-  server: 102.37.156.224
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 02 - Djbadboy
-  server: 139.84.228.106
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 03 - Djbadboy
-  server: 139.84.249.25
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 04 - Djbadboy
-  server: 139.84.234.100
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 05 - Djbadboy
-  server: 139.84.246.73
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 06 - Djbadboy
   server: 139.84.247.164
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
-- name: 🇿🇦 南非 (South Africa) 07 - Djbadboy
-  server: 139.84.250.125
-  port: 80
+- name: 🇿🇦 南非 (South Africa) 02 - Djbadboy
+  server: 102.133.165.160
+  port: 16233
   udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 08 - Djbadboy
-  server: platform101.golnamakcert.top
-  port: 80
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: 🇿🇦 南非 (South Africa) 03 - Djbadboy
+  server: 102.37.156.224
+  port: 443
   udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 09 - Djbadboy
-  server: 139.84.245.154
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform108
-    headers:
-      Host: platform108.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 10 - Djbadboy
-  server: 139.84.245.78
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 11 - Djbadboy
-  server: platform103.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 12 - Djbadboy
-  server: 139.84.247.122
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 13 - Djbadboy
-  server: 139.84.250.128
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,16 +33,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - Djbadboy
   - 🇿🇦 南非 (South Africa) 02 - Djbadboy
   - 🇿🇦 南非 (South Africa) 03 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 04 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 05 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 06 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 07 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 08 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 09 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 10 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 11 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 12 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 13 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -165,15 +41,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - Djbadboy
   - 🇿🇦 南非 (South Africa) 02 - Djbadboy
   - 🇿🇦 南非 (South Africa) 03 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 04 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 05 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 06 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 07 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 08 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 09 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 10 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 11 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 12 - Djbadboy
-  - 🇿🇦 南非 (South Africa) 13 - Djbadboy
 rules:
 - MATCH,PROXIES
