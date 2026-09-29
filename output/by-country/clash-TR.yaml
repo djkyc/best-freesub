@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Djbadboy
-  server: 93.190.8.89
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 7809f866-9f42-43ae-ae11-34729db23236
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - Djbadboy
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -24,8 +15,8 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - Djbadboy
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - Djbadboy
   server: 78.135.73.47
   port: 443
   udp: true
@@ -38,8 +29,8 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - Djbadboy
-  server: 178.83.46.216
+- name: 🇹🇷 土耳其 (Turkey) 03 - Djbadboy
+  server: 145.239.30.17
   port: 2053
   udp: true
   type: vless
@@ -52,7 +43,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Djbadboy
   - 🇹🇷 土耳其 (Turkey) 02 - Djbadboy
   - 🇹🇷 土耳其 (Turkey) 03 - Djbadboy
-  - 🇹🇷 土耳其 (Turkey) 04 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +51,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Djbadboy
   - 🇹🇷 土耳其 (Turkey) 02 - Djbadboy
   - 🇹🇷 土耳其 (Turkey) 03 - Djbadboy
-  - 🇹🇷 土耳其 (Turkey) 04 - Djbadboy
 rules:
 - MATCH,PROXIES

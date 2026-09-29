@@ -6,17 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - Djbadboy",
-      "server": "93.190.8.89",
-      "server_port": 3090,
-      "uuid": "7809f866-9f42-43ae-ae11-34729db23236",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - Djbadboy",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -25,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - Djbadboy",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - Djbadboy",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -57,8 +46,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - Djbadboy",
-      "server": "178.83.46.216",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - Djbadboy",
+      "server": "145.239.30.17",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
@@ -69,8 +58,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - Djbadboy",
         "🇹🇷 土耳其 (Turkey) 02 - Djbadboy",
-        "🇹🇷 土耳其 (Turkey) 03 - Djbadboy",
-        "🇹🇷 土耳其 (Turkey) 04 - Djbadboy"
+        "🇹🇷 土耳其 (Turkey) 03 - Djbadboy"
       ]
     },
     {
@@ -79,8 +67,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - Djbadboy",
         "🇹🇷 土耳其 (Turkey) 02 - Djbadboy",
-        "🇹🇷 土耳其 (Turkey) 03 - Djbadboy",
-        "🇹🇷 土耳其 (Turkey) 04 - Djbadboy"
+        "🇹🇷 土耳其 (Turkey) 03 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
