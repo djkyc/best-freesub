@@ -4,25 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
-  server: hk01.kfc-520.com
-  port: 60001
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
+  server: 172.64.42.85
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
+  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
-  skip-cert-verify: false
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
 rules:
 - MATCH,PROXIES

@@ -4,69 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - Djbadboy",
-      "server": "83.147.18.3",
-      "server_port": 443,
-      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
-          "short_id": "fd8cf7e1173f0edb"
-        }
-      }
+      "server": "5.188.181.201",
+      "server_port": 9000,
+      "method": "aes-256-cfb",
+      "password": "a3GFYt36Sm82Vys9"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - Djbadboy",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 03 - Djbadboy",
-      "server": "193.238.154.5",
-      "server_port": 443,
-      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-es.pleiades.codes",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - Djbadboy",
-      "server": "185.174.137.172",
-      "server_port": 8446,
-      "password": "e9dc02d400b67c727aca1620",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.174.137.172",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - Djbadboy",
       "server": "92.118.127.16",
       "server_port": 443,
       "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
@@ -87,63 +42,44 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - Djbadboy",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - Djbadboy",
+      "server": "83.147.18.3",
+      "server_port": 443,
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - Djbadboy",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - Djbadboy",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - Djbadboy",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - Djbadboy",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "WSyL4XTwNsdv"
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 09 - Djbadboy",
-      "server": "mygptagent.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "mygptagent.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "mygptagent.org"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 10 - Djbadboy",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - Djbadboy",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -164,7 +100,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 11 - Djbadboy",
+      "tag": "🇪🇸 西班牙 (Spain) 08 - Djbadboy",
       "server": "196.245.52.146",
       "server_port": 25535,
       "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
@@ -183,12 +119,64 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 09 - Djbadboy",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 10 - Djbadboy",
+      "server": "193.238.154.5",
+      "server_port": 443,
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-es.pleiades.codes",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 12 - Djbadboy",
-      "server": "85.90.217.42",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "tag": "🇪🇸 西班牙 (Spain) 11 - Djbadboy",
+      "server": "66.163.118.73",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
+      }
     },
     {
       "type": "selector",
@@ -205,8 +193,7 @@
         "🇪🇸 西班牙 (Spain) 08 - Djbadboy",
         "🇪🇸 西班牙 (Spain) 09 - Djbadboy",
         "🇪🇸 西班牙 (Spain) 10 - Djbadboy",
-        "🇪🇸 西班牙 (Spain) 11 - Djbadboy",
-        "🇪🇸 西班牙 (Spain) 12 - Djbadboy"
+        "🇪🇸 西班牙 (Spain) 11 - Djbadboy"
       ]
     },
     {
@@ -223,8 +210,7 @@
         "🇪🇸 西班牙 (Spain) 08 - Djbadboy",
         "🇪🇸 西班牙 (Spain) 09 - Djbadboy",
         "🇪🇸 西班牙 (Spain) 10 - Djbadboy",
-        "🇪🇸 西班牙 (Spain) 11 - Djbadboy",
-        "🇪🇸 西班牙 (Spain) 12 - Djbadboy"
+        "🇪🇸 西班牙 (Spain) 11 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

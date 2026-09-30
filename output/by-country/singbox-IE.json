@@ -15,7 +15,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,112 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - Djbadboy",
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "98b6cb05-b5ab-4c82-8683-07de28f796a9",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiRHF6VWU4SmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0",
+        "headers": {
+          "Host": "holy-glitter-39f9.wwewee2dasdds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - Djbadboy",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "d6828805-5608-44d7-a44b-976d4c3ac2d0",
+      "tls": {
+        "enabled": true,
+        "server_name": "0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/5ibXbgAYxWzwbOtkXJWUtvKMKOYjh?ed",
+        "headers": {
+          "Host": "0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 04 - Djbadboy",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 05 - Djbadboy",
+      "server": "188.114.97.6",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 06 - Djbadboy",
+      "server": "xstack.mahanfixe.workers.dev",
+      "server_port": 443,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
+      "tls": {
+        "enabled": true,
+        "server_name": "xstack.mahanfixe.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - Djbadboy"
+        "🇮🇪 爱尔兰 (Ireland) 01 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 02 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 03 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 04 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 05 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 06 - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - Djbadboy"
+        "🇮🇪 爱尔兰 (Ireland) 01 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 02 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 03 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 04 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 05 - Djbadboy",
+        "🇮🇪 爱尔兰 (Ireland) 06 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

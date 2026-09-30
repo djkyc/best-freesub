@@ -5,72 +5,51 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Djbadboy
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
+  server: 104.18.47.113
+  port: 8080
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Djbadboy
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Djbadboy
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Djbadboy
   server: 185.22.154.239
   port: 40101
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Djbadboy
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Djbadboy
-  server: 47.238.210.5
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - Djbadboy
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Djbadboy
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүрҹү
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Djbadboy
-  server: 5.223.51.84
-  port: 443
+  server: champion.xn--kivt58h.lol
+  port: 80
   udp: true
   type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
+  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
   network: ws
   ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
+    path: /
     headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Djbadboy
   server: 194.99.79.26
   port: 443
   udp: true
@@ -84,34 +63,48 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy
-  server: 47.240.80.220
-  port: 2052
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Djbadboy
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: 47.240.80.220
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2��
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy
-  server: 47.239.6.251
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy
+  server: 45.82.244.40
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy
+  server: 47.238.210.5
   port: 13779
   udp: true
   type: vless
   uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
     short-id: af1bdd293097b664
   servername: tesla.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy
-  server: mz.hkychina.com
-  port: 8443
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy
+  server: 47.240.80.220
+  port: 2052
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -128,7 +121,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -144,6 +136,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 09 - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 10 - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 11 - Djbadboy
 rules:
 - MATCH,PROXIES

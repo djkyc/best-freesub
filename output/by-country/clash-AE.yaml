@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Djbadboy
+  server: 104.143.223.60
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 60f70a3c-6d58-4929-9b64-6bdf38eb5c95
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - Djbadboy
   server: 78.40.195.140
   port: 443
   udp: true
@@ -17,29 +26,28 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - Djbadboy
-  server: 85.204.107.183
+- name: 🇦🇪 阿联酋 (UAE) 03 - Djbadboy
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 03 - Djbadboy
-  server: pl-2.omuvpn.tech
+- name: 🇦🇪 阿联酋 (UAE) 04 - Djbadboy
+  server: 151.241.166.181
   port: 443
   udp: true
   type: vless
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
+  uuid: e9844617-e393-4876-afa7-11859695f4ee
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: 76309429d55d
-  servername: ozone.nl
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 04 - Djbadboy
-  server: uae.unixzone.us
+    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
+  servername: pl.gazladder.work
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - Djbadboy
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -49,19 +57,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - Djbadboy
-  server: 94.183.224.45
-  port: 443
-  udp: true
-  type: vless
-  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
-    short-id: a1b2c3d4e5f67890
-  servername: dzen.ru
-  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - Djbadboy
   server: 146.70.102.82
   port: 443
@@ -76,15 +71,18 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 07 - Djbadboy
-  server: 130.49.161.70
+  server: pl-2.omuvpn.tech
   port: 443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  type: vless
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
+    short-id: 76309429d55d
+  servername: ozone.nl
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

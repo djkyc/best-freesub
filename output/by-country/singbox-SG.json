@@ -4,80 +4,113 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - Djbadboy",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - Djbadboy",
-      "server": "68.183.227.236",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - Djbadboy",
-      "server": "ww11.levikogjgfdd.ir",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - Djbadboy",
-      "server": "128.199.172.224",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - Djbadboy",
-      "server": "5.223.41.93",
-      "server_port": 80,
-      "uuid": "f2eada1b-fdec-48c6-8638-18ade32993d4",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - Djbadboy",
+      "server": "162.159.0.169",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - Djbadboy",
-      "server": "206.206.78.36",
-      "server_port": 443,
-      "uuid": "e3f0c894-0f76-4683-a751-6a93da8fd14d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UOLfRKeEoVxkp-APTF2OlvFkKSoiR2mWzUuhSWxcVmQ",
-          "short_id": "133a3f10a1581047"
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - Djbadboy",
+      "server": "162.159.0.53",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - Djbadboy",
+      "server": "172.64.154.8",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - Djbadboy",
+      "server": "162.159.0.169",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - Djbadboy",
+      "server": "104.21.70.21",
+      "server_port": 443,
+      "uuid": "518de0d4-6ce8-4404-80db-23c4a8806128",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-5faafb.esmaoi.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ez-5faafb.esmaoi.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - Djbadboy",
+      "server": "149.88.23.207",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 07 - Djbadboy",
-      "server": "68.183.235.122",
+      "server": "103.136.68.215",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "3FN3FGfTer3et3kX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - Djbadboy",
+      "server": "68.183.227.45",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - Djbadboy",
+      "tag": "🇸🇬 新加坡 (Singapore) 09 - Djbadboy",
       "server": "146.235.16.130",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
@@ -98,88 +131,38 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - Djbadboy",
-      "server": "3.0.111.82",
-      "server_port": 17623,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 10 - Djbadboy",
-      "server": "68.183.227.4",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 - Djbadboy",
-      "server": "3.0.111.82",
-      "server_port": 10574,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - Djbadboy",
-      "server": "5.223.41.31",
-      "server_port": 80,
-      "uuid": "70513150-d637-4328-a0dc-1e7732f9f0a8",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - Djbadboy",
-      "server": "172.237.89.202",
+      "server": "ld.235231.xyz",
       "server_port": 443,
-      "uuid": "408fbae6-a40b-4f0b-9723-0b4ce8e3d035",
+      "uuid": "65d3f9b3-d289-4a8e-9c87-90bba156de30",
       "tls": {
         "enabled": true,
-        "server_name": "onhit.shalana.xyz",
+        "server_name": "ld.235231.xyz",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - Djbadboy",
-      "server": "68.183.227.45",
+      "tag": "🇸🇬 新加坡 (Singapore) 11 - Djbadboy",
+      "server": "128.199.172.224",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 12 - Djbadboy",
+      "server": "149.88.23.202",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - Djbadboy",
+      "tag": "🇸🇬 新加坡 (Singapore) 13 - Djbadboy",
       "server": "vpn-sg-001.fastervpn.world",
       "server_port": 443,
       "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
@@ -190,8 +173,393 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 - Djbadboy",
+      "server": "68.183.227.236",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - Djbadboy",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "fc60147e-76b8-4bc5-b691-90b2da79e3d2",
+      "tls": {
+        "enabled": true,
+        "server_name": "nautica-cff.kloningstrife002.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/138.2.74.219-28616",
+        "headers": {
+          "Host": "nautica-cff.kloningstrife002.workers.dev"
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 16 - Djbadboy",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "d4453a50-3fdf-465b-9dd3-5f2eed97ddd5",
+      "tls": {
+        "enabled": true,
+        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 17 - Djbadboy",
+      "server": "68.183.227.4",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 18 - Djbadboy",
+      "server": "68.183.235.122",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 19 - Djbadboy",
+      "server": "217.217.254.126",
+      "server_port": 2053,
+      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
+          "short_id": "87829de0e2bb82cb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 20 - Djbadboy",
+      "server": "5.223.41.93",
+      "server_port": 80,
+      "uuid": "f2eada1b-fdec-48c6-8638-18ade32993d4",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 21 - Djbadboy",
+      "server": "57.129.130.10",
+      "server_port": 52014,
+      "uuid": "bca740c6-6704-48ba-99da-7d7a31768d73",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 22 - Djbadboy",
+      "server": "170.114.46.6",
+      "server_port": 80,
+      "uuid": "a57223c7-3581-4fec-9bc4-ad5c30900efb",
+      "transport": {
+        "type": "ws",
+        "path": "/free-server.techsonic.dev",
+        "headers": {
+          "Host": "free-server.techsonic.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 23 - Djbadboy",
+      "server": "91.193.58.99",
+      "server_port": 2096,
+      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
+      "tls": {
+        "enabled": true,
+        "server_name": "free-server.techsonic.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/free-server.techsonic.dev",
+        "headers": {
+          "Host": "free-server.techsonic.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 24 - Djbadboy",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "609b0d70-e2d0-4a48-95b1-02754e9b249a",
+      "tls": {
+        "enabled": true,
+        "server_name": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 25 - Djbadboy",
+      "server": "3.0.111.82",
+      "server_port": 10574,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 26 - Djbadboy",
+      "server": "5.223.41.31",
+      "server_port": 80,
+      "uuid": "70513150-d637-4328-a0dc-1e7732f9f0a8",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 27 - Djbadboy",
+      "server": "3.0.111.82",
+      "server_port": 17623,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 28 - Djbadboy",
+      "server": "onhit.shalana.xyz",
+      "server_port": 443,
+      "uuid": "408fbae6-a40b-4f0b-9723-0b4ce8e3d035",
+      "tls": {
+        "enabled": true,
+        "server_name": "onhit.shalana.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 29 - Djbadboy",
+      "server": "46.137.202.178",
+      "server_port": 12512,
+      "uuid": "2a6c617d-98e4-49c3-95ab-76f02fcf0150",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA",
+          "short_id": "e692a8250d2e2fd0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 30 - Djbadboy",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "81f042b3-13d9-4686-9d92-5350f19d909c",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 31 - Djbadboy",
+      "server": "206.206.78.36",
+      "server_port": 443,
+      "uuid": "e3f0c894-0f76-4683-a751-6a93da8fd14d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UOLfRKeEoVxkp-APTF2OlvFkKSoiR2mWzUuhSWxcVmQ",
+          "short_id": "133a3f10a1581047"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 32 - Djbadboy",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "2388e166-3890-33ae-f77e-efac00000002",
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 33 - Djbadboy",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "66b076d4-519d-4b05-872e-d0366d15bace",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 34 - Djbadboy",
+      "server": "496b9e5d-tmeqo0-0-1imi4.sg7.hyhuawei.com",
+      "server_port": 443,
+      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "496b9e5d-tmeqo0-0-1imi4.sg7.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 35 - Djbadboy",
+      "server": "104.21.67.236",
+      "server_port": 443,
+      "uuid": "96e341a7-3077-4613-b482-41bd9c90cc4d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ezaccess-project-4c7950.ez-dc9bbb.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ezaccess-project-4c7950.ez-dc9bbb.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 36 - Djbadboy",
       "server": "3.0.111.82",
       "server_port": 12972,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -212,80 +580,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - Djbadboy",
-      "server": "sg2-8sb.6121999.dpdns.org",
-      "server_port": 19825,
-      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "tag": "🇸🇬 新加坡 (Singapore) 37 - Djbadboy",
+      "server": "54.169.200.246",
+      "server_port": 41688,
+      "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sg2-8sb.6121999.dpdns.org",
+        "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 18 - Djbadboy",
-      "server": "86.38.247.109",
-      "server_port": 2087,
-      "password": "sshs8_6481354771",
-      "tls": {
-        "enabled": true,
-        "server_name": "ul-singapore1.09vpn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+          "public_key": "srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk",
+          "short_id": "7f342137c20387"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 19 - Djbadboy",
-      "server": "138.2.89.249",
-      "server_port": 443,
-      "password": "d042d150716709bb778cc73889cddb02",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "309502c4a8df10b46fb976d4a8c43f42"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 20 - Djbadboy",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 21 - Djbadboy",
+      "tag": "🇸🇬 新加坡 (Singapore) 38 - Djbadboy",
       "server": "138.2.73.238",
       "server_port": 50160,
       "password": "f87376e17da040ed04c9665ce8972930",
@@ -294,13 +610,6 @@
         "server_name": "www.bing.com",
         "insecure": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 22 - Djbadboy",
-      "server": "47.237.74.17",
-      "server_port": 16263,
-      "uuid": "c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3"
     },
     {
       "type": "selector",
@@ -328,7 +637,23 @@
         "🇸🇬 新加坡 (Singapore) 19 - Djbadboy",
         "🇸🇬 新加坡 (Singapore) 20 - Djbadboy",
         "🇸🇬 新加坡 (Singapore) 21 - Djbadboy",
-        "🇸🇬 新加坡 (Singapore) 22 - Djbadboy"
+        "🇸🇬 新加坡 (Singapore) 22 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 23 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 24 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 25 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 26 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 27 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 28 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 29 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 30 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 31 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 32 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 33 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 34 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 35 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 36 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 37 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 38 - Djbadboy"
       ]
     },
     {
@@ -356,7 +681,23 @@
         "🇸🇬 新加坡 (Singapore) 19 - Djbadboy",
         "🇸🇬 新加坡 (Singapore) 20 - Djbadboy",
         "🇸🇬 新加坡 (Singapore) 21 - Djbadboy",
-        "🇸🇬 新加坡 (Singapore) 22 - Djbadboy"
+        "🇸🇬 新加坡 (Singapore) 22 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 23 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 24 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 25 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 26 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 27 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 28 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 29 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 30 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 31 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 32 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 33 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 34 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 35 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 36 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 37 - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 38 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
