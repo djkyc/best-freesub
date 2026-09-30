@@ -5,22 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - Djbadboy
-  server: 162.249.127.137
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - Djbadboy
-  server: 85.204.107.172
+  server: 85.204.107.176
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - Djbadboy
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - Djbadboy
   server: 77.74.123.101
   port: 8443
   udp: true
@@ -28,6 +20,14 @@ proxies:
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - Djbadboy
+  server: 162.249.127.133
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - Djbadboy
   server: 146.70.124.85
   port: 443
@@ -42,38 +42,15 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - Djbadboy
-  server: 46.28.67.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - Djbadboy
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: speedtest.tinkoff.ru
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - Djbadboy
-  server: hy2-new.aspidnet.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - Djbadboy
-  server: 193.163.203.253
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - Djbadboy
+  server: bl3fk52.sysopnova.art
   port: 443
   udp: true
   type: vless
@@ -85,22 +62,35 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - Djbadboy
-  server: 103.126.51.36
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - Djbadboy
+  server: 103.126.51.38
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 10 - Djbadboy
-  server: 162.249.125.133
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - Djbadboy
+  server: 46.28.67.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇷🇴 罗马尼亚 (Romania) 09 - Djbadboy
+  server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 proxy-groups:
@@ -117,7 +107,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - Djbadboy
   - 🇷🇴 罗马尼亚 (Romania) 08 - Djbadboy
   - 🇷🇴 罗马尼亚 (Romania) 09 - Djbadboy
-  - 🇷🇴 罗马尼亚 (Romania) 10 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,6 +121,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - Djbadboy
   - 🇷🇴 罗马尼亚 (Romania) 08 - Djbadboy
   - 🇷🇴 罗马尼亚 (Romania) 09 - Djbadboy
-  - 🇷🇴 罗马尼亚 (Romania) 10 - Djbadboy
 rules:
 - MATCH,PROXIES

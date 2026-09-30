@@ -5,79 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - Djbadboy
-  server: 181.214.1.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime39.workers.dev
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Djbadboy
   server: 213.183.63.60
-  port: 9085
+  port: 9029
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - Djbadboy
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Djbadboy
   server: 213.183.63.60
   port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - Djbadboy
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - Djbadboy
   server: 213.183.63.60
   port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - Djbadboy
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - Djbadboy
-  server: 213.183.63.60
-  port: 9030
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - Djbadboy
-  server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - Djbadboy
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - Djbadboy
   server: 213.183.63.60
   port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy
-  server: 136.175.82.85
-  port: 18775
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - Djbadboy
+  server: 213.183.63.60
+  port: 9030
   udp: true
-  type: vless
-  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy
+  type: ss
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - Djbadboy
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - Djbadboy
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy
   server: 193.148.59.178
   port: 443
   udp: true
@@ -90,7 +73,27 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy
+  server: 136.175.82.85
+  port: 18775
+  udp: true
+  type: vless
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
+  client-fingerprint: safari
+- name: 🇧🇬 保加利亚 (Bulgaria) 12 - Djbadboy
   server: 213.183.63.60
   port: 9064
   udp: true
@@ -113,6 +116,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy
   - 🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy
   - 🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,5 +133,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy
   - 🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy
   - 🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - Djbadboy
 rules:
 - MATCH,PROXIES
