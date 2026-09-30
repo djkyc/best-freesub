@@ -4,8 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - Djbadboy",
+      "server": "181.214.1.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime39.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Djbadboy",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Djbadboy",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Djbadboy",
       "server": "213.183.63.60",
       "server_port": 9066,
       "method": "aes-256-cfb",
@@ -13,52 +43,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Djbadboy",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Djbadboy",
-      "server": "193.148.59.178",
-      "server_port": 443,
-      "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-          "short_id": "e3daad69"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Djbadboy",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - Djbadboy",
-      "server": "213.183.63.60",
-      "server_port": 9061,
-      "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - Djbadboy",
       "server": "213.183.63.60",
       "server_port": 9030,
       "method": "aes-256-cfb",
@@ -66,15 +51,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - Djbadboy",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - Djbadboy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - Djbadboy",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -82,15 +59,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - Djbadboy",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - Djbadboy",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy",
       "server": "136.175.82.85",
       "server_port": 18775,
       "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
@@ -111,32 +96,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy",
-      "server": "131.123.41.223",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy",
+      "server": "193.148.59.178",
       "server_port": 443,
-      "uuid": "33e8bd3a-26f0-4e57-bc27-e5552a81c880",
+      "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "bulgaria.stream-live.ru",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "dsyxDiVtAFRjKOqLdqof2SuygewTO-EWTd34Jk1YYVo",
-          "short_id": "e9433de76a53573b"
+          "public_key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
+          "short_id": "e3daad69"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 - Djbadboy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "selector",
@@ -153,8 +138,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - Djbadboy",
         "🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy",
         "🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy",
-        "🇧🇬 保加利亚 (Bulgaria) 12 - Djbadboy"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy"
       ]
     },
     {
@@ -171,8 +155,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - Djbadboy",
         "🇧🇬 保加利亚 (Bulgaria) 09 - Djbadboy",
         "🇧🇬 保加利亚 (Bulgaria) 10 - Djbadboy",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy",
-        "🇧🇬 保加利亚 (Bulgaria) 12 - Djbadboy"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
