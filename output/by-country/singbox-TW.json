@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - Djbadboy",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
-        "insecure": true
-      }
+      "server": "dog-tw.kunlun01dns.com",
+      "server_port": 21034,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
@@ -23,7 +19,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
@@ -36,13 +32,70 @@
       "security": "auto"
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - Djbadboy",
+      "server": "tw3.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "f1d601f2-cc29-4fc2-bafc-7ac833af466a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdnets.asus.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM",
+          "short_id": "473277e2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - Djbadboy",
+      "server": "tw4.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "f1d601f2-cc29-4fc2-bafc-7ac833af466a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdnets.asus.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g",
+          "short_id": "e6d59aff03e5b0"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - Djbadboy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 03 - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 03 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 05 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 06 - Djbadboy"
       ]
     },
     {
@@ -51,7 +104,10 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - Djbadboy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 03 - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 03 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 05 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 06 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
