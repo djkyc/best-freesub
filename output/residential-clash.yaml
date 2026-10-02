@@ -4,72 +4,41 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
-  server: 172.64.229.2
-  port: 80
+- name: 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
+  server: 172.64.229.170
+  port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy
+  server: 178.83.46.216
+  port: 2053
   udp: true
   type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: random
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
-  server: 8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com
+  server: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-  sni: 8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com
+  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+  sni: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Djbadboy
-  server: 48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com
+  server: b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-  sni: 48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com
+  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  sni: b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 05 (移动家宽) - Djbadboy
-  server: 31.77.114.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Zli2oz4Y11pvkrGK71XDcbp1OWIPzK2FYhUXQvl1yiI
-  servername: aken.nightfall.best
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 06 (家宽) - Djbadboy
-  server: 43.165.191.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: ju88t.ce8d.q6g.hh.ov0.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: ju88t.ce8d.q6g.hh.ov0.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Djbadboy
-  server: hinet1.2yly.com
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Djbadboy
+  server: 118.167.235.241
   port: 24215
   udp: true
   type: vless
@@ -78,30 +47,49 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
+  client-fingerprint: random
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Djbadboy
+  server: ttww11.bpca2026.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  sni: ttww11.bpca2026.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /images
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Djbadboy
-  - 🇳🇱 荷兰 (Netherlands) 05 (移动家宽) - Djbadboy
-  - 🇯🇵 日本 (Japan) 06 (家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
+  - 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Djbadboy
-  - 🇳🇱 荷兰 (Netherlands) 05 (移动家宽) - Djbadboy
-  - 🇯🇵 日本 (Japan) 06 (家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Djbadboy
 rules:
 - MATCH,PROXIES

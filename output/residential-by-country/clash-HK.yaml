@@ -5,31 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
-  server: 8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com
+  server: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-  sni: 8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com
+  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+  sni: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
-  server: 48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
+  server: b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-  sni: 48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com
+  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  sni: b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -38,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
 rules:
 - MATCH,PROXIES
