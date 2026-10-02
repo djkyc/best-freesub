@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Djbadboy",
-      "server": "hinet1.2yly.com",
+      "server": "118.167.235.241",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -24,43 +24,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Djbadboy",
-      "server": "hi.northcluster.info",
-      "server_port": 52300,
-      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/video"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Djbadboy",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

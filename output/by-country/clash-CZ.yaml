@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - Djbadboy
+  server: 104.21.81.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  tls: true
+  servername: netra-85a0ca.shoameni19.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
+    headers:
+      Host: netra-85a0ca.shoameni19.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - Djbadboy
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: daf485ba-60fc-4166-a72c-8d2a5407cbc5
+  network: ws
+  ws-opts:
+    path: /vl/zM8ELyqEIYeZ3ijacV9kuK?ed
+    headers:
+      Host: kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 - Djbadboy
   server: 85.117.235.50
   port: 443
   udp: true
@@ -23,11 +49,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - Djbadboy
+  - 🇨🇿 捷克 (Czech) 02 - Djbadboy
+  - 🇨🇿 捷克 (Czech) 03 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - Djbadboy
+  - 🇨🇿 捷克 (Czech) 02 - Djbadboy
+  - 🇨🇿 捷克 (Czech) 03 - Djbadboy
 rules:
 - MATCH,PROXIES
