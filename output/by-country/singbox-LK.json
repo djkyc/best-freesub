@@ -16,30 +16,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - Djbadboy",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Djbadboy",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - Djbadboy"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Djbadboy",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - Djbadboy"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

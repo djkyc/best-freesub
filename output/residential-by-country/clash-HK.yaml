@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
-  server: 218.250.216.236
+  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
   port: 443
   udp: true
   type: vless
@@ -14,18 +14,38 @@ proxies:
   reality-opts:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
   servername: download.windowsupdate.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
+  server: 8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  sni: 8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
+  server: 48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  sni: 48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
 rules:
 - MATCH,PROXIES

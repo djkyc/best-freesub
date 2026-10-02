@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy",
-      "server": "218.250.216.236",
+      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
       "server_port": 443,
       "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -24,18 +24,46 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy",
+      "server": "8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "0da8651e-e1f6-11ec-bd7c-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy",
+      "server": "48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "3ee091ca-ab9c-11ef-a791-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "48b2f4e5-tmm5c0-tmapa2-1ryup.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
