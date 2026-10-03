@@ -19,13 +19,43 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "vpn-tw-002.fastervpn.world",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - Djbadboy",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/oneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy",
+      "server": "tw6.dexlos.com",
+      "server_port": 8080,
+      "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
+      "password": "D7286728-678E-443B-B76B-B699654C66DD",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw6.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - Djbadboy",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -44,7 +74,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - Djbadboy",
       "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
       "server_port": 11224,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -59,7 +89,9 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - Djbadboy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Djbadboy",
         "🇹🇼 中国台湾 (Taiwan) 03 - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 05 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 06 - Djbadboy"
       ]
     },
     {
@@ -69,7 +101,9 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - Djbadboy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Djbadboy",
         "🇹🇼 中国台湾 (Taiwan) 03 - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 04 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 05 - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 06 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

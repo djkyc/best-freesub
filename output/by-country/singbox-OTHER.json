@@ -5,22 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - Djbadboy",
-      "server": "194.93.61.100",
-      "server_port": 443,
-      "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
-      "flow": "xtls-rprx-vision",
+      "tag": "🌐 其他地区 (Other) 01 - Djbadboy",
+      "server": "172.67.130.187",
+      "server_port": 2053,
+      "uuid": "2b8738de-1af5-4267-b101-c05707769ed4",
       "tls": {
         "enabled": true,
-        "server_name": "cdnjs.com",
+        "server_name": "FaNs.livErpoOl.qZZ.io",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ",
-          "short_id": "17d334ad29b2ff40"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "fans.liverpool.qzz.io"
         }
       }
     },
@@ -29,14 +33,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - Djbadboy"
+        "🌐 其他地区 (Other) 01 - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - Djbadboy"
+        "🌐 其他地区 (Other) 01 - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -29,19 +29,30 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 03 - Djbadboy
-  server: 34.165.56.30
+  server: 129.159.156.109
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇮🇱 以色列 (Israel) 04 - Djbadboy
+  server: 177.3.208.65
   port: 443
   udp: true
   type: vless
-  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   tls: true
-  reality-opts:
-    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
-    short-id: fffff8acddadcac3
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +61,7 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 01 - Djbadboy
   - 🇮🇱 以色列 (Israel) 02 - Djbadboy
   - 🇮🇱 以色列 (Israel) 03 - Djbadboy
+  - 🇮🇱 以色列 (Israel) 04 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +70,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 01 - Djbadboy
   - 🇮🇱 以色列 (Israel) 02 - Djbadboy
   - 🇮🇱 以色列 (Israel) 03 - Djbadboy
+  - 🇮🇱 以色列 (Israel) 04 - Djbadboy
 rules:
 - MATCH,PROXIES

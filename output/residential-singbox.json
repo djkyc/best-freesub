@@ -5,108 +5,46 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Djbadboy",
-      "server": "145.239.30.17",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - Djbadboy",
+      "server": "104.18.47.113",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy",
-      "server": "b0ae2b60-tmm5c0-tyn7s3-1q3dm.hk3.hyhuawei.com",
+      "server": "12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "c1785de0-212f-11ef-92aa-f23c9164ca5d",
+      "password": "2c01eae6-0b6a-11ee-a058-f23c91369f2d",
       "tls": {
         "enabled": true,
-        "server_name": "b0ae2b60-tmm5c0-tyn7s3-1q3dm.hk3.hyhuawei.com",
+        "server_name": "12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy",
-      "server": "bada37c4-tmm5c0-u1dafb-1ro8s.nw4.hyhuawei.com",
+      "server": "95f27e25-tmm5c0-tqrqo1-8rja.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "a18ef18e-293a-11ef-b76e-f23c91cfbbc9",
+      "password": "d18bcaf4-1323-11ec-a0fc-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "bada37c4-tmm5c0-u1dafb-1ro8s.nw4.hyhuawei.com",
+        "server_name": "95f27e25-tmm5c0-tqrqo1-8rja.nw4.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 (家宽) - Djbadboy",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 (家宽) - Djbadboy",
-      "server": "37.120.222.70",
-      "server_port": 8082,
-      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
-      "tls": {
-        "enabled": true,
-        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 (家宽) - Djbadboy",
-      "server": "69.63.221.116",
-      "server_port": 25517,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Djbadboy",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy",
+      "server": "118.167.235.241",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -114,7 +52,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -125,7 +63,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 (家宽) - Djbadboy",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 (家宽) - Djbadboy",
       "server": "s3.huhiuh.space",
       "server_port": 18642,
       "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
@@ -136,32 +74,37 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Djbadboy",
+        "🇺🇸 美国 (United States) 01 (家宽) - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy",
-        "🇩🇪 德国 (Germany) 04 (家宽) - Djbadboy",
-        "🇯🇵 日本 (Japan) 05 (家宽) - Djbadboy",
-        "🇺🇸 美国 (United States) 06 (家宽) - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Djbadboy",
-        "🇸🇬 新加坡 (Singapore) 08 (家宽) - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 05 (家宽) - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Djbadboy",
+        "🇺🇸 美国 (United States) 01 (家宽) - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy",
-        "🇩🇪 德国 (Germany) 04 (家宽) - Djbadboy",
-        "🇯🇵 日本 (Japan) 05 (家宽) - Djbadboy",
-        "🇺🇸 美国 (United States) 06 (家宽) - Djbadboy",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Djbadboy",
-        "🇸🇬 新加坡 (Singapore) 08 (家宽) - Djbadboy"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy",
+        "🇸🇬 新加坡 (Singapore) 05 (家宽) - Djbadboy",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
