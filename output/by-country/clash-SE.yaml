@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - Djbadboy
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 02 - Djbadboy
-  server: 13.49.76.55
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 03 - Djbadboy
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -33,35 +19,33 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 (Sweden) 02 - Djbadboy
+  server: 132.243.231.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - Djbadboy
+  server: 132.243.231.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: edge
 - name: 🇸🇪 瑞典 (Sweden) 04 - Djbadboy
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 05 - Djbadboy
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 06 - Djbadboy
-  server: 13.60.213.145
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 07 - Djbadboy
-  server: 13.48.177.148
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 08 - Djbadboy
   server: 143.246.196.207
   port: 443
   udp: true
@@ -72,61 +56,8 @@ proxies:
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 09 - Djbadboy
-  server: 51.20.77.147
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 10 - Djbadboy
-  server: 13.61.185.249
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 11 - Djbadboy
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 12 - Djbadboy
-  server: 2.26.80.235
-  port: 443
-  udp: true
-  type: vless
-  uuid: cb0ccf90-0e8f-4621-b042-4e35c797de2b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _gjcl5q-hkJIFmKYSY9DbBcSiBHK3YUAKOfZzZqnkT8
-    short-id: c17f1d8951b3bf90
-  servername: dl.google.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 13 - Djbadboy
-  server: 144.31.235.214
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: swed4.o4ka-internet.com
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 14 - Djbadboy
+- name: 🇸🇪 瑞典 (Sweden) 05 - Djbadboy
   server: 94.143.231.146
   port: 443
   udp: true
@@ -141,31 +72,16 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 15 - Djbadboy
-  server: 132.243.231.4
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 06 - Djbadboy
+  server: 77.110.96.201
+  port: 36264
   udp: true
-  type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: edge
-- name: 🇸🇪 瑞典 (Sweden) 16 - Djbadboy
-  server: swidenfenix.space
-  port: 443
-  udp: true
-  type: vless
-  uuid: f811a2e8-08ed-4b30-b44c-449a7cab54d8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  servername: swidenfenix.space
-  client-fingerprint: qq
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
 proxy-groups:
 - name: PROXIES
   type: select
@@ -177,16 +93,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - Djbadboy
   - 🇸🇪 瑞典 (Sweden) 05 - Djbadboy
   - 🇸🇪 瑞典 (Sweden) 06 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 07 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 08 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 09 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 10 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 11 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 12 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 13 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 14 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 15 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 16 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -198,15 +104,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - Djbadboy
   - 🇸🇪 瑞典 (Sweden) 05 - Djbadboy
   - 🇸🇪 瑞典 (Sweden) 06 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 07 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 08 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 09 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 10 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 11 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 12 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 13 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 14 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 15 - Djbadboy
-  - 🇸🇪 瑞典 (Sweden) 16 - Djbadboy
 rules:
 - MATCH,PROXIES

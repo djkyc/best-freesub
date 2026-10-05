@@ -4,35 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
-  server: 104.18.47.113
-  port: 2082
+- name: 🇦🇹 奥地利 (Austria) 01 (家宽) - Djbadboy
+  server: 31.77.227.6
+  port: 52006
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
-  server: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  sni: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
-  server: 95f27e25-tmm5c0-tqrqo1-8rja.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-  sni: 95f27e25-tmm5c0-tqrqo1-8rja.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy
-  server: 118.167.235.241
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: bigdick.gamegrow.ru
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Djbadboy
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -42,7 +25,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - Djbadboy
+- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - Djbadboy
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -50,35 +33,21 @@ proxies:
   password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - Djbadboy
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy
+  - 🇦🇹 奥地利 (Austria) 01 (家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Djbadboy
+  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Djbadboy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Djbadboy
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Djbadboy
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - Djbadboy
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Djbadboy
+  - 🇦🇹 奥地利 (Austria) 01 (家宽) - Djbadboy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Djbadboy
+  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - Djbadboy
 rules:
 - MATCH,PROXIES
