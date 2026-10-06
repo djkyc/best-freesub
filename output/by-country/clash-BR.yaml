@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - Djbadboy
+  server: brb.nnpy.org
+  port: 11100
+  udp: true
+  type: hysteria2
+  password: df8d55f9-fb51-442d-902a-bf8160dc051b
+  sni: brb.nnpy.org
+  skip-cert-verify: true
+- name: 🇧🇷 巴西 (Brazil) 02 - Djbadboy
   server: 89.39.161.157
   port: 443
   udp: true
@@ -18,19 +26,19 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-    headers:
-      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - Djbadboy
+  - 🇧🇷 巴西 (Brazil) 02 - Djbadboy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - Djbadboy
+  - 🇧🇷 巴西 (Brazil) 02 - Djbadboy
 rules:
 - MATCH,PROXIES
