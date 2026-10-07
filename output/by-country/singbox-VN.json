@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "103.30.76.197",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - djkyc",
+      "server": "43.255.157.118",
       "server_port": 44988,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
