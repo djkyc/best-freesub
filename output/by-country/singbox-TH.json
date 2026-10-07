@@ -14,32 +14,28 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - djkyc",
-      "server": "104.18.26.90",
-      "server_port": 443,
+      "server": "support.zoom.us.v2ray.simspeedup.com",
+      "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
+          "Host": "support.zoom.us.v2ray.simspeedup.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - djkyc",
-      "server": "v2ray.simspeedup.com",
-      "server_port": 80,
+      "server": "104.21.34.106",
+      "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
         "path": "/ws",
@@ -57,6 +53,15 @@
       "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - djkyc",
+      "server": "silversbgfgov.vip43.wogbcnmnagfwgov.com",
+      "server_port": 11243,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -64,7 +69,8 @@
         "🇹🇭 泰国 (Thailand) 01 - djkyc",
         "🇹🇭 泰国 (Thailand) 02 - djkyc",
         "🇹🇭 泰国 (Thailand) 03 - djkyc",
-        "🇹🇭 泰国 (Thailand) 04 - djkyc"
+        "🇹🇭 泰国 (Thailand) 04 - djkyc",
+        "🇹🇭 泰国 (Thailand) 05 - djkyc"
       ]
     },
     {
@@ -74,7 +80,8 @@
         "🇹🇭 泰国 (Thailand) 01 - djkyc",
         "🇹🇭 泰国 (Thailand) 02 - djkyc",
         "🇹🇭 泰国 (Thailand) 03 - djkyc",
-        "🇹🇭 泰国 (Thailand) 04 - djkyc"
+        "🇹🇭 泰国 (Thailand) 04 - djkyc",
+        "🇹🇭 泰国 (Thailand) 05 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

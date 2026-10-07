@@ -5,31 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - djkyc
-  server: 78.135.73.47
-  port: 443
+  server: 206.1.100.83
+  port: 25178
   udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
 - name: 🇹🇷 土耳其 (Turkey) 02 - djkyc
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - djkyc
   server: 85.192.48.142
   port: 443
   udp: true
@@ -41,14 +23,69 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - djkyc
-  server: 206.1.100.83
-  port: 25178
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - djkyc
+  server: bale.xv98.ir
+  port: 5051
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
+  cipher: chacha20-ietf-poly1305
+  password: 68mL2QkZEBlxWa3hcslGDw
+- name: 🇹🇷 土耳其 (Turkey) 04 - djkyc
+  server: 38.180.209.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cloud.surfweb.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - djkyc
+  server: 162.249.126.39
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 06 - djkyc
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 07 - djkyc
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 08 - djkyc
+  server: nimm.mpd.cc.cd
+  port: 2053
+  udp: true
+  type: trojan
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /0962
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +95,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - djkyc
   - 🇹🇷 土耳其 (Turkey) 03 - djkyc
   - 🇹🇷 土耳其 (Turkey) 04 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 05 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 06 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 07 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 08 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +108,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - djkyc
   - 🇹🇷 土耳其 (Turkey) 03 - djkyc
   - 🇹🇷 土耳其 (Turkey) 04 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 05 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 06 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 07 - djkyc
+  - 🇹🇷 土耳其 (Turkey) 08 - djkyc
 rules:
 - MATCH,PROXIES
