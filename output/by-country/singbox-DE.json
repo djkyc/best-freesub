@@ -4,420 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 01 - djkyc",
-      "server": "104.24.152.217",
-      "server_port": 80,
-      "uuid": "b945051b-61fd-4769-bd4f-e6a46214bbdf",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "auto-b94505.mmonn5771.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 - djkyc",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "uuid": "2e305ebe-f6e6-4689-b32f-cd04ab5ff541",
-      "tls": {
-        "enabled": true,
-        "server_name": "idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/w1bJhZ1XIBYMkkBlELIOzpfOxkj?ed=2560",
-        "headers": {
-          "Host": "idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 - djkyc",
-      "server": "188.114.97.3",
-      "server_port": 443,
-      "uuid": "d6828805-5608-44d7-a44b-976d4c3ac2d0",
-      "tls": {
-        "enabled": true,
-        "server_name": "0LG3u92i0exN577l3Mc637Ycba3.SfgsfgSfGFSGSf-4630.wOrkeRS.dEv",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/5ibXbgAYxWzwbOtkXJWUtvKMKOYjh?ed",
-        "headers": {
-          "Host": "0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 04 - djkyc",
-      "server": "209.46.102.22",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "1hhrqrokj3ag"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 - djkyc",
-      "server": "63.185.114.140",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 06 - djkyc",
-      "server": "31.76.11.83",
-      "server_port": 22849,
-      "uuid": "2e511783-125c-466b-925d-a9cd1c98e30e"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 07 - djkyc",
       "server": "185.226.172.8",
       "server_port": 8008,
       "method": "aes-256-gcm",
       "password": "XKFKl2rULjIp74"
     },
     {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 08 - djkyc",
-      "server": "185.177.229.129",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 09 - djkyc",
-      "server": "213.202.208.199",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 10 - djkyc",
-      "server": "216.106.187.60",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 11 - djkyc",
-      "server": "2.58.81.221",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 12 - djkyc",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 13 - djkyc",
-      "server": "144.31.62.242",
-      "server_port": 443,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.srv.vbuste.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 14 - djkyc",
-      "server": "51.195.126.38",
+      "tag": "🇩🇪 德国 (Germany) 02 - djkyc",
+      "server": "209.46.102.22",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "2YdE4lFOid5a"
+      "password": "1hhrqrokj3ag"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 15 - djkyc",
-      "server": "130.17.25.67",
-      "server_port": 443,
-      "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
-          "short_id": "9e4eced6e98ed4d4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 16 - djkyc",
-      "server": "57.129.41.216",
-      "server_port": 80,
-      "uuid": "18535741-e8b3-4b43-9348-785b55936751",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "ov-germany1.09vpn.comfreenettirgermanylimburg"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 17 - djkyc",
-      "server": "2.27.69.128",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc",
-          "short_id": "e696e744"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 18 - djkyc",
-      "server": "212.100.171.154",
-      "server_port": 443,
-      "uuid": "a5ce10af-5e95-4eb3-ab87-bf4f95cb059b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg",
-          "short_id": "aa6582cf25e243ce"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 19 - djkyc",
-      "server": "2.27.35.74",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks",
-          "short_id": "34e797af"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 20 - djkyc",
-      "server": "163.245.43.50",
-      "server_port": 443,
-      "uuid": "203d434a-2a92-45df-8973-ca80434ecf73",
-      "tls": {
-        "enabled": true,
-        "server_name": "se-twitch.global-cdn.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "content.v1.Feed"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 21 - djkyc",
-      "server": "91.233.8.141",
-      "server_port": 443,
-      "uuid": "81d8f575-a9c3-03e7-be6b-c0e1dc1d2e20",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tnt-cloud.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k76Ze8R0E5NyZwvBZT1A4n0zlVXxTeHQDAs0bBqiGQw",
-          "short_id": "6e5f2a3b"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 22 - djkyc",
-      "server": "63.177.230.112",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 23 - djkyc",
-      "server": "vpn-de-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-de-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 24 - djkyc",
-      "server": "144.31.62.162",
-      "server_port": 443,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.srv.vbuste.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 25 - djkyc",
-      "server": "193.108.117.54",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "aidrivercat.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 26 - djkyc",
-      "server": "144.31.63.114",
-      "server_port": 443,
-      "uuid": "c797b9ad-6f9e-4eee-befd-eef119ec3637",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-de.pleiades.codes",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 27 - djkyc",
-      "server": "31.70.111.146",
-      "server_port": 443,
-      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
-          "short_id": "d7de3a6ff4018957"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 28 - djkyc",
-      "server": "8.209.74.72",
-      "server_port": 20001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "PWpjPo3tqhPN4yRZ"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 29 - djkyc",
+      "tag": "🇩🇪 德国 (Germany) 03 - djkyc",
       "server": "111.88.74.239",
       "server_port": 443,
       "uuid": "88a4915f-d68d-44aa-b4a4-36b99a2ab1ed",
@@ -438,112 +42,68 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 30 - djkyc",
-      "server": "82.118.19.153",
+      "tag": "🇩🇪 德国 (Germany) 04 - djkyc",
+      "server": "212.100.171.154",
       "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "uuid": "a5ce10af-5e95-4eb3-ab87-bf4f95cb059b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
+          "public_key": "8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg",
+          "short_id": "aa6582cf25e243ce"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 31 - djkyc",
-      "server": "31.76.11.83",
-      "server_port": 50551,
-      "uuid": "57160c16-b7db-40d8-bd06-ced30edd4df6",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 32 - djkyc",
-      "server": "89.169.53.176",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.wvpn.one",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-          "short_id": "df3aff719526dc5a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 33 - djkyc",
-      "server": "93.152.217.152",
-      "server_port": 40443,
-      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-          "short_id": "db46e2946fc466fd"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 34 - djkyc",
-      "server": "18.159.149.158",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 35 - djkyc",
-      "server": "31.76.11.83",
-      "server_port": 15250,
-      "method": "chacha20-ietf-poly1305",
-      "password": "iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c="
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 36 - djkyc",
-      "server": "lucas.ehsanazizi-speed-server.com",
-      "server_port": 2110,
-      "uuid": "06d4d001-4168-4876-9416-7caecf578f40",
-      "security": "auto"
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 37 - djkyc",
-      "server": "31.77.168.21",
+      "tag": "🇩🇪 德国 (Germany) 05 - djkyc",
+      "server": "actual-squid.rooster465.autos",
       "server_port": 443,
-      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "d3-de2.cloud-cdn.xyz",
+        "server_name": "actual-squid.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 06 - djkyc",
+      "server": "31.70.111.146",
+      "server_port": 443,
+      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
+          "short_id": "d7de3a6ff4018957"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 07 - djkyc",
+      "server": "144.31.63.114",
+      "server_port": 443,
+      "uuid": "c797b9ad-6f9e-4eee-befd-eef119ec3637",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-de.pleiades.codes",
         "insecure": false,
-        "alpn": [
-          "h2"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -551,41 +111,49 @@
       },
       "transport": {
         "type": "grpc",
-        "service_name": "ajv"
+        "service_name": "cdn.v1.AssetService"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 38 - djkyc",
-      "server": "169.150.210.233",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "tag": "🇩🇪 德国 (Germany) 08 - djkyc",
+      "server": "3.121.212.178",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 39 - djkyc",
-      "server": "cdn-de.bulkavpn.top",
+      "tag": "🇩🇪 德国 (Germany) 09 - djkyc",
+      "server": "2.27.35.74",
       "server_port": 443,
-      "uuid": "91d734be-a3d0-4d50-83ab-74cf7b6966fa",
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-de.bulkavpn.top",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ",
-          "short_id": "c885e8f8"
+          "public_key": "zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks",
+          "short_id": "34e797af"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 10 - djkyc",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
+    },
+    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 40 - djkyc",
+      "tag": "🇩🇪 德国 (Germany) 11 - djkyc",
       "server": "162.55.242.208",
       "server_port": 2053,
       "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
@@ -594,7 +162,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -605,10 +173,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 41 - djkyc",
-      "server": "104.194.159.237",
-      "server_port": 8443,
-      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "tag": "🇩🇪 德国 (Germany) 12 - djkyc",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "ov-germany1.09vpn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 13 - djkyc",
+      "server": "130.17.25.67",
+      "server_port": 443,
+      "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -619,26 +201,56 @@
         },
         "reality": {
           "enabled": true,
+          "public_key": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
+          "short_id": "9e4eced6e98ed4d4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 14 - djkyc",
+      "server": "104.194.159.237",
+      "server_port": 8443,
+      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
           "public_key": "L5cKU_oSpJsGd3ffemej3Wy7V6KzqjIUC2T5jaCyPys",
           "short_id": "1aec480577a542ee"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 42 - djkyc",
-      "server": "lm10.ehsanazizi-speed-server.com",
-      "server_port": 2127,
-      "password": "zgRfB1MMJDJ65rwKSnGCZuzLpTiUSfgzHmTb26ye7mM=",
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 15 - djkyc",
+      "server": "82.39.171.142",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lm10.ehsanazizi-speed-server.com",
-        "insecure": true
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 43 - djkyc",
+      "tag": "🇩🇪 德国 (Germany) 16 - djkyc",
       "server": "node8.quaxly.com",
       "server_port": 25040,
       "password": "Km/pIG4AGCjCOiGWj5FsWA==",
@@ -652,137 +264,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 44 - djkyc",
-      "server": "5.75.197.74",
-      "server_port": 1080,
-      "uuid": "250865f0-4a0f-4e2e-8d14-4c39a25d0bef",
-      "tls": {
-        "enabled": true,
-        "server_name": "www6.gameservice-iramn3.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qmCIBP5Y6Pu7oxY--0sOXglNvHV9byxo2cyVsfAqUiI",
-          "short_id": "307eb35dbf3a5385"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 45 - djkyc",
-      "server": "172.64.229.129",
-      "server_port": 2052,
-      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
-      "transport": {
-        "type": "ws",
-        "path": "/rain1226",
-        "headers": {
-          "Host": "eu02.123450908.xyz"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 46 - djkyc",
-      "server": "pleased-albacore.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "pleased-albacore.rooster465.autos",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 47 - djkyc",
-      "server": "2.58.81.221",
-      "server_port": 80,
+      "tag": "🇩🇪 德国 (Germany) 17 - djkyc",
+      "server": "213.202.208.199",
+      "server_port": 7001,
       "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 48 - djkyc",
-      "server": "de12.h1cloud.net",
-      "server_port": 25095,
-      "uuid": "95003356-20f9-4c84-a21f-2f9c1fc285eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.chip.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pvXuNe35fkSbA-CVmh6_b3ADAXLY8tBONjnwE8HM8yY",
-          "short_id": "397c81bed08f3f78"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "f3d967fe8981"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 49 - djkyc",
-      "server": "82.39.171.142",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 50 - djkyc",
-      "server": "actual-squid.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "actual-squid.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 51 - djkyc",
-      "server": "undef.network",
-      "server_port": 2052,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
-      "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 52 - djkyc",
+      "tag": "🇩🇪 德国 (Germany) 18 - djkyc",
       "server": "82.39.171.12",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -792,7 +283,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -802,331 +293,27 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 53 - djkyc",
-      "server": "46.101.110.88",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 19 - djkyc",
+      "server": "54.93.180.166",
       "server_port": 443,
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
-      "tls": {
-        "enabled": true,
-        "server_name": "s4ws.ragingbull.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsrb7k2m",
-        "headers": {
-          "Host": "s4ws.ragingbull.de5.net"
-        }
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 20 - djkyc",
+      "server": "213.202.208.199",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 54 - djkyc",
-      "server": "104.27.88.172",
-      "server_port": 80,
-      "uuid": "50414e45-4c5f-5a45-5553-52108a2d5224",
-      "transport": {
-        "type": "ws",
-        "path": "/api/ws",
-        "headers": {
-          "Host": "web-app-nr6wpa.app-tp57xz.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 55 - djkyc",
-      "server": "188.114.96.2",
-      "server_port": 8443,
-      "uuid": "8bb52771-052e-40b5-ab53-c6e151ad2290",
-      "tls": {
-        "enabled": true,
-        "server_name": "shop.neexbyte.ir",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shop.neexbyte.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 56 - djkyc",
-      "server": "159.195.5.79",
-      "server_port": 2083,
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
-      "tls": {
-        "enabled": true,
-        "server_name": "s4ws.ragingbull.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsrb7k2m",
-        "headers": {
-          "Host": "s4ws.ragingbull.de5.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 57 - djkyc",
-      "server": "150.241.101.80",
-      "server_port": 8443,
-      "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 58 - djkyc",
-      "server": "91.107.157.188",
+      "tag": "🇩🇪 德国 (Germany) 21 - djkyc",
+      "server": "2.27.69.128",
       "server_port": 443,
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3ws.ragingbull.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsrb7k2m",
-        "headers": {
-          "Host": "s3ws.ragingbull.de5.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 59 - djkyc",
-      "server": "188.114.97.3",
-      "server_port": 2087,
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
-      "tls": {
-        "enabled": true,
-        "server_name": "s4ws.ragingbull.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsrb7k2m",
-        "headers": {
-          "Host": "s4ws.ragingbull.de5.net"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 60 - djkyc",
-      "server": "meet-goshawk.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "meet-goshawk.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 61 - djkyc",
-      "server": "85.121.124.65",
-      "server_port": 8443,
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
-      "tls": {
-        "enabled": true,
-        "server_name": "s4ws.ragingbull.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsrb7k2m",
-        "headers": {
-          "Host": "s4ws.ragingbull.de5.net"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 62 - djkyc",
-      "server": "31.77.168.35",
-      "server_port": 443,
-      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3-de2.cloud-cdn.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ajv"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 63 - djkyc",
-      "server": "188.114.96.3",
-      "server_port": 2087,
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3ws.ragingbull.de5.net",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsrb7k2m",
-        "headers": {
-          "Host": "s3ws.ragingbull.de5.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 64 - djkyc",
-      "server": "95.85.252.72",
-      "server_port": 443,
-      "uuid": "39770645-fcd2-4f35-a670-877672fc2ef7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.lostpool.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "u5gK34Vx2N4cN4dowhD81_ZPMvymSPYt4Fvv44dKHAY",
-          "short_id": "5cca2511acbc3ca9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 65 - djkyc",
-      "server": "undef.network",
-      "server_port": 2053,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
-      "tls": {
-        "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 66 - djkyc",
-      "server": "freesocks.work",
-      "server_port": 2053,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
-      "tls": {
-        "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 67 - djkyc",
-      "server": "150.241.79.232",
-      "server_port": 443,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.srv.vbuste.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 68 - djkyc",
-      "server": "176.108.252.139",
-      "server_port": 9881,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "short_id": "aabb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 69 - djkyc",
-      "server": "31.76.35.27",
-      "server_port": 443,
-      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -1137,40 +324,105 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s",
-          "short_id": "b76a6309"
+          "public_key": "RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc",
+          "short_id": "e696e744"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 70 - djkyc",
-      "server": "64.110.79.66",
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 22 - djkyc",
+      "server": "8.211.15.144",
       "server_port": 8443,
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
+      "password": "fc04RSUu3TfONQnlbKTwvA",
       "tls": {
         "enabled": true,
-        "server_name": "s3ws.ragingbull.de5.net",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 23 - djkyc",
+      "server": "2.58.81.221",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 24 - djkyc",
+      "server": "3.75.93.113",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "meet-goshawk.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 25 - djkyc",
+      "server": "169.150.210.233",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 26 - djkyc",
+      "server": "2.58.81.221",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 27 - djkyc",
+      "server": "de1.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 28 - djkyc",
+      "server": "31.76.11.83",
+      "server_port": 22849,
+      "uuid": "2e511783-125c-466b-925d-a9cd1c98e30e"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 29 - djkyc",
+      "server": "144.31.215.227",
+      "server_port": 443,
+      "uuid": "91d734be-a3d0-4d50-83ab-74cf7b6966fa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-de.bulkavpn.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsrb7k2m",
-        "headers": {
-          "Host": "s3ws.ragingbull.de5.net"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ",
+          "short_id": "c885e8f8"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 71 - djkyc",
-      "server": "undef.network",
+      "tag": "🇩🇪 德国 (Germany) 30 - djkyc",
+      "server": "hikvision-plus.com",
       "server_port": 2052,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "uuid": "26769ac3-b34c-430a-87f8-e1de14619d25",
       "transport": {
         "type": "ws",
         "path": "/@BlueKnight_net--@BlueKnight_net",
@@ -1180,43 +432,28 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 72 - djkyc",
-      "server": "31.77.168.33",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 31 - djkyc",
+      "server": "3.67.197.81",
       "server_port": 443,
-      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3-de2.cloud-cdn.xyz",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ajv"
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 73 - djkyc",
-      "server": "77.74.123.107",
-      "server_port": 4443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 32 - djkyc",
+      "server": "vpn-de-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "vpn-de-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 74 - djkyc",
+      "tag": "🇩🇪 德国 (Germany) 33 - djkyc",
       "server": "189.24.82.195",
       "server_port": 443,
       "uuid": "bf7ca7a3-a028-488e-b9f1-34e467d6d897",
@@ -1225,7 +462,7 @@
         "server_name": "itunes.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -1242,34 +479,86 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 34 - djkyc",
+      "server": "51.195.126.38",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2YdE4lFOid5a"
+    },
+    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 75 - djkyc",
-      "server": "de12.h1cloud.net",
-      "server_port": 25089,
-      "uuid": "95003356-20f9-4c84-a21f-2f9c1fc285eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.chip.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3ZxTHjZ8XHP2aYzLEKUPI3xQ5jYQYrSrIEXlUlULUEA",
-          "short_id": "56d9d9fba348e5e6"
+      "tag": "🇩🇪 德国 (Germany) 35 - djkyc",
+      "server": "172.64.229.129",
+      "server_port": 2052,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "transport": {
+        "type": "ws",
+        "path": "/rain1226",
+        "headers": {
+          "Host": "eu02.123450908.xyz"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 76 - djkyc",
-      "server": "rubifen.adaspoloandco.com",
+      "tag": "🇩🇪 德国 (Germany) 36 - djkyc",
+      "server": "2.27.69.117",
       "server_port": 443,
-      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rubifen.adaspoloandco.com",
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y",
+          "short_id": "123c2bff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 37 - djkyc",
+      "server": "82.118.19.153",
+      "server_port": 443,
+      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+          "short_id": "670ed9f350bd8ee0"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 38 - djkyc",
+      "server": "18.184.32.202",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 39 - djkyc",
+      "server": "209.38.225.184",
+      "server_port": 443,
+      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
+      "tls": {
+        "enabled": true,
+        "server_name": "s4ws.ragingbull.de5.net",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -1278,25 +567,16 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/GOrbEh"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 77 - djkyc",
-      "server": "77.74.123.106",
-      "server_port": 4443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
+        "path": "/wsrb7k2m",
+        "headers": {
+          "Host": "s4ws.ragingbull.de5.net"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 78 - djkyc",
-      "server": "150.241.79.56",
+      "tag": "🇩🇪 德国 (Germany) 40 - djkyc",
+      "server": "144.31.62.242",
       "server_port": 443,
       "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
       "flow": "xtls-rprx-vision",
@@ -1305,7 +585,7 @@
         "server_name": "de2.srv.vbuste.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -1316,8 +596,237 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 79 - djkyc",
-      "server": "144.31.62.170",
+      "tag": "🇩🇪 德国 (Germany) 41 - djkyc",
+      "server": "hikvision-plus.com",
+      "server_port": 2053,
+      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "tls": {
+        "enabled": true,
+        "server_name": "uwu.blueknightnet.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 42 - djkyc",
+      "server": "68.183.186.117",
+      "server_port": 443,
+      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3ws.ragingbull.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wsrb7k2m",
+        "headers": {
+          "Host": "s3ws.ragingbull.de5.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 43 - djkyc",
+      "server": "63.178.198.94",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pleased-albacore.rooster465.autos",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 44 - djkyc",
+      "server": "188.114.96.3",
+      "server_port": 2087,
+      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3ws.ragingbull.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wsrb7k2m",
+        "headers": {
+          "Host": "s3ws.ragingbull.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 45 - djkyc",
+      "server": "95.85.252.72",
+      "server_port": 443,
+      "uuid": "39770645-fcd2-4f35-a670-877672fc2ef7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.lostpool.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "u5gK34Vx2N4cN4dowhD81_ZPMvymSPYt4Fvv44dKHAY",
+          "short_id": "5cca2511acbc3ca9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 46 - djkyc",
+      "server": "144.31.62.162",
+      "server_port": 443,
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de2.srv.vbuste.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 47 - djkyc",
+      "server": "130.185.121.69",
+      "server_port": 443,
+      "uuid": "d3c9d170-80fa-489a-8ba2-f4cc80d240e3",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 48 - djkyc",
+      "server": "57.129.113.16",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "NcAXc0UZI6yQJE1p8QmOv8"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 49 - djkyc",
+      "server": "93.152.217.152",
+      "server_port": 40443,
+      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+          "short_id": "db46e2946fc466fd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 50 - djkyc",
+      "server": "172.67.162.201",
+      "server_port": 2053,
+      "uuid": "dc1e9f00-c064-4870-9bfc-463db50257d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 51 - djkyc",
+      "server": "cctvhikvision.center",
+      "server_port": 2052,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 52 - djkyc",
+      "server": "45.32.57.54",
+      "server_port": 8443,
+      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
+      "tls": {
+        "enabled": true,
+        "server_name": "s4ws.ragingbull.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wsrb7k2m",
+        "headers": {
+          "Host": "s4ws.ragingbull.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 53 - djkyc",
+      "server": "144.31.62.195",
       "server_port": 443,
       "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
       "flow": "xtls-rprx-vision",
@@ -1337,17 +846,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 80 - djkyc",
-      "server": "mhzedir.qzz.io",
-      "server_port": 4462,
-      "uuid": "7687f6b3-8633-48bb-b0a1-f1ecc7f6c1cc",
+      "tag": "🇩🇪 德国 (Germany) 54 - djkyc",
+      "server": "cctvhikvision.center",
+      "server_port": 2053,
+      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
       "tls": {
         "enabled": true,
-        "server_name": "mhzedir.qzz.io",
+        "server_name": "uwu.blueknightnet.qzz.io",
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 55 - djkyc",
+      "server": "104.27.88.172",
+      "server_port": 80,
+      "uuid": "50414e45-4c5f-5a45-5553-52108a2d5224",
+      "transport": {
+        "type": "ws",
+        "path": "/api/ws",
+        "headers": {
+          "Host": "web-app-nr6wpa.app-tp57xz.workers.dev"
+        }
       }
     },
     {
@@ -1409,32 +936,7 @@
         "🇩🇪 德国 (Germany) 52 - djkyc",
         "🇩🇪 德国 (Germany) 53 - djkyc",
         "🇩🇪 德国 (Germany) 54 - djkyc",
-        "🇩🇪 德国 (Germany) 55 - djkyc",
-        "🇩🇪 德国 (Germany) 56 - djkyc",
-        "🇩🇪 德国 (Germany) 57 - djkyc",
-        "🇩🇪 德国 (Germany) 58 - djkyc",
-        "🇩🇪 德国 (Germany) 59 - djkyc",
-        "🇩🇪 德国 (Germany) 60 - djkyc",
-        "🇩🇪 德国 (Germany) 61 - djkyc",
-        "🇩🇪 德国 (Germany) 62 - djkyc",
-        "🇩🇪 德国 (Germany) 63 - djkyc",
-        "🇩🇪 德国 (Germany) 64 - djkyc",
-        "🇩🇪 德国 (Germany) 65 - djkyc",
-        "🇩🇪 德国 (Germany) 66 - djkyc",
-        "🇩🇪 德国 (Germany) 67 - djkyc",
-        "🇩🇪 德国 (Germany) 68 - djkyc",
-        "🇩🇪 德国 (Germany) 69 - djkyc",
-        "🇩🇪 德国 (Germany) 70 - djkyc",
-        "🇩🇪 德国 (Germany) 71 - djkyc",
-        "🇩🇪 德国 (Germany) 72 - djkyc",
-        "🇩🇪 德国 (Germany) 73 - djkyc",
-        "🇩🇪 德国 (Germany) 74 - djkyc",
-        "🇩🇪 德国 (Germany) 75 - djkyc",
-        "🇩🇪 德国 (Germany) 76 - djkyc",
-        "🇩🇪 德国 (Germany) 77 - djkyc",
-        "🇩🇪 德国 (Germany) 78 - djkyc",
-        "🇩🇪 德国 (Germany) 79 - djkyc",
-        "🇩🇪 德国 (Germany) 80 - djkyc"
+        "🇩🇪 德国 (Germany) 55 - djkyc"
       ]
     },
     {
@@ -1495,32 +997,7 @@
         "🇩🇪 德国 (Germany) 52 - djkyc",
         "🇩🇪 德国 (Germany) 53 - djkyc",
         "🇩🇪 德国 (Germany) 54 - djkyc",
-        "🇩🇪 德国 (Germany) 55 - djkyc",
-        "🇩🇪 德国 (Germany) 56 - djkyc",
-        "🇩🇪 德国 (Germany) 57 - djkyc",
-        "🇩🇪 德国 (Germany) 58 - djkyc",
-        "🇩🇪 德国 (Germany) 59 - djkyc",
-        "🇩🇪 德国 (Germany) 60 - djkyc",
-        "🇩🇪 德国 (Germany) 61 - djkyc",
-        "🇩🇪 德国 (Germany) 62 - djkyc",
-        "🇩🇪 德国 (Germany) 63 - djkyc",
-        "🇩🇪 德国 (Germany) 64 - djkyc",
-        "🇩🇪 德国 (Germany) 65 - djkyc",
-        "🇩🇪 德国 (Germany) 66 - djkyc",
-        "🇩🇪 德国 (Germany) 67 - djkyc",
-        "🇩🇪 德国 (Germany) 68 - djkyc",
-        "🇩🇪 德国 (Germany) 69 - djkyc",
-        "🇩🇪 德国 (Germany) 70 - djkyc",
-        "🇩🇪 德国 (Germany) 71 - djkyc",
-        "🇩🇪 德国 (Germany) 72 - djkyc",
-        "🇩🇪 德国 (Germany) 73 - djkyc",
-        "🇩🇪 德国 (Germany) 74 - djkyc",
-        "🇩🇪 德国 (Germany) 75 - djkyc",
-        "🇩🇪 德国 (Germany) 76 - djkyc",
-        "🇩🇪 德国 (Germany) 77 - djkyc",
-        "🇩🇪 德国 (Germany) 78 - djkyc",
-        "🇩🇪 德国 (Germany) 79 - djkyc",
-        "🇩🇪 德国 (Germany) 80 - djkyc"
+        "🇩🇪 德国 (Germany) 55 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

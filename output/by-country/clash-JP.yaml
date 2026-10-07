@@ -5,97 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - djkyc
-  server: 149.22.87.240
+  server: 132.226.14.77
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 02 - djkyc
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 03 - djkyc
   server: 54.65.177.190
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: winning-marten.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 03 - djkyc
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 'off'
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 04 - djkyc
-  server: 132.226.14.77
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 05 - djkyc
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 06 - djkyc
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 07 - djkyc
-  server: 45.32.52.173
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - djkyc
-  server: 54.238.153.132
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - djkyc
-  server: accurate-frog.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: accurate-frog.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - djkyc
-  server: 132.226.14.77
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - djkyc
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 12 - djkyc
-  server: 13.230.91.226
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: musical-terrier.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 13 - djkyc
   server: 103.75.118.228
   port: 12683
   udp: true
@@ -108,7 +46,23 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 14 - djkyc
+- name: 🇯🇵 日本 (Japan) 05 - djkyc
+  server: 158.101.148.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: 158.101.148.79
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - djkyc
+  server: 43.207.89.91
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: organic-caribou.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 07 - djkyc
   server: 153.121.36.102
   port: 443
   udp: true
@@ -121,111 +75,91 @@ proxies:
     short-id: 1a
   servername: www.amazon.com
   client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 15 - djkyc
-  server: 13.231.247.130
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: concrete-aardvark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 16 - djkyc
-  server: 103.75.118.228
-  port: 11452
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 17 - djkyc
-  server: 43.207.89.91
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: organic-caribou.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 18 - djkyc
-  server: open.2ml.bid
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - djkyc
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 81f042b3-13d9-4686-9d92-5350f19d909c
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 20 - djkyc
-  server: fancy-javelin.rooster465.autos
+- name: 🇯🇵 日本 (Japan) 08 - djkyc
+  server: 43.207.198.39
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: fancy-javelin.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 21 - djkyc
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 22 - djkyc
-  server: jp.tronsg.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - djkyc
+  server: 13.230.91.226
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: jp.tronsg.com
+  password: UX82473651
+  sni: musical-terrier.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 10 - djkyc
+  server: obliging-louse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: obliging-louse.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 11 - djkyc
+  server: dynamic-imp.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: dynamic-imp.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - djkyc
-  server: 154.31.114.248
-  port: 50159
+- name: 🇯🇵 日本 (Japan) 12 - djkyc
+  server: 138.2.21.246
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 13 - djkyc
+  server: 54.249.36.167
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: comic-poodle.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 14 - djkyc
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 15 - djkyc
+  server: 132.226.14.77
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: 132.226.14.77
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 16 - djkyc
+  server: 142.91.106.31
+  port: 43000
   udp: true
   type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  uuid: f8681dba-d368-4bab-a3c2-a8dc712ba368
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 24 - djkyc
-  server: 52.192.45.137
+    public-key: onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4
+    short-id: 8d66106f
+  servername: 142.91.106.31
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 17 - djkyc
+  server: brief-glider.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: promoted-rattler.rooster465.autos
+  sni: brief-glider.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 25 - djkyc
-  server: 54.199.66.128
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: integral-rodent.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 26 - djkyc
+- name: 🇯🇵 日本 (Japan) 18 - djkyc
   server: jumpernode.online
   port: 443
   udp: true
@@ -238,142 +172,45 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: amazon.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 27 - djkyc
-  server: intense-sole.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: intense-sole.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 28 - djkyc
-  server: assuring-skink.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: assuring-skink.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 29 - djkyc
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 30 - djkyc
-  server: 207.148.97.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
-  servername: googleapis.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 31 - djkyc
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: join---i10vpn---join---i10vpn---join---i10vpn---join---i10vpn
-- name: 🇯🇵 日本 (Japan) 32 - djkyc
-  server: vp3.yysyy.online
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 33 - djkyc
-  server: dynamic-imp.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: dynamic-imp.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 34 - djkyc
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9d81ab94-494c-4507-bc63-334db46e80d9
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 35 - djkyc
-  server: 138.2.21.246
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.cc.cd
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 36 - djkyc
-  server: 152.69.195.67
-  port: 47878
-  udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 (Japan) 37 - djkyc
-  server: open.2ml.bid
+- name: 🇯🇵 日本 (Japan) 19 - djkyc
+  server: 158.101.148.79
   port: 5443
   udp: true
   type: hysteria2
   password: my_super_password_123
   sni: open.2ml.bid
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 38 - djkyc
-  server: 210.152.85.154
-  port: 19364
+- name: 🇯🇵 日本 (Japan) 20 - djkyc
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 21 - djkyc
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 22 - djkyc
+  server: 54.249.55.154
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 23 - djkyc
+  server: 137.220.221.179
+  port: 443
   udp: true
   type: vless
-  uuid: d6c21f6f-2e7e-479d-a4d9-4069995867ed
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 39 - djkyc
-  server: 142.91.106.31
-  port: 43000
-  udp: true
-  type: vless
-  uuid: f8681dba-d368-4bab-a3c2-a8dc712ba368
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4
-    short-id: 8d66106f
-  servername: 142.91.106.31
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 40 - djkyc
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 24 - djkyc
   server: 3.114.220.22
-  port: 18007
+  port: 10583
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -384,30 +221,94 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 41 - djkyc
-  server: 83.147.216.223
-  port: 4433
-  udp: true
-  type: vless
-  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 42 - djkyc
-  server: brief-glider.rooster465.autos
+- name: 🇯🇵 日本 (Japan) 25 - djkyc
+  server: assuring-skink.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: brief-glider.rooster465.autos
+  sni: assuring-skink.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 43 - djkyc
+- name: 🇯🇵 日本 (Japan) 26 - djkyc
+  server: intense-sole.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: intense-sole.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 27 - djkyc
+  server: 172.111.146.64
+  port: 80
+  udp: true
+  type: vless
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: join---i10vpn---join---i10vpn---join---i10vpn---join---i10vpn
+- name: 🇯🇵 日本 (Japan) 28 - djkyc
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 29 - djkyc
+  server: 52.192.217.187
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: evolving-platypus.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 30 - djkyc
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 31 - djkyc
+  server: 45.32.52.173
+  port: 8886
+  udp: true
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 32 - djkyc
+  server: accurate-frog.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: accurate-frog.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 33 - djkyc
+  server: 13.231.247.130
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: concrete-aardvark.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 34 - djkyc
+  server: vp3.yysyy.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 35 - djkyc
   server: jpga01.jumpernode.site
   port: 443
   udp: true
@@ -420,17 +321,21 @@ proxies:
     short-id: c8e49965
   servername: amzn.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 44 - djkyc
-  server: 54.249.55.154
+- name: 🇯🇵 日本 (Japan) 36 - djkyc
+  server: jpba.osaip.net
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: prime-corgi.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 45 - djkyc
+  type: vless
+  uuid: 2a73bd11-43d4-4af2-a46f-d8cb519fa2b3
+  tls: true
+  reality-opts:
+    public-key: oNBTLH-mw1gk3nDF74ATS7cpvb3eLVePL5iQHscEp3Y
+    short-id: 97e03274
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 37 - djkyc
   server: 3.114.220.22
-  port: 19645
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -441,47 +346,8 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 46 - djkyc
-  server: goldcnmltyljgfwgov.vip60.wogcnmnnagfwgov.com
-  port: 11260
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 47 - djkyc
-  server: cdn3.salamfox.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2dedf401-3786-480a-b353-c719a583c4ec
-  tls: true
-  servername: cdn3.salamfox.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /2dedf401-3786-480a-b353-c719a583c4ec
-    headers:
-      Host: cdn3.salamfox.ir
-- name: 🇯🇵 日本 (Japan) 48 - djkyc
-  server: zfd-jpv2.kunlun01dns.com
-  port: 16121
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 49 - djkyc
-  server: comic-poodle.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 50 - djkyc
-  server: t14.qifei.app
+- name: 🇯🇵 日本 (Japan) 38 - djkyc
+  server: 160.16.139.182
   port: 443
   udp: true
   type: vless
@@ -492,35 +358,83 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: www.amazon.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 51 - djkyc
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 52 - djkyc
-  server: 52.192.217.187
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 39 - djkyc
+  server: integral-rodent.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: evolving-platypus.rooster465.autos
+  sni: integral-rodent.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 40 - djkyc
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 53 - djkyc
+- name: 🇯🇵 日本 (Japan) 41 - djkyc
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 42 - djkyc
+  server: silversbgfgov.vip30.wogbcnmnagfwgov.com
+  port: 11230
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 43 - djkyc
+  server: goldcnmltyljgfwgov.vip60.wogcnmnnagfwgov.com
+  port: 11260
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 44 - djkyc
+  server: 104.16.10.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 45 - djkyc
   server: rb.mangshe.xyz
   port: 2060
   udp: true
   type: hysteria2
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: 127.0.0.1
+  sni: rb.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 46 - djkyc
+  server: promoted-rattler.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: promoted-rattler.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 47 - djkyc
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -574,12 +488,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 45 - djkyc
   - 🇯🇵 日本 (Japan) 46 - djkyc
   - 🇯🇵 日本 (Japan) 47 - djkyc
-  - 🇯🇵 日本 (Japan) 48 - djkyc
-  - 🇯🇵 日本 (Japan) 49 - djkyc
-  - 🇯🇵 日本 (Japan) 50 - djkyc
-  - 🇯🇵 日本 (Japan) 51 - djkyc
-  - 🇯🇵 日本 (Japan) 52 - djkyc
-  - 🇯🇵 日本 (Japan) 53 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -632,11 +540,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 45 - djkyc
   - 🇯🇵 日本 (Japan) 46 - djkyc
   - 🇯🇵 日本 (Japan) 47 - djkyc
-  - 🇯🇵 日本 (Japan) 48 - djkyc
-  - 🇯🇵 日本 (Japan) 49 - djkyc
-  - 🇯🇵 日本 (Japan) 50 - djkyc
-  - 🇯🇵 日本 (Japan) 51 - djkyc
-  - 🇯🇵 日本 (Japan) 52 - djkyc
-  - 🇯🇵 日本 (Japan) 53 - djkyc
 rules:
 - MATCH,PROXIES

@@ -5,295 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - djkyc
-  server: 104.24.152.217
-  port: 80
-  udp: true
-  type: vless
-  uuid: b945051b-61fd-4769-bd4f-e6a46214bbdf
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: auto-b94505.mmonn5771.workers.dev
-- name: 🇩🇪 德国 (Germany) 02 - djkyc
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
-  tls: true
-  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/w1bJhZ1XIBYMkkBlELIOzpfOxkj?ed=2560
-    headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-- name: 🇩🇪 德国 (Germany) 03 - djkyc
-  server: 188.114.97.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: d6828805-5608-44d7-a44b-976d4c3ac2d0
-  tls: true
-  servername: 0LG3u92i0exN577l3Mc637Ycba3.SfgsfgSfGFSGSf-4630.wOrkeRS.dEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/5ibXbgAYxWzwbOtkXJWUtvKMKOYjh?ed
-    headers:
-      Host: 0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev
-- name: 🇩🇪 德国 (Germany) 04 - djkyc
-  server: 209.46.102.22
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: 🇩🇪 德国 (Germany) 05 - djkyc
-  server: 63.185.114.140
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 06 - djkyc
-  server: 31.76.11.83
-  port: 22849
-  udp: true
-  type: vless
-  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
-- name: 🇩🇪 德国 (Germany) 07 - djkyc
   server: 185.226.172.8
   port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 08 - djkyc
-  server: 185.177.229.129
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 09 - djkyc
-  server: 213.202.208.199
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇩🇪 德国 (Germany) 10 - djkyc
-  server: 216.106.187.60
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 11 - djkyc
-  server: 2.58.81.221
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 12 - djkyc
-  server: 213.202.208.199
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇩🇪 德国 (Germany) 13 - djkyc
-  server: 144.31.62.242
-  port: 443
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 14 - djkyc
-  server: 51.195.126.38
+- name: 🇩🇪 德国 (Germany) 02 - djkyc
+  server: 209.46.102.22
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 (Germany) 15 - djkyc
-  server: 130.17.25.67
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 16 - djkyc
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.comfreenettirgermanylimburg
-- name: 🇩🇪 德国 (Germany) 17 - djkyc
-  server: 2.27.69.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 18 - djkyc
-  server: 212.100.171.154
-  port: 443
-  udp: true
-  type: vless
-  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
-    short-id: aa6582cf25e243ce
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 19 - djkyc
-  server: 2.27.35.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks
-    short-id: 34e797af
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 20 - djkyc
-  server: 163.245.43.50
-  port: 443
-  udp: true
-  type: vless
-  uuid: 203d434a-2a92-45df-8973-ca80434ecf73
-  tls: true
-  servername: se-twitch.global-cdn.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: content.v1.Feed
-- name: 🇩🇪 德国 (Germany) 21 - djkyc
-  server: 91.233.8.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 81d8f575-a9c3-03e7-be6b-c0e1dc1d2e20
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k76Ze8R0E5NyZwvBZT1A4n0zlVXxTeHQDAs0bBqiGQw
-    short-id: 6e5f2a3b
-  servername: tnt-cloud.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 22 - djkyc
-  server: 63.177.230.112
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 23 - djkyc
-  server: vpn-de-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 24 - djkyc
-  server: 144.31.62.162
-  port: 443
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 25 - djkyc
-  server: 193.108.117.54
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aidrivercat.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇩🇪 德国 (Germany) 26 - djkyc
-  server: 144.31.63.114
-  port: 443
-  udp: true
-  type: vless
-  uuid: c797b9ad-6f9e-4eee-befd-eef119ec3637
-  tls: true
-  servername: assets-de.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇩🇪 德国 (Germany) 27 - djkyc
-  server: 31.70.111.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 28 - djkyc
-  server: 8.209.74.72
-  port: 20001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 29 - djkyc
+  password: 1hhrqrokj3ag
+- name: 🇩🇪 德国 (Germany) 03 - djkyc
   server: 111.88.74.239
   port: 443
   udp: true
@@ -306,107 +31,81 @@ proxies:
     short-id: c56d4f1c
   servername: google.com
   client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 30 - djkyc
-  server: 82.118.19.153
+- name: 🇩🇪 德国 (Germany) 04 - djkyc
+  server: 212.100.171.154
   port: 443
   udp: true
   type: vless
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 31 - djkyc
-  server: 31.76.11.83
-  port: 50551
+    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
+    short-id: aa6582cf25e243ce
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 05 - djkyc
+  server: actual-squid.rooster465.autos
+  port: 443
   udp: true
-  type: vmess
-  uuid: 57160c16-b7db-40d8-bd06-ced30edd4df6
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 32 - djkyc
-  server: 89.169.53.176
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  servername: de.wvpn.one
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 33 - djkyc
-  server: 93.152.217.152
-  port: 40443
+  type: trojan
+  password: UX82473651
+  sni: actual-squid.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 - djkyc
+  server: 31.70.111.146
+  port: 443
   udp: true
   type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
-  servername: deepl.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 34 - djkyc
-  server: 18.159.149.158
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 07 - djkyc
+  server: 144.31.63.114
+  port: 443
+  udp: true
+  type: vless
+  uuid: c797b9ad-6f9e-4eee-befd-eef119ec3637
+  tls: true
+  servername: assets-de.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇩🇪 德国 (Germany) 08 - djkyc
+  server: 3.121.212.178
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 35 - djkyc
-  server: 31.76.11.83
-  port: 15250
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
-- name: 🇩🇪 德国 (Germany) 36 - djkyc
-  server: lucas.ehsanazizi-speed-server.com
-  port: 2110
-  udp: true
-  type: vmess
-  uuid: 06d4d001-4168-4876-9416-7caecf578f40
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 37 - djkyc
-  server: 31.77.168.21
-  port: 443
-  udp: true
-  type: trojan
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  sni: d3-de2.cloud-cdn.xyz
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇩🇪 德国 (Germany) 38 - djkyc
-  server: 169.150.210.233
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 39 - djkyc
-  server: cdn-de.bulkavpn.top
+- name: 🇩🇪 德国 (Germany) 09 - djkyc
+  server: 2.27.35.74
   port: 443
   udp: true
   type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
-    short-id: c885e8f8
-  servername: cdn-de.bulkavpn.top
+    public-key: zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks
+    short-id: 34e797af
+  servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 40 - djkyc
+- name: 🇩🇪 德国 (Germany) 10 - djkyc
+  server: 8.209.74.72
+  port: 20001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 11 - djkyc
   server: 162.55.242.208
   port: 2053
   udp: true
@@ -417,8 +116,32 @@ proxies:
     public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
     short-id: 4d14da19b19cfc8c
   servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12 - djkyc
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 13 - djkyc
+  server: 130.17.25.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 41 - djkyc
+- name: 🇩🇪 德国 (Germany) 14 - djkyc
   server: 104.194.159.237
   port: 8443
   udp: true
@@ -430,80 +153,8 @@ proxies:
     public-key: L5cKU_oSpJsGd3ffemej3Wy7V6KzqjIUC2T5jaCyPys
     short-id: 1aec480577a542ee
   servername: github.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 42 - djkyc
-  server: lm10.ehsanazizi-speed-server.com
-  port: 2127
-  udp: true
-  type: trojan
-  password: zgRfB1MMJDJ65rwKSnGCZuzLpTiUSfgzHmTb26ye7mM=
-  sni: lm10.ehsanazizi-speed-server.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 43 - djkyc
-  server: node8.quaxly.com
-  port: 25040
-  udp: true
-  type: trojan
-  password: Km/pIG4AGCjCOiGWj5FsWA==
-  sni: /gay-anal
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 44 - djkyc
-  server: 5.75.197.74
-  port: 1080
-  udp: true
-  type: vless
-  uuid: 250865f0-4a0f-4e2e-8d14-4c39a25d0bef
-  tls: true
-  reality-opts:
-    public-key: qmCIBP5Y6Pu7oxY--0sOXglNvHV9byxo2cyVsfAqUiI
-    short-id: 307eb35dbf3a5385
-  servername: www6.gameservice-iramn3.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 45 - djkyc
-  server: 172.64.229.129
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 46 - djkyc
-  server: pleased-albacore.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pleased-albacore.rooster465.autos
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 47 - djkyc
-  server: 2.58.81.221
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 48 - djkyc
-  server: de12.h1cloud.net
-  port: 25095
-  udp: true
-  type: vless
-  uuid: 95003356-20f9-4c84-a21f-2f9c1fc285eb
-  tls: true
-  reality-opts:
-    public-key: pvXuNe35fkSbA-CVmh6_b3ADAXLY8tBONjnwE8HM8yY
-    short-id: 397c81bed08f3f78
-  servername: www.chip.de
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f3d967fe8981
-- name: 🇩🇪 德国 (Germany) 49 - djkyc
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 15 - djkyc
   server: 82.39.171.142
   port: 443
   udp: true
@@ -515,27 +166,26 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 50 - djkyc
-  server: actual-squid.rooster465.autos
-  port: 443
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 16 - djkyc
+  server: node8.quaxly.com
+  port: 25040
   udp: true
   type: trojan
-  password: UX82473651
-  sni: actual-squid.rooster465.autos
+  password: Km/pIG4AGCjCOiGWj5FsWA==
+  sni: /gay-anal
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 51 - djkyc
-  server: undef.network
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 52 - djkyc
+    path: /
+- name: 🇩🇪 德国 (Germany) 17 - djkyc
+  server: 213.202.208.199
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 18 - djkyc
   server: 82.39.171.12
   port: 443
   udp: true
@@ -547,9 +197,194 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 53 - djkyc
-  server: 46.101.110.88
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 19 - djkyc
+  server: 54.93.180.166
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 (Germany) 20 - djkyc
+  server: 213.202.208.199
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇩🇪 德国 (Germany) 21 - djkyc
+  server: 2.27.69.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 22 - djkyc
+  server: 8.211.15.144
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: fc04RSUu3TfONQnlbKTwvA
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 23 - djkyc
+  server: 2.58.81.221
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 24 - djkyc
+  server: 3.75.93.113
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: meet-goshawk.rooster465.autos
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 25 - djkyc
+  server: 169.150.210.233
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 26 - djkyc
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 27 - djkyc
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 28 - djkyc
+  server: 31.76.11.83
+  port: 22849
+  udp: true
+  type: vless
+  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
+- name: 🇩🇪 德国 (Germany) 29 - djkyc
+  server: 144.31.215.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
+    short-id: c885e8f8
+  servername: cdn-de.bulkavpn.top
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 30 - djkyc
+  server: hikvision-plus.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 31 - djkyc
+  server: 3.67.197.81
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 (Germany) 32 - djkyc
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 33 - djkyc
+  server: 189.24.82.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: bf7ca7a3-a028-488e-b9f1-34e467d6d897
+  tls: true
+  reality-opts:
+    public-key: oXHb-GX9ExLRs-CcFwllm6zp99jpx7yAdxrvAV1sZ18
+    short-id: 3eaacc9b
+  servername: itunes.apple.com
+  client-fingerprint: ''
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇩🇪 德国 (Germany) 34 - djkyc
+  server: 51.195.126.38
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 35 - djkyc
+  server: 172.64.229.129
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 36 - djkyc
+  server: 2.27.69.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇩🇪 德国 (Germany) 37 - djkyc
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇩🇪 德国 (Germany) 38 - djkyc
+  server: 18.184.32.202
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 (Germany) 39 - djkyc
+  server: 209.38.225.184
   port: 443
   udp: true
   type: vless
@@ -557,67 +392,42 @@ proxies:
   tls: true
   servername: s4ws.ragingbull.de5.net
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /wsrb7k2m
     headers:
       Host: s4ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 54 - djkyc
-  server: 104.27.88.172
-  port: 80
+- name: 🇩🇪 德国 (Germany) 40 - djkyc
+  server: 144.31.62.242
+  port: 443
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
-- name: 🇩🇪 德国 (Germany) 55 - djkyc
-  server: 188.114.96.2
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
-  tls: true
-  servername: shop.neexbyte.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇩🇪 德国 (Germany) 56 - djkyc
-  server: 159.195.5.79
-  port: 2083
-  udp: true
-  type: vless
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
-  tls: true
-  servername: s4ws.ragingbull.de5.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /wsrb7k2m
-    headers:
-      Host: s4ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 57 - djkyc
-  server: 150.241.101.80
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 47d9b534-8a0a-4bd2-90f1-1d6ade14427e
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: yandex.net
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 41 - djkyc
+  server: hikvision-plus.com
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 58 - djkyc
-  server: 91.107.157.188
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 42 - djkyc
+  server: 68.183.186.117
   port: 443
   udp: true
   type: vless
@@ -631,56 +441,15 @@ proxies:
     path: /wsrb7k2m
     headers:
       Host: s3ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 59 - djkyc
-  server: 188.114.97.3
-  port: 2087
-  udp: true
-  type: vless
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
-  tls: true
-  servername: s4ws.ragingbull.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /wsrb7k2m
-    headers:
-      Host: s4ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 60 - djkyc
-  server: meet-goshawk.rooster465.autos
+- name: 🇩🇪 德国 (Germany) 43 - djkyc
+  server: 63.178.198.94
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: meet-goshawk.rooster465.autos
+  sni: pleased-albacore.rooster465.autos
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 61 - djkyc
-  server: 85.121.124.65
-  port: 8443
-  udp: true
-  type: vless
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
-  tls: true
-  servername: s4ws.ragingbull.de5.net
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /wsrb7k2m
-    headers:
-      Host: s4ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 62 - djkyc
-  server: 31.77.168.35
-  port: 443
-  udp: true
-  type: trojan
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  sni: d3-de2.cloud-cdn.xyz
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇩🇪 德国 (Germany) 63 - djkyc
+- name: 🇩🇪 德国 (Germany) 44 - djkyc
   server: 188.114.96.3
   port: 2087
   udp: true
@@ -689,12 +458,13 @@ proxies:
   tls: true
   servername: s3ws.ragingbull.de5.net
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /wsrb7k2m
     headers:
       Host: s3ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 64 - djkyc
+- name: 🇩🇪 德国 (Germany) 45 - djkyc
   server: 95.85.252.72
   port: 443
   udp: true
@@ -706,37 +476,9 @@ proxies:
     public-key: u5gK34Vx2N4cN4dowhD81_ZPMvymSPYt4Fvv44dKHAY
     short-id: 5cca2511acbc3ca9
   servername: de1.lostpool.org
-  client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 65 - djkyc
-  server: undef.network
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 66 - djkyc
-  server: freesocks.work
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 67 - djkyc
-  server: 150.241.79.232
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 46 - djkyc
+  server: 144.31.62.162
   port: 443
   udp: true
   type: vless
@@ -747,145 +489,79 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
     short-id: 4be4110078ebed4a
   servername: de2.srv.vbuste.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 68 - djkyc
-  server: 176.108.252.139
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇩🇪 德国 (Germany) 69 - djkyc
-  server: 31.76.35.27
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 47 - djkyc
+  server: 130.185.121.69
   port: 443
   udp: true
   type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: d3c9d170-80fa-489a-8ba2-f4cc80d240e3
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 48 - djkyc
+  server: 57.129.113.16
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+- name: 🇩🇪 德国 (Germany) 49 - djkyc
+  server: 93.152.217.152
+  port: 40443
+  udp: true
+  type: vless
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s
-    short-id: b76a6309
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 70 - djkyc
-  server: 64.110.79.66
-  port: 8443
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 50 - djkyc
+  server: 172.67.162.201
+  port: 2053
   udp: true
   type: vless
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
   tls: true
-  servername: s3ws.ragingbull.de5.net
+  servername: RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /wsrb7k2m
+    path: /
     headers:
-      Host: s3ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 71 - djkyc
-  server: undef.network
+      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+- name: 🇩🇪 德国 (Germany) 51 - djkyc
+  server: cctvhikvision.center
   port: 2052
   udp: true
   type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 72 - djkyc
-  server: 31.77.168.33
-  port: 443
-  udp: true
-  type: trojan
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  sni: d3-de2.cloud-cdn.xyz
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇩🇪 德国 (Germany) 73 - djkyc
-  server: 77.74.123.107
-  port: 4443
-  udp: true
-  type: trojan
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 74 - djkyc
-  server: 189.24.82.195
-  port: 443
+- name: 🇩🇪 德国 (Germany) 52 - djkyc
+  server: 45.32.57.54
+  port: 8443
   udp: true
   type: vless
-  uuid: bf7ca7a3-a028-488e-b9f1-34e467d6d897
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   tls: true
-  reality-opts:
-    public-key: oXHb-GX9ExLRs-CcFwllm6zp99jpx7yAdxrvAV1sZ18
-    short-id: 3eaacc9b
-  servername: itunes.apple.com
-  client-fingerprint: chrome
+  servername: s4ws.ragingbull.de5.net
+  skip-cert-verify: false
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /ws
+    path: /wsrb7k2m
     headers:
-      Host: itunes.apple.com
-- name: 🇩🇪 德国 (Germany) 75 - djkyc
-  server: de12.h1cloud.net
-  port: 25089
-  udp: true
-  type: vless
-  uuid: 95003356-20f9-4c84-a21f-2f9c1fc285eb
-  tls: true
-  reality-opts:
-    public-key: 3ZxTHjZ8XHP2aYzLEKUPI3xQ5jYQYrSrIEXlUlULUEA
-    short-id: 56d9d9fba348e5e6
-  servername: www.chip.de
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 76 - djkyc
-  server: rubifen.adaspoloandco.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-- name: 🇩🇪 德国 (Germany) 77 - djkyc
-  server: 77.74.123.106
-  port: 4443
-  udp: true
-  type: trojan
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 78 - djkyc
-  server: 150.241.79.56
-  port: 443
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 79 - djkyc
-  server: 144.31.62.170
+      Host: s4ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 53 - djkyc
+  server: 144.31.62.195
   port: 443
   udp: true
   type: vless
@@ -897,18 +573,31 @@ proxies:
     short-id: 4be4110078ebed4a
   servername: de2.srv.vbuste.ru
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 80 - djkyc
-  server: mhzedir.qzz.io
-  port: 4462
+- name: 🇩🇪 德国 (Germany) 54 - djkyc
+  server: cctvhikvision.center
+  port: 2053
   udp: true
   type: vless
-  uuid: 7687f6b3-8633-48bb-b0a1-f1ecc7f6c1cc
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   tls: true
-  servername: mhzedir.qzz.io
+  servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 55 - djkyc
+  server: 104.27.88.172
+  port: 80
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-nr6wpa.app-tp57xz.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -969,31 +658,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 53 - djkyc
   - 🇩🇪 德国 (Germany) 54 - djkyc
   - 🇩🇪 德国 (Germany) 55 - djkyc
-  - 🇩🇪 德国 (Germany) 56 - djkyc
-  - 🇩🇪 德国 (Germany) 57 - djkyc
-  - 🇩🇪 德国 (Germany) 58 - djkyc
-  - 🇩🇪 德国 (Germany) 59 - djkyc
-  - 🇩🇪 德国 (Germany) 60 - djkyc
-  - 🇩🇪 德国 (Germany) 61 - djkyc
-  - 🇩🇪 德国 (Germany) 62 - djkyc
-  - 🇩🇪 德国 (Germany) 63 - djkyc
-  - 🇩🇪 德国 (Germany) 64 - djkyc
-  - 🇩🇪 德国 (Germany) 65 - djkyc
-  - 🇩🇪 德国 (Germany) 66 - djkyc
-  - 🇩🇪 德国 (Germany) 67 - djkyc
-  - 🇩🇪 德国 (Germany) 68 - djkyc
-  - 🇩🇪 德国 (Germany) 69 - djkyc
-  - 🇩🇪 德国 (Germany) 70 - djkyc
-  - 🇩🇪 德国 (Germany) 71 - djkyc
-  - 🇩🇪 德国 (Germany) 72 - djkyc
-  - 🇩🇪 德国 (Germany) 73 - djkyc
-  - 🇩🇪 德国 (Germany) 74 - djkyc
-  - 🇩🇪 德国 (Germany) 75 - djkyc
-  - 🇩🇪 德国 (Germany) 76 - djkyc
-  - 🇩🇪 德国 (Germany) 77 - djkyc
-  - 🇩🇪 德国 (Germany) 78 - djkyc
-  - 🇩🇪 德国 (Germany) 79 - djkyc
-  - 🇩🇪 德国 (Germany) 80 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1054,30 +718,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 53 - djkyc
   - 🇩🇪 德国 (Germany) 54 - djkyc
   - 🇩🇪 德国 (Germany) 55 - djkyc
-  - 🇩🇪 德国 (Germany) 56 - djkyc
-  - 🇩🇪 德国 (Germany) 57 - djkyc
-  - 🇩🇪 德国 (Germany) 58 - djkyc
-  - 🇩🇪 德国 (Germany) 59 - djkyc
-  - 🇩🇪 德国 (Germany) 60 - djkyc
-  - 🇩🇪 德国 (Germany) 61 - djkyc
-  - 🇩🇪 德国 (Germany) 62 - djkyc
-  - 🇩🇪 德国 (Germany) 63 - djkyc
-  - 🇩🇪 德国 (Germany) 64 - djkyc
-  - 🇩🇪 德国 (Germany) 65 - djkyc
-  - 🇩🇪 德国 (Germany) 66 - djkyc
-  - 🇩🇪 德国 (Germany) 67 - djkyc
-  - 🇩🇪 德国 (Germany) 68 - djkyc
-  - 🇩🇪 德国 (Germany) 69 - djkyc
-  - 🇩🇪 德国 (Germany) 70 - djkyc
-  - 🇩🇪 德国 (Germany) 71 - djkyc
-  - 🇩🇪 德国 (Germany) 72 - djkyc
-  - 🇩🇪 德国 (Germany) 73 - djkyc
-  - 🇩🇪 德国 (Germany) 74 - djkyc
-  - 🇩🇪 德国 (Germany) 75 - djkyc
-  - 🇩🇪 德国 (Germany) 76 - djkyc
-  - 🇩🇪 德国 (Germany) 77 - djkyc
-  - 🇩🇪 德国 (Germany) 78 - djkyc
-  - 🇩🇪 德国 (Germany) 79 - djkyc
-  - 🇩🇪 德国 (Germany) 80 - djkyc
 rules:
 - MATCH,PROXIES
