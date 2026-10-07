@@ -54,6 +54,9 @@ except ImportError as e:
 
 SOURCE_URLS = [
     "https://wild-cloud-9893.heleimail.workers.dev",
+    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+    "https://github.com/Wboyx/foxy-exit/raw/refs/heads/main/v7qk2f.txt",
+    "https://xget.xi-xu.me/gh/cbusifabcap/daily_free_vpn/raw/refs/heads/main/Z.txt",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-KR.txt",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-JP.txt",
