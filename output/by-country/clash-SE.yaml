@@ -15,33 +15,21 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 02 - djkyc
-  server: 13.143.174.97
-  port: 2083
-  udp: true
-  type: vless
-  uuid: cfae6477-e8ad-4114-8efd-a7c3e5d8a05b
-  tls: true
-  servername: 13.143.174.97
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - djkyc
-  - 🇸🇪 瑞典 (Sweden) 02 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - djkyc
-  - 🇸🇪 瑞典 (Sweden) 02 - djkyc
 rules:
 - MATCH,PROXIES

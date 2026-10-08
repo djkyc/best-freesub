@@ -48,30 +48,46 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - djkyc",
-      "server": "31.59.210.37",
+      "server": "eu86.vaultberry.cloud",
       "server_port": 443,
-      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "uuid": "73bec071-8d42-4294-a453-de168627649b",
       "tls": {
         "enabled": true,
-        "server_name": "www.yandex.ru",
+        "server_name": "eu86.vaultberry.cloud",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
-          "short_id": "6dbf4931096f9890"
+          "public_key": "zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M",
+          "short_id": "1ed136481e0ede74"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "astracat"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - djkyc",
+      "server": "eu86.vaultberry.cloud",
+      "server_port": 443,
+      "uuid": "327487f5-8665-48df-9e76-f1bee6d16557",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu86.vaultberry.cloud",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M",
+          "short_id": "1ed136481e0ede74"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - djkyc",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - djkyc",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -87,17 +103,86 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - djkyc",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws"
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - djkyc",
+      "server": "217.60.183.239",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ge-s-1.pythonmakemigreat.wiki",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8",
+          "short_id": "2c9a2790ad5900b2"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - djkyc",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - djkyc",
+      "server": "94.183.193.79",
+      "server_port": 443,
+      "uuid": "327487f5-8665-48df-9e76-f1bee6d16557",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu86.vaultberry.cloud",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M",
+          "short_id": "1ed136481e0ede74"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - djkyc",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 09 - djkyc",
+      "server": "31.59.210.37",
+      "server_port": 443,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
+          "short_id": "6dbf4931096f9890"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 10 - djkyc",
       "server": "146.70.102.82",
       "server_port": 443,
       "uuid": "31fd2fde-ca69-450e-8c03-eaad819b06b9",
@@ -107,13 +192,37 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k",
           "short_id": "002fb4ec7b3088cc"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 11 - djkyc",
+      "server": "31.59.210.26",
+      "server_port": 2088,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg",
+          "short_id": "b1ad165f903c62fe"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
       }
     },
     {
@@ -126,7 +235,12 @@
         "🇦🇪 阿联酋 (UAE) 03 - djkyc",
         "🇦🇪 阿联酋 (UAE) 04 - djkyc",
         "🇦🇪 阿联酋 (UAE) 05 - djkyc",
-        "🇦🇪 阿联酋 (UAE) 06 - djkyc"
+        "🇦🇪 阿联酋 (UAE) 06 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 07 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 08 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 09 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 10 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 11 - djkyc"
       ]
     },
     {
@@ -138,7 +252,12 @@
         "🇦🇪 阿联酋 (UAE) 03 - djkyc",
         "🇦🇪 阿联酋 (UAE) 04 - djkyc",
         "🇦🇪 阿联酋 (UAE) 05 - djkyc",
-        "🇦🇪 阿联酋 (UAE) 06 - djkyc"
+        "🇦🇪 阿联酋 (UAE) 06 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 07 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 08 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 09 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 10 - djkyc",
+        "🇦🇪 阿联酋 (UAE) 11 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - djkyc
-  server: 185.159.247.30
-  port: 8880
+  server: 132.226.226.189
+  port: 50160
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 02 - djkyc
   server: 140.238.2.250
   port: 443
@@ -24,21 +21,24 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 03 - djkyc
-  server: kr2-r.link-t7.com
-  port: 10047
+  server: 141.164.45.187
+  port: 6679
   udp: true
-  type: vless
-  uuid: 58C828CD-3EBA-46F9-B297-16003D7A6E68
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
 - name: 🇰🇷 韩国 (South Korea) 04 - djkyc
+  server: 132.145.80.230
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇰🇷 韩国 (South Korea) 05 - djkyc
   server: 43.201.100.203
   port: 443
   udp: true
@@ -46,74 +46,50 @@ proxies:
   password: UX82473651
   sni: optimum-snapper.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 05 - djkyc
-  server: 141.164.45.187
-  port: 8000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
 - name: 🇰🇷 韩国 (South Korea) 06 - djkyc
+  server: 54.180.231.160
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - djkyc
   server: 141.164.45.187
-  port: 9101
+  port: 6697
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: 🇰🇷 韩国 (South Korea) 07 - djkyc
+  password: TEzjfAYq2IjtuoS
+- name: 🇰🇷 韩国 (South Korea) 08 - djkyc
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
+  sni: t.me
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - djkyc
-  server: 141.164.45.187
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
 - name: 🇰🇷 韩国 (South Korea) 09 - djkyc
-  server: 141.164.45.187
-  port: 2376
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: 🇰🇷 韩国 (South Korea) 10 - djkyc
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - djkyc
-  server: vpn-kr-002.fastervpn.world
+  server: 64.176.231.183
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - djkyc
+  type: vless
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 10 - djkyc
   server: 141.164.45.187
-  port: 5001
+  port: 8888
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 13 - djkyc
-  server: 3.34.95.215
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14 - djkyc
+- name: 🇰🇷 韩国 (South Korea) 11 - djkyc
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -125,35 +101,54 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 15 - djkyc
-  server: 3.35.168.225
-  port: 443
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 12 - djkyc
+  server: kr2-r.link-t7.com
+  port: 10047
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: noted-cougar.rooster465.autos
+  type: vless
+  uuid: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇰🇷 韩国 (South Korea) 13 - djkyc
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: 152.70.237.123
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 14 - djkyc
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 15 - djkyc
+  server: 141.164.45.187
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
 - name: 🇰🇷 韩国 (South Korea) 16 - djkyc
-  server: 52.78.203.191
+  server: vpn-kr-002.fastervpn.world
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: false
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 17 - djkyc
-  server: 132.145.80.230
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇰🇷 韩国 (South Korea) 18 - djkyc
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -166,22 +161,38 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 18 - djkyc
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 19 - djkyc
-  server: 141.164.45.187
-  port: 8119
+  server: 211.178.105.134
+  port: 6123
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 20 - djkyc
-  server: 132.226.226.189
-  port: 50160
+  server: 3.34.95.215
+  port: 443
   udp: true
   type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 21 - djkyc
+  server: 3.34.131.153
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 22 - djkyc
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -193,30 +204,21 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 22 - djkyc
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 23 - djkyc
-  server: 3.34.131.153
+  server: 3.35.168.225
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: false
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 24 - djkyc
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
+  server: 141.164.45.187
+  port: 8091
   udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
 - name: 🇰🇷 韩国 (South Korea) 25 - djkyc
   server: engaging-toucan.rooster465.autos
   port: 443
@@ -224,24 +226,8 @@ proxies:
   type: trojan
   password: UX82473651
   sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 26 - djkyc
-  server: main-fawn.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 27 - djkyc
-  server: 3.39.225.215
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: kind-stork.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 28 - djkyc
+- name: 🇰🇷 韩国 (South Korea) 26 - djkyc
   server: silversbgfgov.vip40.wogbcnmnagfwgov.com
   port: 11240
   udp: true
@@ -249,6 +235,21 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 27 - djkyc
+  server: delicate-buck.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 28 - djkyc
+  server: 141.164.45.187
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 - name: 🇰🇷 韩国 (South Korea) 29 - djkyc
   server: 3.35.217.113
   port: 443
@@ -258,20 +259,36 @@ proxies:
   sni: amazing-peacock.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 30 - djkyc
-  server: 141.164.45.187
-  port: 6679
+  server: 3.35.207.188
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  type: trojan
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 31 - djkyc
   server: 141.164.45.187
-  port: 8888
+  port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: XKFKl2rULjIp74
 - name: 🇰🇷 韩国 (South Korea) 32 - djkyc
+  server: 3.39.225.215
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 33 - djkyc
+  server: 141.164.45.187
+  port: 8000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇰🇷 韩国 (South Korea) 34 - djkyc
   server: 47.80.19.173
   port: 2053
   udp: true
@@ -284,13 +301,20 @@ proxies:
     short-id: 3c4041d3
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 33 - djkyc
+- name: 🇰🇷 韩国 (South Korea) 35 - djkyc
   server: 141.164.45.187
-  port: 8008
+  port: 2376
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  password: faBAoD54k87UJG7
+- name: 🇰🇷 韩国 (South Korea) 36 - djkyc
+  server: 141.164.45.187
+  port: 5498
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
 proxy-groups:
 - name: PROXIES
   type: select
@@ -329,6 +353,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 31 - djkyc
   - 🇰🇷 韩国 (South Korea) 32 - djkyc
   - 🇰🇷 韩国 (South Korea) 33 - djkyc
+  - 🇰🇷 韩国 (South Korea) 34 - djkyc
+  - 🇰🇷 韩国 (South Korea) 35 - djkyc
+  - 🇰🇷 韩国 (South Korea) 36 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -367,5 +394,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 31 - djkyc
   - 🇰🇷 韩国 (South Korea) 32 - djkyc
   - 🇰🇷 韩国 (South Korea) 33 - djkyc
+  - 🇰🇷 韩国 (South Korea) 34 - djkyc
+  - 🇰🇷 韩国 (South Korea) 35 - djkyc
+  - 🇰🇷 韩国 (South Korea) 36 - djkyc
 rules:
 - MATCH,PROXIES

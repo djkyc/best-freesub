@@ -14,7 +14,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -28,36 +28,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - djkyc",
-      "server": "13.143.174.97",
-      "server_port": 2083,
-      "uuid": "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b",
-      "tls": {
-        "enabled": true,
-        "server_name": "13.143.174.97",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 02 - djkyc"
+        "🇸🇪 瑞典 (Sweden) 01 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 02 - djkyc"
+        "🇸🇪 瑞典 (Sweden) 01 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
