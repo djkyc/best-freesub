@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 巴西 (Brazil) 01 - djkyc
-  server: brb.nnpy.org
-  port: 11100
+- name: 🇨🇿 捷克 (Czech) 01 - djkyc
+  server: 95.85.238.173
+  port: 443
   udp: true
   type: hysteria2
-  password: df8d55f9-fb51-442d-902a-bf8160dc051b
-  sni: www.bing.com
+  password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
+  sni: cz.h2.cleanersaz.help
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 巴西 (Brazil) 01 - djkyc
+  - 🇨🇿 捷克 (Czech) 01 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 (Brazil) 01 - djkyc
+  - 🇨🇿 捷克 (Czech) 01 - djkyc
 rules:
 - MATCH,PROXIES

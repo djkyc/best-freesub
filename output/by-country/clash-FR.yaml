@@ -5,36 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - djkyc
-  server: 151.247.197.253
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 02 - djkyc
-  server: 15.237.53.180
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 03 - djkyc
-  server: 35.181.173.15
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 04 - djkyc
-  server: 13.38.44.64
+  server: 51.44.167.227
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 13.38.44.64
+  sni: vpn-fr-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 05 - djkyc
+- name: 🇫🇷 法国 (France) 02 - djkyc
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -45,11 +23,21 @@ proxies:
     public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
     short-id: 52add08b86a5ccea
   servername: www.nvidia.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 06 - djkyc
+- name: 🇫🇷 法国 (France) 03 - djkyc
+  server: 51.77.217.70
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+- name: 🇫🇷 法国 (France) 04 - djkyc
   server: 51.77.217.70
   port: 2053
   udp: true
@@ -61,39 +49,56 @@ proxies:
     short-id: bfe58beb41f1d09f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - djkyc
-  server: 62.210.91.10
-  port: 23576
+- name: 🇫🇷 法国 (France) 05 - djkyc
+  server: 62.210.7.139
+  port: 60111
   udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - djkyc
-  server: e3k67dwms3-51255166202-direct.tavafog.com
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - djkyc
+  server: 13.36.234.11
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07 - djkyc
+  server: 51.255.166.202
   port: 443
   udp: true
   type: vless
-  uuid: e3k67dwms3
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
   flow: xtls-rprx-vision
   tls: true
   servername: e3k67dwms3-51255166202-direct.tavafog.com
   skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 08 - djkyc
+  server: 145.239.55.210
+  port: 80
+  udp: true
+  type: vmess
+  uuid: e5e563fb-cf72-4250-bfff-fa0385301061
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 - name: 🇫🇷 法国 (France) 09 - djkyc
-  server: 62.210.124.146
-  port: 22000
+  server: 13.38.44.64
+  port: 443
   udp: true
   type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 10 - djkyc
-  server: 35.180.23.68
+  server: 15.237.53.180
   port: 443
   udp: true
   type: ss
@@ -107,26 +112,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 12 - djkyc
-  server: 54.37.136.194
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  tls: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 13 - djkyc
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 14 - djkyc
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -137,12 +122,170 @@ proxies:
     public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
     short-id: 2fed44d8c59f7e71
   servername: www.sony.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
+- name: 🇫🇷 法国 (France) 13 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: akamaized.net
+- name: 🇫🇷 法国 (France) 14 - djkyc
+  server: 51.44.86.16
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇷 法国 (France) 15 - djkyc
-  server: 62.210.91.2
+  server: ov-france1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 16 - djkyc
+  server: 54.37.136.194
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  tls: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 17 - djkyc
+  server: 52.47.99.71
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 18 - djkyc
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 151.247.197.253
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 19 - djkyc
+  server: 137.74.16.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 20 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 21 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 22 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 23 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 24 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: akamaized.net
+- name: 🇫🇷 法国 (France) 25 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: akamaized.net
+- name: 🇫🇷 法国 (France) 26 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 27 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 28 - djkyc
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 29 - djkyc
+  server: 62.210.91.10
   port: 23576
   udp: true
   type: vless
@@ -154,47 +297,55 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 16 - djkyc
-  server: 51.44.167.227
-  port: 443
+- name: 🇫🇷 法国 (France) 30 - djkyc
+  server: 217.26.30.125
+  port: 1443
+  udp: true
+  type: vless
+  uuid: 4f466863-b6c5-4fdc-955e-7a601c18d89a
+  tls: true
+  reality-opts:
+    public-key: EuRD8QK-uL3uQqnQ_IC2Ybj7v8feXRxCiEaXYjhHx3c
+  servername: yahoo.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇫🇷 法国 (France) 31 - djkyc
+  server: 62.210.91.2
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 32 - djkyc
+  server: 51.77.217.70
+  port: 21000
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-001.fastervpn.world
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 17 - djkyc
-  server: 7q4eiwcseu-193708596-direct.rahbarii.com
-  port: 443
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+  ports: 21000-21199,33000-33199
+- name: 🇫🇷 法国 (France) 33 - djkyc
+  server: 51.77.217.70
+  port: 8447
   udp: true
-  type: vless
-  uuid: 7q4eiwcseu
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 18 - djkyc
-  server: 152.228.162.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇫🇷 法国 (France) 19 - djkyc
-  server: tyxyrytyro-51255165170-direct.araghchy.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: tyxyrytyro
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 20 - djkyc
-  server: 5.253.189.238
+  type: hysteria2
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+- name: 🇫🇷 法国 (France) 34 - djkyc
+  server: 213.1.145.50
   port: 443
   udp: true
   type: trojan
@@ -204,20 +355,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 21 - djkyc
-  server: 145.239.55.210
-  port: 80
-  udp: true
-  type: vmess
-  uuid: e5e563fb-cf72-4250-bfff-fa0385301061
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 22 - djkyc
+- name: 🇫🇷 法国 (France) 35 - djkyc
   server: 173.212.201.85
   port: 443
   udp: true
@@ -225,15 +363,16 @@ proxies:
   password: gf1:gfhysteria2024
   sni: 173.212.201.85
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 23 - djkyc
-  server: 13.36.178.160
-  port: 443
+- name: 🇫🇷 法国 (France) 36 - djkyc
+  server: 62.210.147.2
+  port: 43115
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 24 - djkyc
-  server: www.large-files.info
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 37 - djkyc
+  server: 104.21.60.29
   port: 8443
   udp: true
   type: vless
@@ -241,25 +380,32 @@ proxies:
   tls: true
   servername: www.large-files.info
   skip-cert-verify: false
-  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /var/www/html/video/preview/download/i8o0la
-- name: 🇫🇷 法国 (France) 25 - djkyc
-  server: 145.223.68.58
+    headers:
+      Host: www.large-files.info
+- name: 🇫🇷 法国 (France) 38 - djkyc
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 39 - djkyc
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
   port: 443
   udp: true
   type: vless
-  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
+  uuid: rgiw5k0gg5
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
-    short-id: a44ff7d2e80213c2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 26 - djkyc
-  server: cip.navid.lat
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 40 - djkyc
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -273,7 +419,37 @@ proxies:
     path: /webdl
     headers:
       Host: frc.navid.lat
-- name: 🇫🇷 法国 (France) 27 - djkyc
+- name: 🇫🇷 法国 (France) 41 - djkyc
+  server: ade.axiomed.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
+  tls: true
+  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
+    headers:
+      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+- name: 🇫🇷 法国 (France) 42 - djkyc
+  server: 199.232.78.160
+  port: 443
+  udp: true
+  type: vless
+  uuid: XpnTeam-6
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 43 - djkyc
   server: 95.179.208.12
   port: 443
   udp: true
@@ -285,6 +461,112 @@ proxies:
     public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
   servername: googleapis.com
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 44 - djkyc
+  server: 5.253.189.238
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 45 - djkyc
+  server: 7q4eiwcseu-193708596-direct.rahbarii.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7q4eiwcseu
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 46 - djkyc
+  server: fertest3.povrak.ir
+  port: 55277
+  udp: true
+  type: vmess
+  uuid: 954a9c8e-627b-4f75-899e-c5b406555fed
+  alterId: 0
+  cipher: auto
+- name: 🇫🇷 法国 (France) 47 - djkyc
+  server: 51.255.165.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: tyxyrytyro
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 48 - djkyc
+  server: www.speedtest.net
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 49 - djkyc
+  server: 172.67.118.45
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  tls: true
+  servername: fr.api-music-fa.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 50 - djkyc
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 51 - djkyc
+  server: 35.181.173.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 52 - djkyc
+  server: 145.223.68.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
+    short-id: a44ff7d2e80213c2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 53 - djkyc
+  server: v35.hdacd.com
+  port: 30835
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -317,6 +599,32 @@ proxy-groups:
   - 🇫🇷 法国 (France) 25 - djkyc
   - 🇫🇷 法国 (France) 26 - djkyc
   - 🇫🇷 法国 (France) 27 - djkyc
+  - 🇫🇷 法国 (France) 28 - djkyc
+  - 🇫🇷 法国 (France) 29 - djkyc
+  - 🇫🇷 法国 (France) 30 - djkyc
+  - 🇫🇷 法国 (France) 31 - djkyc
+  - 🇫🇷 法国 (France) 32 - djkyc
+  - 🇫🇷 法国 (France) 33 - djkyc
+  - 🇫🇷 法国 (France) 34 - djkyc
+  - 🇫🇷 法国 (France) 35 - djkyc
+  - 🇫🇷 法国 (France) 36 - djkyc
+  - 🇫🇷 法国 (France) 37 - djkyc
+  - 🇫🇷 法国 (France) 38 - djkyc
+  - 🇫🇷 法国 (France) 39 - djkyc
+  - 🇫🇷 法国 (France) 40 - djkyc
+  - 🇫🇷 法国 (France) 41 - djkyc
+  - 🇫🇷 法国 (France) 42 - djkyc
+  - 🇫🇷 法国 (France) 43 - djkyc
+  - 🇫🇷 法国 (France) 44 - djkyc
+  - 🇫🇷 法国 (France) 45 - djkyc
+  - 🇫🇷 法国 (France) 46 - djkyc
+  - 🇫🇷 法国 (France) 47 - djkyc
+  - 🇫🇷 法国 (France) 48 - djkyc
+  - 🇫🇷 法国 (France) 49 - djkyc
+  - 🇫🇷 法国 (France) 50 - djkyc
+  - 🇫🇷 法国 (France) 51 - djkyc
+  - 🇫🇷 法国 (France) 52 - djkyc
+  - 🇫🇷 法国 (France) 53 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -349,5 +657,31 @@ proxy-groups:
   - 🇫🇷 法国 (France) 25 - djkyc
   - 🇫🇷 法国 (France) 26 - djkyc
   - 🇫🇷 法国 (France) 27 - djkyc
+  - 🇫🇷 法国 (France) 28 - djkyc
+  - 🇫🇷 法国 (France) 29 - djkyc
+  - 🇫🇷 法国 (France) 30 - djkyc
+  - 🇫🇷 法国 (France) 31 - djkyc
+  - 🇫🇷 法国 (France) 32 - djkyc
+  - 🇫🇷 法国 (France) 33 - djkyc
+  - 🇫🇷 法国 (France) 34 - djkyc
+  - 🇫🇷 法国 (France) 35 - djkyc
+  - 🇫🇷 法国 (France) 36 - djkyc
+  - 🇫🇷 法国 (France) 37 - djkyc
+  - 🇫🇷 法国 (France) 38 - djkyc
+  - 🇫🇷 法国 (France) 39 - djkyc
+  - 🇫🇷 法国 (France) 40 - djkyc
+  - 🇫🇷 法国 (France) 41 - djkyc
+  - 🇫🇷 法国 (France) 42 - djkyc
+  - 🇫🇷 法国 (France) 43 - djkyc
+  - 🇫🇷 法国 (France) 44 - djkyc
+  - 🇫🇷 法国 (France) 45 - djkyc
+  - 🇫🇷 法国 (France) 46 - djkyc
+  - 🇫🇷 法国 (France) 47 - djkyc
+  - 🇫🇷 法国 (France) 48 - djkyc
+  - 🇫🇷 法国 (France) 49 - djkyc
+  - 🇫🇷 法国 (France) 50 - djkyc
+  - 🇫🇷 法国 (France) 51 - djkyc
+  - 🇫🇷 法国 (France) 52 - djkyc
+  - 🇫🇷 法国 (France) 53 - djkyc
 rules:
 - MATCH,PROXIES

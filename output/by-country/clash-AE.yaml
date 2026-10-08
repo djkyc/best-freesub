@@ -5,6 +5,74 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - djkyc
+  server: 157.228.155.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 02 - djkyc
+  server: 31.59.210.24
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: W2OLbQ682PLJ9yHQ21Q0nPJk9U8RuL5YnlP-U1fdQzI
+    short-id: a11023050f134216
+  servername: www.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 03 - djkyc
+  server: 31.59.210.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
+  servername: www.yandex.ru
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 04 - djkyc
+  server: 31.59.210.25
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY
+    short-id: ed435c242097fd05
+  servername: www.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 05 - djkyc
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 06 - djkyc
   server: 157.228.155.185
   port: 443
   udp: true
@@ -17,79 +85,7 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - djkyc
-  server: 157.228.155.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03 - djkyc
-  server: eu86.vaultberry.cloud
-  port: 443
-  udp: true
-  type: vless
-  uuid: 73bec071-8d42-4294-a453-de168627649b
-  tls: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-    short-id: 1ed136481e0ede74
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - djkyc
-  server: eu86.vaultberry.cloud
-  port: 443
-  udp: true
-  type: vless
-  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
-  tls: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-    short-id: 1ed136481e0ede74
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - djkyc
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 06 - djkyc
-  server: 217.60.183.239
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  servername: ge-s-1.pythonmakemigreat.wiki
-  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 07 - djkyc
-  server: 94.183.193.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
-  tls: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-    short-id: 1ed136481e0ede74
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 08 - djkyc
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -100,35 +96,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - djkyc
-  server: 31.59.210.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
-  servername: www.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 10 - djkyc
-  server: 146.70.102.82
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 11 - djkyc
+- name: 🇦🇪 阿联酋 (UAE) 08 - djkyc
   server: 31.59.210.26
   port: 2088
   udp: true
@@ -143,6 +111,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 09 - djkyc
+  server: 146.70.102.82
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
+    short-id: 002fb4ec7b3088cc
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -157,8 +138,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - djkyc
   - 🇦🇪 阿联酋 (UAE) 08 - djkyc
   - 🇦🇪 阿联酋 (UAE) 09 - djkyc
-  - 🇦🇪 阿联酋 (UAE) 10 - djkyc
-  - 🇦🇪 阿联酋 (UAE) 11 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -173,7 +152,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - djkyc
   - 🇦🇪 阿联酋 (UAE) 08 - djkyc
   - 🇦🇪 阿联酋 (UAE) 09 - djkyc
-  - 🇦🇪 阿联酋 (UAE) 10 - djkyc
-  - 🇦🇪 阿联酋 (UAE) 11 - djkyc
 rules:
 - MATCH,PROXIES
