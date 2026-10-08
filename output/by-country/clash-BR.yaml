@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
-  server: p141.panda001.net
-  port: 4652
+- name: 🇧🇷 巴西 (Brazil) 01 - djkyc
+  server: brb.nnpy.org
+  port: 11100
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: hysteria2
+  password: df8d55f9-fb51-442d-902a-bf8160dc051b
+  sni: brb.nnpy.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+  - 🇧🇷 巴西 (Brazil) 01 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+  - 🇧🇷 巴西 (Brazil) 01 - djkyc
 rules:
 - MATCH,PROXIES

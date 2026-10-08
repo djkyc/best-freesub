@@ -14,7 +14,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -28,24 +28,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - djkyc",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - djkyc",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - djkyc",
       "server": "13.143.174.97",
       "server_port": 2083,
       "uuid": "cfae6477-e8ad-4114-8efd-a7c3e5d8a05b",
@@ -60,37 +44,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - djkyc",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 02 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 03 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 04 - djkyc"
+        "🇸🇪 瑞典 (Sweden) 02 - djkyc"
       ]
     },
     {
@@ -98,9 +57,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 02 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 03 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 04 - djkyc"
+        "🇸🇪 瑞典 (Sweden) 02 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
