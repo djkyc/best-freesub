@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - djkyc
-  server: freesocks.work
-  port: 2053
+  server: uk2-2.998998.best
+  port: 443
   udp: true
-  type: vless
-  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: uwu.blueknightnet.qzz.io
+  servername: server3.9966338.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /waetasiuofguiwer
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: server3.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
