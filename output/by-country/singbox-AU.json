@@ -4,20 +4,68 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
-      "server": "vpn-au-001.fastervpn.world",
+      "server": "130.250.137.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
+      "server": "104.18.155.229",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/au-do",
+        "headers": {
+          "Host": "www.genflix.co.id.r3xxe.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
+      "server": "208.103.161.5",
+      "server_port": 443,
+      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
+      "tls": {
+        "enabled": true,
+        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -33,8 +81,9 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
       "server": "159.13.42.167",
+      "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
@@ -44,15 +93,11 @@
       "obfs": {
         "type": "salamander",
         "password": "b42d90fa667942aebc734d60"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
+      }
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - djkyc",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -72,6 +117,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 07 - djkyc",
+      "server": "vpn-au-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-au-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -79,7 +136,10 @@
         "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 04 - djkyc"
+        "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 06 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 07 - djkyc"
       ]
     },
     {
@@ -89,7 +149,10 @@
         "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 04 - djkyc"
+        "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 06 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 07 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

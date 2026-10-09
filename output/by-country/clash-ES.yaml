@@ -16,23 +16,15 @@ proxies:
     public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 02 - djkyc
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 03 - djkyc
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 04 - djkyc
+- name: 🇪🇸 西班牙 (Spain) 03 - djkyc
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -43,7 +35,15 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 04 - djkyc
+  server: 185.174.137.172
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 05 - djkyc
   server: 138.124.62.158
   port: 443
@@ -69,7 +69,36 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
+- name: 🇪🇸 西班牙 (Spain) 07 - djkyc
+  server: 185.220.249.44
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 6d1590ed-4c0f-4bbc-931d-2431737615dd
+  tls: true
+  servername: 185.220.249.44
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /ws-cdn1-vless
+    headers:
+      Host: es.fastmirror-labs.xyz
+- name: 🇪🇸 西班牙 (Spain) 08 - djkyc
+  server: 217.26.30.125
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 4f466863-b6c5-4fdc-955e-7a601c18d89a
+  tls: true
+  reality-opts:
+    public-key: EuRD8QK-uL3uQqnQ_IC2Ybj7v8feXRxCiEaXYjhHx3c
+  servername: yahoo.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,6 +110,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - djkyc
   - 🇪🇸 西班牙 (Spain) 05 - djkyc
   - 🇪🇸 西班牙 (Spain) 06 - djkyc
+  - 🇪🇸 西班牙 (Spain) 07 - djkyc
+  - 🇪🇸 西班牙 (Spain) 08 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +123,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - djkyc
   - 🇪🇸 西班牙 (Spain) 05 - djkyc
   - 🇪🇸 西班牙 (Spain) 06 - djkyc
+  - 🇪🇸 西班牙 (Spain) 07 - djkyc
+  - 🇪🇸 西班牙 (Spain) 08 - djkyc
 rules:
 - MATCH,PROXIES
