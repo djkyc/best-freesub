@@ -4,124 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - djkyc",
-      "server": "46.17.42.141",
-      "server_port": 50660,
-      "method": "aes-256-gcm",
-      "password": "6b39ae3234dfd68b"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - djkyc",
-      "server": "188.114.97.3",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "newwk1.f1w.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "newwk1.f1w.de5.net"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - djkyc",
-      "server": "46.17.45.31",
-      "server_port": 50660,
-      "method": "aes-256-gcm",
-      "password": "bdb313adf74c2ede"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - djkyc",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2ð\\x9f\\x87¨ð\\x9f\\x87³",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - djkyc",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
-      "server": "43.161.230.103",
-      "server_port": 8443,
-      "password": "HysTeria2026!Proxy",
-      "tls": {
-        "enabled": true,
-        "server_name": "mz.hkychina.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - djkyc",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - djkyc",
-      "server": "vpn-hk-004.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-hk-004.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - djkyc",
-      "server": "jumpernode.site",
-      "server_port": 443,
-      "uuid": "23af32ca-bea1-4a5e-bebb-04d1b1b633bc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "p-nt-www-amazon-com-kalias.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE",
-          "short_id": "6d962e8d8a0dce"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - djkyc",
       "server": "82.29.36.250",
       "server_port": 443,
       "uuid": "41a7af38-0bb1-4493-aa8d-634af0c2548b",
@@ -141,20 +25,84 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - djkyc",
-      "server": "2.27.109.179",
-      "server_port": 45464,
-      "password": "XuMweB2PWs",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - djkyc",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "2.27.109.179.sslip.io",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - djkyc",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/oneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - djkyc",
+      "server": "130.94.33.80",
+      "server_port": 443,
+      "uuid": "218ae360-0e5f-4856-91f3-1823adfc9037",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.sepporated.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "hk.sepporated.com"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - djkyc",
+      "server": "43.161.230.103",
+      "server_port": 8443,
+      "password": "HysTeria2026!Proxy",
+      "tls": {
+        "enabled": true,
+        "server_name": "mz.hkychina.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
+      "server": "jumpernode.site",
+      "server_port": 443,
+      "uuid": "23af32ca-bea1-4a5e-bebb-04d1b1b633bc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "p-nt-www-amazon-com-kalias.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE",
+          "short_id": "6d962e8d8a0dce"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - djkyc",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - djkyc",
       "server": "yg1.ygkkk.dpdns.org",
       "server_port": 443,
       "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
@@ -173,44 +121,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - djkyc",
-      "server": "nas.aizhzo.com",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
-      "tls": {
-        "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 14 - djkyc",
-      "server": "hk2.998998.best",
-      "server_port": 443,
-      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "server15.9966338.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/asivewritten",
-        "headers": {
-          "Host": "server15.9966338.xyz"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 15 - djkyc",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - djkyc",
       "server": "3696b38bsg.murphyweb.sbs",
       "server_port": 32134,
       "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4",
@@ -230,6 +142,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - djkyc",
+      "server": "46.17.45.31",
+      "server_port": 50660,
+      "method": "aes-256-gcm",
+      "password": "bdb313adf74c2ede"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -242,13 +162,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 07 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 08 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 09 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 10 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 11 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 12 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 13 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 14 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 15 - djkyc"
+        "🇭🇰 中国香港 (Hong Kong) 09 - djkyc"
       ]
     },
     {
@@ -263,13 +177,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 07 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 08 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 09 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 10 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 11 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 12 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 13 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 14 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 15 - djkyc"
+        "🇭🇰 中国香港 (Hong Kong) 09 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

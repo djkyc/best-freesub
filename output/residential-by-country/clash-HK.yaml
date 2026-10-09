@@ -13,7 +13,7 @@ proxies:
   sni: images.ctfassets.net
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - djkyc
-  server: t4.qifei.app
+  server: 42.200.173.5
   port: 443
   udp: true
   type: vless

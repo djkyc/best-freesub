@@ -5,21 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - djkyc
-  server: 77.74.123.101
+  server: 77.74.123.99
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - djkyc
-  server: 185.156.44.99
+  server: 162.249.125.133
   port: 443
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.amazon.com
-  skip-cert-verify: true
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - djkyc
   server: hy2-new.aspidnet.xyz
   port: 443
@@ -42,18 +44,8 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - djkyc
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - djkyc
   server: 146.70.124.85
   port: 443
   udp: true
@@ -66,13 +58,22 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - djkyc
-  server: 154.46.31.106
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - djkyc
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - djkyc
+  server: 194.87.6.192
+  port: 2097
+  udp: true
+  type: trojan
+  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
+  sni: ger6.fytpn.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

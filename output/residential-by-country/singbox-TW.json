@@ -4,27 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - djkyc",
-      "server": "tw8.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw8.dexlos.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc",
-      "server": "61.230.162.88",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - djkyc",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -32,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -46,16 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
