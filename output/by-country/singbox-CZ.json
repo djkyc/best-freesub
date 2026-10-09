@@ -16,16 +16,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16280,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - djkyc",
+      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
       "server": "194.87.6.192",
       "server_port": 56789,
       "uuid": "a889fba5-5472-4022-a6b4-9710157fda2f",
@@ -46,7 +38,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇨🇿 捷克 (Czech) 04 - djkyc",
+      "tag": "🇨🇿 捷克 (Czech) 03 - djkyc",
       "server": "ger6.fytpn.com",
       "server_port": 2097,
       "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
@@ -63,8 +55,7 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - djkyc",
         "🇨🇿 捷克 (Czech) 02 - djkyc",
-        "🇨🇿 捷克 (Czech) 03 - djkyc",
-        "🇨🇿 捷克 (Czech) 04 - djkyc"
+        "🇨🇿 捷克 (Czech) 03 - djkyc"
       ]
     },
     {
@@ -73,8 +64,7 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - djkyc",
         "🇨🇿 捷克 (Czech) 02 - djkyc",
-        "🇨🇿 捷克 (Czech) 03 - djkyc",
-        "🇨🇿 捷克 (Czech) 04 - djkyc"
+        "🇨🇿 捷克 (Czech) 03 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

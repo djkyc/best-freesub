@@ -7,41 +7,38 @@
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - djkyc",
       "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc",
-      "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "estproxy4.lockdwn.com"
-        }
+        "path": "/"
       }
     },
     {
       "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
         "server_name": "109.206.241.10",
-        "insecure": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -54,7 +51,10 @@
       "tls": {
         "enabled": true,
         "server_name": "fdghyt.com",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
@@ -67,21 +67,21 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
-      "server": "31.76.70.225",
-      "server_port": 7443,
-      "uuid": "8ff3db5a-5f41-4f25-a8a4-7fbf00f1c319",
+      "server": "93.89.220.37",
+      "server_port": 443,
+      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
+        "server_name": "ibm.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
-          "short_id": "d2061bb1"
+          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
+          "short_id": "e88cb983f3c97528"
         }
       }
     },
@@ -102,6 +102,48 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc",
+      "server": "ee.edgemedia.lol",
+      "server_port": 7443,
+      "uuid": "8ff3db5a-5f41-4f25-a8a4-7fbf00f1c319",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - djkyc",
+      "server": "stoniy.fytpn.com",
+      "server_port": 56789,
+      "uuid": "a889fba5-5472-4022-a6b4-9710157fda2f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "stoniy.fytpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ",
+          "short_id": "a2aa"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -111,7 +153,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - djkyc"
       ]
     },
     {
@@ -123,7 +167,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
