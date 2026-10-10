@@ -12,51 +12,33 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - djkyc
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+- name: 🇫🇮 芬兰 (Finland) 03 - djkyc
   server: 185.103.110.66
   port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 03 - djkyc
-  server: 2.26.106.232
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
-  tls: true
-  reality-opts:
-    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
-    short-id: 07f508fe5d2355d3
-  servername: finland02.azotvpn.xyz
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
 - name: 🇫🇮 芬兰 (Finland) 04 - djkyc
-  server: 144.31.212.253
+  server: 65.108.3.59
   port: 443
   udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: 144.31.212.253
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 05 - djkyc
-  server: 87.228.92.114
-  port: 25481
-  udp: true
   type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 06 - djkyc
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - djkyc
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -67,21 +49,23 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 07 - djkyc
-  server: 144.31.27.215
-  port: 43000
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - djkyc
+  server: 87.228.92.114
+  port: 25481
   udp: true
   type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   tls: true
   reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 08 - djkyc
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  servername: www.bing.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8cb5baa18cd7
+- name: 🇫🇮 芬兰 (Finland) 07 - djkyc
   server: 195.226.92.129
   port: 8446
   udp: true
@@ -94,6 +78,14 @@ proxies:
     short-id: 7bac4b112d30d1
   servername: amd.com
   client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 08 - djkyc
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 09 - djkyc
   server: 170.168.4.59
   port: 17170
@@ -108,29 +100,46 @@ proxies:
   grpc-opts:
     grpc-service-name: trail-grpc
 - name: 🇫🇮 芬兰 (Finland) 10 - djkyc
-  server: 65.108.3.59
+  server: 45.133.151.188
   port: 443
   udp: true
   type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  tls: true
+  reality-opts:
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
+- name: 🇫🇮 芬兰 (Finland) 11 - djkyc
+  server: specific.to1.task-hit.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 11 - djkyc
-  server: 65.108.3.59
-  port: 443
+    public-key: nAC29oXt_go8eVQerHBtS2da2WmcExd9V7jI0Om-wE4
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 12 - djkyc
+  server: 83.220.175.235
+  port: 2096
   udp: true
   type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
+  uuid: f13b36ac-3765-4458-8a4d-08575038c463
   tls: true
-  servername: web.eitaa.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,6 +156,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - djkyc
   - 🇫🇮 芬兰 (Finland) 10 - djkyc
   - 🇫🇮 芬兰 (Finland) 11 - djkyc
+  - 🇫🇮 芬兰 (Finland) 12 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -163,5 +173,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - djkyc
   - 🇫🇮 芬兰 (Finland) 10 - djkyc
   - 🇫🇮 芬兰 (Finland) 11 - djkyc
+  - 🇫🇮 芬兰 (Finland) 12 - djkyc
 rules:
 - MATCH,PROXIES

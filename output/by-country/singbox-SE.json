@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - djkyc",
+      "server": "62.60.159.81",
+      "server_port": 2053,
+      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
+          "short_id": "d0ea1847066af5a6"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpce5bb9e71"
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - djkyc",
       "server": "svip.skycon808.com",
       "server_port": 60005,
       "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
@@ -16,35 +40,23 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - djkyc",
-      "server": "sweedenqfds777.qcloud.surf",
-      "server_port": 21223,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "sweedenqfds777.qcloud.surf",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - djkyc",
-      "server": "144.31.62.170",
+      "server": "specific3.kandnet.com",
       "server_port": 443,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "uuid": "621bcb9e-7df5-427b-a9d4-6e87223c8bca",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de2.srv.vbuste.ru",
+        "server_name": "specific3.kandnet.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
+          "public_key": "0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw",
+          "short_id": ""
         }
       }
     },
@@ -60,7 +72,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
