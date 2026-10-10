@@ -16,8 +16,16 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - djkyc
+  server: tttyder.wsone.icu
+  port: 443
+  udp: true
+  type: trojan
+  password: M7v%w11Se*
+  sni: tttyder.wsone.icu
+  skip-cert-verify: false
+- name: 🇮🇳 印度 (India) 03 - djkyc
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -28,15 +36,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - djkyc
-  server: 35.244.28.130
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: tttyder.wsone.icu
-  skip-cert-verify: false
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 04 - djkyc
   server: 152.67.8.205
   port: 80
@@ -48,8 +48,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 152.67.8.205
 proxy-groups:
 - name: PROXIES
   type: select

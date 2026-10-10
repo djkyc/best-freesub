@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -30,6 +30,27 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - djkyc",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - djkyc",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -38,7 +59,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -49,40 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - djkyc",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-      "server": "162.249.126.42",
-      "server_port": 9443,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
-      "tls": {
-        "enabled": true,
-        "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - djkyc",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -102,14 +90,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - djkyc",
-      "server": "tumspr.azad0namah.ir",
-      "server_port": 5566,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "8NwabdWBXK1q1QaBhF69rw==:Lzvg7nuGDOIqso68553eNQ=="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -117,9 +97,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - djkyc",
         "🇹🇷 土耳其 (Turkey) 02 - djkyc",
         "🇹🇷 土耳其 (Turkey) 03 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 06 - djkyc"
+        "🇹🇷 土耳其 (Turkey) 04 - djkyc"
       ]
     },
     {
@@ -129,9 +107,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - djkyc",
         "🇹🇷 土耳其 (Turkey) 02 - djkyc",
         "🇹🇷 土耳其 (Turkey) 03 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 06 - djkyc"
+        "🇹🇷 土耳其 (Turkey) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
