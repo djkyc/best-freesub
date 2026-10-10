@@ -13,25 +13,31 @@ proxies:
   password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - djkyc
   server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - djkyc
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - djkyc
-  server: 213.183.63.60
   port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - djkyc
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - djkyc
+  server: 136.175.82.85
+  port: 18775
+  udp: true
+  type: vless
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - djkyc
   server: 213.183.63.60
   port: 9066
@@ -48,12 +54,26 @@ proxies:
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - djkyc
   server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - djkyc
+  server: 213.183.63.60
   port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - djkyc
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - djkyc
+  server: 213.183.63.60
+  port: 9030
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - djkyc
   server: 194.226.121.119
   port: 2087
   udp: true
@@ -68,19 +88,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - djkyc
-  server: 136.175.82.85
-  port: 18775
-  udp: true
-  type: vless
-  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +102,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - djkyc
   - 🇧🇬 保加利亚 (Bulgaria) 08 - djkyc
   - 🇧🇬 保加利亚 (Bulgaria) 09 - djkyc
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,5 +117,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - djkyc
   - 🇧🇬 保加利亚 (Bulgaria) 08 - djkyc
   - 🇧🇬 保加利亚 (Bulgaria) 09 - djkyc
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - djkyc
 rules:
 - MATCH,PROXIES

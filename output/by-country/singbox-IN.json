@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 01 - djkyc",
-      "server": "tttyder.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - djkyc",
+      "tag": "🇮🇳 印度 (India) 01 - djkyc",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -42,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - djkyc",
+      "tag": "🇮🇳 印度 (India) 02 - djkyc",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -61,6 +45,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 03 - djkyc",
+      "server": "35.244.28.130",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "tttyder.wsone.icu",
+        "insecure": false
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇮🇳 印度 (India) 04 - djkyc",
       "server": "152.67.8.205",
@@ -68,22 +64,10 @@
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
       "security": "auto",
       "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 05 - djkyc",
-      "server": "hyfuuf6.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
         }
       }
     },
@@ -95,8 +79,7 @@
         "🇮🇳 印度 (India) 01 - djkyc",
         "🇮🇳 印度 (India) 02 - djkyc",
         "🇮🇳 印度 (India) 03 - djkyc",
-        "🇮🇳 印度 (India) 04 - djkyc",
-        "🇮🇳 印度 (India) 05 - djkyc"
+        "🇮🇳 印度 (India) 04 - djkyc"
       ]
     },
     {
@@ -106,8 +89,7 @@
         "🇮🇳 印度 (India) 01 - djkyc",
         "🇮🇳 印度 (India) 02 - djkyc",
         "🇮🇳 印度 (India) 03 - djkyc",
-        "🇮🇳 印度 (India) 04 - djkyc",
-        "🇮🇳 印度 (India) 05 - djkyc"
+        "🇮🇳 印度 (India) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
