@@ -4,55 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc",
-      "server": "61.18.134.10",
-      "server_port": 443,
-      "uuid": "e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
-      "tls": {
-        "enabled": true,
-        "server_name": "mswo-gy191m.zhiyuantech.cloud",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
-        "headers": {
-          "Host": "mswo-gy191m.zhiyuantech.cloud"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 (家宽) - djkyc",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - djkyc",
-      "server": "t4.qifei.app",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc",
+      "server": "42.200.173.5",
       "server_port": 443,
       "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
       "flow": "xtls-rprx-vision",
@@ -72,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc",
       "server": "61.230.162.88",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -91,73 +69,26 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 (家宽) - djkyc",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.huhiuh.space",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc",
-      "server": "56481.df6h451rh.xin",
-      "server_port": 443,
-      "password": "6725d134ee80",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 08 (家宽) - djkyc",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc",
-        "🇩🇪 德国 (Germany) 02 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc",
-        "🇸🇬 新加坡 (Singapore) 06 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc",
-        "🇰🇷 韩国 (South Korea) 08 (家宽) - djkyc"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc",
-        "🇩🇪 德国 (Germany) 02 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc",
-        "🇸🇬 新加坡 (Singapore) 06 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc",
-        "🇰🇷 韩国 (South Korea) 08 (家宽) - djkyc"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

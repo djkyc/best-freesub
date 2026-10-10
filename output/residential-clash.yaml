@@ -4,38 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc
-  server: 61.18.134.10
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-  tls: true
-  servername: mswo-gy191m.zhiyuantech.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-    headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇩🇪 德国 (Germany) 02 (家宽) - djkyc
-  server: 209.38.238.229
-  port: 20202
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - djkyc
-  server: t4.qifei.app
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc
+  server: 42.200.173.5
   port: 443
   udp: true
   type: vless
@@ -47,7 +38,7 @@ proxies:
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
   client-fingerprint: random
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
   server: 61.230.162.88
   port: 24215
   udp: true
@@ -58,62 +49,25 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - djkyc
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc
-  server: 56481.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 6725d134ee80
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - djkyc
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc
-  - 🇩🇪 德国 (Germany) 02 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc
-  - 🇩🇪 德国 (Germany) 02 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - djkyc
 rules:
 - MATCH,PROXIES

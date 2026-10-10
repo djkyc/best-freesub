@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - djkyc",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - djkyc",
       "server": "179.255.191.86",
       "server_port": 443,
       "uuid": "12e95f93-443c-45f0-9a2a-5b318b9124cf",
@@ -26,8 +38,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - djkyc",
-      "server": "82.38.64.239",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - djkyc",
+      "server": "82.38.64.237",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
@@ -35,14 +47,6 @@
         "server_name": "hopp-swizland-new.mysynology.net",
         "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - djkyc",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "vless",
@@ -55,7 +59,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -76,7 +80,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -104,18 +108,6 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 07 - djkyc",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - djkyc",
       "server": "208.69.78.217",
       "server_port": 8444,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -131,7 +123,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - djkyc",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - djkyc",
       "server": "208.69.78.217",
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
@@ -147,6 +139,14 @@
         "21000:21199",
         "33000:33199"
       ]
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 - djkyc",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "selector",

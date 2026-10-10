@@ -4,25 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - djkyc",
-      "server": "022xw1dmczg0c6165pcla6.tomborn69.workers.dev",
-      "server_port": 443,
-      "uuid": "5d4f5139-6965-42ed-8dba-fe3ef9fed7c1",
-      "tls": {
-        "enabled": true,
-        "server_name": "022xw1dmczg0c6165pcla6.tomborn69.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/fw89i0TpKDRV7i25w2uWIf?ed=2560"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
-      "server": "95.85.238.173",
+      "tag": "🇨🇿 捷克 (Czech) 01 - djkyc",
+      "server": "cz.h2.cleanersaz.help",
       "server_port": 443,
       "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
       "tls": {
@@ -32,61 +16,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - djkyc",
-      "server": "194.87.6.192",
-      "server_port": 56789,
-      "uuid": "a889fba5-5472-4022-a6b4-9710157fda2f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ger6.fytpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ",
-          "short_id": "a2aa"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇿 捷克 (Czech) 04 - djkyc",
-      "server": "ger6.fytpn.com",
-      "server_port": 2097,
-      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
-      "tls": {
-        "enabled": true,
-        "server_name": "ger6.fytpn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - djkyc",
-        "🇨🇿 捷克 (Czech) 02 - djkyc",
-        "🇨🇿 捷克 (Czech) 03 - djkyc",
-        "🇨🇿 捷克 (Czech) 04 - djkyc"
+        "🇨🇿 捷克 (Czech) 01 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - djkyc",
-        "🇨🇿 捷克 (Czech) 02 - djkyc",
-        "🇨🇿 捷克 (Czech) 03 - djkyc",
-        "🇨🇿 捷克 (Czech) 04 - djkyc"
+        "🇨🇿 捷克 (Czech) 01 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - djkyc",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
@@ -23,37 +23,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
       "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
-      "server": "195.238.126.20",
       "server_port": 9001,
       "method": "aes-256-cfb",
       "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
-      "server": "195.238.126.84",
-      "server_port": 9039,
-      "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -61,7 +45,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
       "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
@@ -69,7 +53,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - djkyc",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - djkyc",
       "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
@@ -87,8 +79,7 @@
         "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 07 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 08 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 09 - djkyc"
+        "🇱🇹 立陶宛 (Lithuania) 08 - djkyc"
       ]
     },
     {
@@ -102,8 +93,7 @@
         "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 07 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 08 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 09 - djkyc"
+        "🇱🇹 立陶宛 (Lithuania) 08 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
