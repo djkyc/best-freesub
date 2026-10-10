@@ -23,17 +23,30 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - djkyc",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - djkyc",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "server": "136.175.82.85",
+      "server_port": 18775,
+      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -52,29 +65,40 @@
       "password": "aLpQtfEZe445QyHk"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - djkyc",
-      "server": "136.175.82.85",
-      "server_port": 18775,
-      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
-          "short_id": ""
-        }
-      }
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - djkyc",
+      "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - djkyc",
+      "server": "213.183.63.60",
+      "server_port": 9030,
+      "method": "aes-256-cfb",
+      "password": "GeregetR8cvQHzYr"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - djkyc",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - djkyc",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - djkyc",
       "server": "93.152.223.201",
       "server_port": 443,
       "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
@@ -100,7 +124,10 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - djkyc",
         "🇧🇬 保加利亚 (Bulgaria) 06 - djkyc",
         "🇧🇬 保加利亚 (Bulgaria) 07 - djkyc",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - djkyc"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - djkyc",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - djkyc",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - djkyc",
+        "🇧🇬 保加利亚 (Bulgaria) 11 - djkyc"
       ]
     },
     {
@@ -114,7 +141,10 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - djkyc",
         "🇧🇬 保加利亚 (Bulgaria) 06 - djkyc",
         "🇧🇬 保加利亚 (Bulgaria) 07 - djkyc",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - djkyc"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - djkyc",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - djkyc",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - djkyc",
+        "🇧🇬 保加利亚 (Bulgaria) 11 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

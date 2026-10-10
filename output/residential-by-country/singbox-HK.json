@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "mswo-gy191m.zhiyuantech.cloud",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -39,7 +43,7 @@
         "reality": {
           "enabled": true,
           "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
-          "short_id": ""
+          "short_id": "1a"
         }
       }
     },

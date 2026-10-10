@@ -22,20 +22,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: random
-- name: 🇻🇳 越南 (Vietnam) 03 - djkyc
-  server: 2610sgdodo.volkvpn.com
-  port: 20880
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-    short-id: bb82c8
-  servername: www.tesla.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - djkyc
   - 🇻🇳 越南 (Vietnam) 02 - djkyc
-  - 🇻🇳 越南 (Vietnam) 03 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - djkyc
   - 🇻🇳 越南 (Vietnam) 02 - djkyc
-  - 🇻🇳 越南 (Vietnam) 03 - djkyc
 rules:
 - MATCH,PROXIES
