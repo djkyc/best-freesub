@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - djkyc",
+      "server": "109.176.239.123",
+      "server_port": 443,
+      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
+      "tls": {
+        "enabled": true,
+        "server_name": "notls.lukongtou.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "notls.lukongtou.eu.org"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - djkyc",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - djkyc",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -24,14 +47,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - djkyc"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - djkyc",
+        "🇺🇸 美国 (United States) 02 (家宽) - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - djkyc"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - djkyc",
+        "🇺🇸 美国 (United States) 02 (家宽) - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

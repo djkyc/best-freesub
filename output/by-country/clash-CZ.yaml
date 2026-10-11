@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - djkyc
-  server: ade.axiomed.ir
+  server: chatgpt.com
   port: 443
   udp: true
   type: vless
-  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
+  uuid: 64726966-0000-4000-8000-740000000000
   tls: true
-  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
+    path: /drift
     headers:
-      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - djkyc
   server: 95.85.238.173
   port: 443

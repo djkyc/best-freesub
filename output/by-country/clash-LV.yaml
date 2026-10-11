@@ -6,33 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - djkyc
   server: 185.135.86.175
-  port: 9082
+  port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - djkyc
-  server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - djkyc
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - djkyc
-  server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - djkyc
   server: 138.124.180.137
   port: 443
   udp: true
@@ -44,22 +23,57 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - djkyc
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - djkyc
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - djkyc
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - djkyc
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - djkyc
   server: 185.135.86.175
   port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - djkyc
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - djkyc
   server: 185.135.86.175
-  port: 9068
+  port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - djkyc
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - djkyc
+  server: 185.135.86.175
+  port: 9007
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
+- name: 🇱🇻 拉脱维亚 (Latvia) 10 - djkyc
   server: 216.173.71.43
   port: 443
   udp: true
@@ -71,22 +85,15 @@ proxies:
     public-key: miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08
     short-id: 0da7e14db353e7d0
   servername: lv.nztvpn.com
-  client-fingerprint: safari
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - djkyc
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 10 - djkyc
-  server: 185.135.86.175
-  port: 9034
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 11 - djkyc
+  server: 185.135.86.175
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - djkyc
   server: 195.123.213.28
   port: 443
   udp: true
@@ -98,8 +105,8 @@ proxies:
     public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 12 - djkyc
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - djkyc
   server: 31.57.106.241
   port: 443
   udp: true
@@ -129,6 +136,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 10 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 11 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 12 - djkyc
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -146,5 +154,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 10 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 11 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 12 - djkyc
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - djkyc
 rules:
 - MATCH,PROXIES

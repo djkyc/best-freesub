@@ -6,7 +6,35 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - djkyc",
-      "server": "178.17.57.120",
+      "server": "188.114.96.3",
+      "server_port": 80,
+      "uuid": "7201b2cd-0675-4c1a-9c76-07ca14ffcf08",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiMm40VHVzc2JqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "headers": {
+          "Host": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - djkyc",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "ffa431ab-a59b-4092-a418-905fcb1e4d5f",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560",
+        "headers": {
+          "Host": "s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 03 - djkyc",
+      "server": "arcturus.yokkastars.com",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
@@ -15,7 +43,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +57,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - djkyc"
+        "🇮🇶 IQ 01 - djkyc",
+        "🇮🇶 IQ 02 - djkyc",
+        "🇮🇶 IQ 03 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - djkyc"
+        "🇮🇶 IQ 01 - djkyc",
+        "🇮🇶 IQ 02 - djkyc",
+        "🇮🇶 IQ 03 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
