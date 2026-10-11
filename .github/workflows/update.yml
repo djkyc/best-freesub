@@ -2,8 +2,8 @@ name: Update Subscriptions
 
 on:
   schedule:
-    # 每天在 UTC 时间 0:00, 6:00, 12:00, 18:00 自动触发更新
-    - cron: '25 */11 * * *'
+    # 每天在 UTC 时间 0:23, 6:23, 12:23, 18:23, 21:23 自动触发更新
+    - cron: '23 0,6,12,18,21 * * *'
   workflow_dispatch: # 支持手动点击运行
 
 jobs:
