@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - djkyc",
-      "server": "77.74.123.108",
+      "server": "77.74.123.107",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -18,27 +18,6 @@
     {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - djkyc",
-      "server": "146.70.124.85",
-      "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - djkyc",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -54,6 +33,27 @@
           "enabled": true,
           "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
           "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - djkyc",
+      "server": "146.70.124.85",
+      "server_port": 443,
+      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
+          "short_id": "fe24f8a0a560056e"
         }
       }
     },
@@ -74,45 +74,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - djkyc",
-      "server": "glazatushi.yandex-api.com",
-      "server_port": 443,
-      "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "glazatushi.yandex-api.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ",
-          "short_id": "a9dc98a7dc87a7dc"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - djkyc",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - djkyc",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - djkyc",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
@@ -123,9 +94,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - djkyc",
         "🇷🇴 罗马尼亚 (Romania) 03 - djkyc",
         "🇷🇴 罗马尼亚 (Romania) 04 - djkyc",
-        "🇷🇴 罗马尼亚 (Romania) 05 - djkyc",
-        "🇷🇴 罗马尼亚 (Romania) 06 - djkyc",
-        "🇷🇴 罗马尼亚 (Romania) 07 - djkyc"
+        "🇷🇴 罗马尼亚 (Romania) 05 - djkyc"
       ]
     },
     {
@@ -136,9 +105,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - djkyc",
         "🇷🇴 罗马尼亚 (Romania) 03 - djkyc",
         "🇷🇴 罗马尼亚 (Romania) 04 - djkyc",
-        "🇷🇴 罗马尼亚 (Romania) 05 - djkyc",
-        "🇷🇴 罗马尼亚 (Romania) 06 - djkyc",
-        "🇷🇴 罗马尼亚 (Romania) 07 - djkyc"
+        "🇷🇴 罗马尼亚 (Romania) 05 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

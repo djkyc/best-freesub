@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - djkyc
-  server: 188.114.96.3
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiMm40VHVzc2JqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
-    headers:
-      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
-- name: 🇮🇶 IQ 02 - djkyc
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
-  network: ws
-  ws-opts:
-    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
-    headers:
-      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
-- name: 🇮🇶 IQ 03 - djkyc
   server: arcturus.yokkastars.com
   port: 40443
   udp: true
@@ -38,22 +16,18 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - djkyc
-  - 🇮🇶 IQ 02 - djkyc
-  - 🇮🇶 IQ 03 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - djkyc
-  - 🇮🇶 IQ 02 - djkyc
-  - 🇮🇶 IQ 03 - djkyc
 rules:
 - MATCH,PROXIES

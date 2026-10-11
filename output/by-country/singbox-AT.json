@@ -14,7 +14,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇹 奥地利 (Austria) 02 - djkyc",
-      "server": "5.254.51.108",
+      "server": "5.254.51.109",
       "server_port": 9443,
       "password": "Hc9_NX924RE_Mn948rgrwiub_m93V84nll",
       "tls": {
@@ -26,7 +26,7 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - djkyc",
-      "server": "80.87.194.253",
+      "server": "80.87.194.252",
       "server_port": 2096,
       "uuid": "f13b36ac-3765-4458-8a4d-08575038c463",
       "tls": {
@@ -34,7 +34,7 @@
         "server_name": "id.vk.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -48,35 +48,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 04 - djkyc",
-      "server": "kozyavka.yandex-api.com",
-      "server_port": 443,
-      "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "kozyavka.yandex-api.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ",
-          "short_id": "a9dc98a7dc87a7dc"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - djkyc",
         "🇦🇹 奥地利 (Austria) 02 - djkyc",
-        "🇦🇹 奥地利 (Austria) 03 - djkyc",
-        "🇦🇹 奥地利 (Austria) 04 - djkyc"
+        "🇦🇹 奥地利 (Austria) 03 - djkyc"
       ]
     },
     {
@@ -85,8 +63,7 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - djkyc",
         "🇦🇹 奥地利 (Austria) 02 - djkyc",
-        "🇦🇹 奥地利 (Austria) 03 - djkyc",
-        "🇦🇹 奥地利 (Austria) 04 - djkyc"
+        "🇦🇹 奥地利 (Austria) 03 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - djkyc
-  server: 77.74.123.108
+  server: 77.74.123.107
   port: 8443
   udp: true
   type: hysteria2
@@ -13,19 +13,6 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - djkyc
-  server: 146.70.124.85
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - djkyc
   server: 46.28.67.55
   port: 443
   udp: true
@@ -38,6 +25,19 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - djkyc
+  server: 146.70.124.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: random
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - djkyc
   server: hy2-new.aspidnet.xyz
   port: 443
@@ -49,33 +49,13 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - djkyc
-  server: glazatushi.yandex-api.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
-    short-id: a9dc98a7dc87a7dc
-  servername: glazatushi.yandex-api.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - djkyc
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: vk.com
+  sni: css.rbxcdn.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - djkyc
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,8 +66,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 04 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 05 - djkyc
-  - 🇷🇴 罗马尼亚 (Romania) 06 - djkyc
-  - 🇷🇴 罗马尼亚 (Romania) 07 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,7 +76,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 04 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 05 - djkyc
-  - 🇷🇴 罗马尼亚 (Romania) 06 - djkyc
-  - 🇷🇴 罗马尼亚 (Romania) 07 - djkyc
 rules:
 - MATCH,PROXIES

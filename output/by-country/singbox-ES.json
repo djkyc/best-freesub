@@ -4,29 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - djkyc",
-      "server": "185.159.247.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "vms.lifetime59.workers.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - djkyc",
-      "server": "5.188.181.201",
-      "server_port": 9019,
-      "method": "aes-256-cfb",
-      "password": "GA9KzeEgvfxNrgmM"
+      "tag": "🇪🇸 西班牙 (Spain) 01 - djkyc",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - djkyc",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -35,7 +22,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -45,53 +32,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - djkyc",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - djkyc",
-      "server": "5.188.181.201",
-      "server_port": 9029,
-      "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - djkyc",
-      "server": "5.188.181.201",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - djkyc",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - djkyc",
       "server": "185.174.137.172",
       "server_port": 8446,
       "password": "e9dc02d400b67c727aca1620",
@@ -108,12 +50,7 @@
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - djkyc",
         "🇪🇸 西班牙 (Spain) 02 - djkyc",
-        "🇪🇸 西班牙 (Spain) 03 - djkyc",
-        "🇪🇸 西班牙 (Spain) 04 - djkyc",
-        "🇪🇸 西班牙 (Spain) 05 - djkyc",
-        "🇪🇸 西班牙 (Spain) 06 - djkyc",
-        "🇪🇸 西班牙 (Spain) 07 - djkyc",
-        "🇪🇸 西班牙 (Spain) 08 - djkyc"
+        "🇪🇸 西班牙 (Spain) 03 - djkyc"
       ]
     },
     {
@@ -122,12 +59,7 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - djkyc",
         "🇪🇸 西班牙 (Spain) 02 - djkyc",
-        "🇪🇸 西班牙 (Spain) 03 - djkyc",
-        "🇪🇸 西班牙 (Spain) 04 - djkyc",
-        "🇪🇸 西班牙 (Spain) 05 - djkyc",
-        "🇪🇸 西班牙 (Spain) 06 - djkyc",
-        "🇪🇸 西班牙 (Spain) 07 - djkyc",
-        "🇪🇸 西班牙 (Spain) 08 - djkyc"
+        "🇪🇸 西班牙 (Spain) 03 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
