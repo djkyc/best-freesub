@@ -3,7 +3,7 @@ name: Update Subscriptions
 on:
   schedule:
     # 每 3 小时整点自动触发运行一次
-    - cron: '30 */3 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:  # 仅保留手动触发按钮
 
 jobs:
@@ -70,3 +70,72 @@ jobs:
             p "$f"; sleep 0.2
           done
           echo "[+] jsDelivr CDN purge done (after push)"
+
+      - name: Send Telegram Notification
+        if: always()
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          python - <<'EOF'
+          import os
+          import json
+          import urllib.request
+          import urllib.parse
+
+          token = os.environ.get("TG_BOT_TOKEN")
+          chat_id = os.environ.get("TG_CHAT_ID")
+          job_status = os.environ.get("JOB_STATUS")
+
+          if not token or not chat_id:
+              print("[-] Telegram Secrets not configured, skipping notification.")
+              exit(0)
+
+          # 默认统计数据初始化
+          total = 0
+          residential = 0
+          filtered_risk = 0
+          residential_mobile = 0
+          normal_cdn = 0
+
+          # 尝试读取 e2e_test_report.json 获取统计数据
+          try:
+              with open("output/e2e_test_report.json", "r", encoding="utf-8") as f:
+                  report = json.load(f)
+                  # 根据你的 main_v2.py 生成的 json 结构适配字段（如果没有这些字段会采用默认值）
+                  total = report.get("total", report.get("total_nodes", 0))
+                  residential = report.get("residential", report.get("residential_count", 0))
+                  filtered_risk = report.get("filtered_risk", report.get("risk_removed", 0))
+                  residential_mobile = report.get("residential_mobile", report.get("residential_or_mobile", 0))
+                  normal_cdn = report.get("normal_cdn", report.get("normal_count", 0))
+          except Exception as e:
+              print(f"[!] 读取测试报告失败或格式不匹配: {e}")
+
+          status_icon = "✅ 成功" if job_status == "success" else "❌ 失败"
+          
+          msg = (
+              f"<b>订阅更新通知: {status_icon}</b>\n"
+              f"━━━━━━━━━━━━━━━━━━━\n"
+              f"📊 <b>全量节点:</b> <code>{total}</code>\n"
+              f"🏠 <b>家宽节点:</b> <code>{residential}</code>\n"
+              f"🛡️ <b>劫持高风险节点已剔除:</b> <code>{filtered_risk}</code>\n"
+              f"📶 <b>家宽/移动网络节点:</b> <code>{residential_mobile}</code>\n"
+              f"💻 <b>普通(机房/CDN):</b> <code>{normal_cdn}</code>\n"
+              f"━━━━━━━━━━━━━━━━━━━"
+          )
+
+          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          data = urllib.parse.urlencode({
+              "chat_id": chat_id,
+              "text": msg,
+              "parse_mode": "HTML"
+          }).encode("utf-8")
+
+          try:
+              req = urllib.request.Request(url, data=data, method="POST")
+              with urllib.request.urlopen(req) as response:
+                  print("[+] Telegram notification sent successfully.")
+          except Exception as e:
+              print(f"[-] Failed to send Telegram notification: {e}")
+          EOF
