@@ -54,7 +54,9 @@ jobs:
             echo "没有节点变动与内容更新。"
           else
             git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
-            git push
+            # 先拉取远程最新变动并变基合并，避免 reject
+            git pull origin main --rebase || true
+            git push origin main
           fi
 
       - name: Purge jsDelivr CDN (post-push)
