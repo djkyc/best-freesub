@@ -1,9 +1,7 @@
 name: Update Subscriptions
 
 on:
-  # 每天在 UTC 时间 0:23, 6:23, 12:23, 18:23, 21:23 自动触发更新
-  - cron: '23 0,6,12,18,21 * * *'
-  workflow_dispatch: # 支持手动点击运行
+  workflow_dispatch:  # 仅保留手动触发按钮
 
 jobs:
   build:
@@ -15,9 +13,6 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,6 +29,7 @@ jobs:
         run: |
           python scripts/main_v2.py
         env:
+          # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
 
       - name: Upload test artifacts (调试用, 7天保留)
@@ -47,14 +43,16 @@ jobs:
           if-no-files-found: ignore
 
       - name: Commit and Push Results
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Auto Update nodes"
-          file_pattern: "output/ README.md"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
-          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          push_options: '--force'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A output/ README.md
+          if git diff --staged --quiet; then
+            echo "没有节点变动与内容更新。"
+          else
+            git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
+            git push
+          fi
 
       - name: Purge jsDelivr CDN (post-push)
         if: success()
