@@ -15,6 +15,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,7 +34,6 @@ jobs:
         run: |
           python scripts/main_v2.py
         env:
-          # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
 
       - name: Upload test artifacts (调试用, 7天保留)
@@ -47,7 +49,7 @@ jobs:
       - name: Commit and Push Results
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto Update: ${{ github.event.repository.updated_at }}"
+          commit_message: "Auto Update nodes"
           file_pattern: "output/ README.md"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
