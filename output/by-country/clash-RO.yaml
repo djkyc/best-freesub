@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - djkyc
-  server: 77.74.123.102
+  server: 77.74.123.104
   port: 8443
   udp: true
   type: hysteria2
@@ -13,6 +13,49 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - djkyc
+  server: 46.28.67.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - djkyc
+  server: 194.68.44.42
+  port: 64546
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - djkyc
+  server: 146.70.124.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - djkyc
+  server: hy2-new.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - djkyc
   server: 82.152.132.120
   port: 443
   udp: true
@@ -25,7 +68,17 @@ proxies:
     short-id: ef7c4e4302bd52d7
   servername: ro1.gigobingo.ru
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - djkyc
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - djkyc
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - djkyc
   server: 82.117.255.174
   port: 443
   udp: true
@@ -38,7 +91,7 @@ proxies:
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - djkyc
+- name: 🇷🇴 罗马尼亚 (Romania) 09 - djkyc
   server: 103.126.51.58
   port: 995
   udp: true
@@ -53,30 +106,7 @@ proxies:
     path: /api/v1
     headers:
       Host: ocober-romania-new.yyuyy.com
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - djkyc
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - djkyc
-  server: 146.70.124.85
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: edge
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - djkyc
+- name: 🇷🇴 罗马尼亚 (Romania) 10 - djkyc
   server: 77.74.123.110
   port: 995
   udp: true
@@ -91,34 +121,21 @@ proxies:
     path: /api/v1
     headers:
       Host: italy-pay-october.yyuyy.com
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - djkyc
-  server: ro1.gigobingo.ru
+- name: 🇷🇴 罗马尼亚 (Romania) 11 - djkyc
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: vless
-  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
-    short-id: ef7c4e4302bd52d7
-  servername: ro1.gigobingo.ru
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - djkyc
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 12 - djkyc
   server: 154.46.31.106
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 10 - djkyc
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: whatsapp.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,6 +151,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 08 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 09 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 10 - djkyc
+  - 🇷🇴 罗马尼亚 (Romania) 11 - djkyc
+  - 🇷🇴 罗马尼亚 (Romania) 12 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,5 +168,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 08 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 09 - djkyc
   - 🇷🇴 罗马尼亚 (Romania) 10 - djkyc
+  - 🇷🇴 罗马尼亚 (Romania) 11 - djkyc
+  - 🇷🇴 罗马尼亚 (Romania) 12 - djkyc
 rules:
 - MATCH,PROXIES

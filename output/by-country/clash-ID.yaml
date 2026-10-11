@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - djkyc
-  server: 154.21.203.106
+  server: dghk2610.supertoolify.com
   port: 46984
   udp: true
   type: vless
@@ -16,7 +16,7 @@ proxies:
     public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
     short-id: 9c3c0f8ec8b4af12
   servername: www.lamer.com.sg
-  client-fingerprint: random
+  client-fingerprint: ios
 - name: 🇮🇩 印尼 (Indonesia) 02 - djkyc
   server: 103.172.197.3
   port: 16006
@@ -28,7 +28,7 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇩 印尼 (Indonesia) 03 - djkyc
   server: 103.172.197.2
   port: 29172
@@ -40,7 +40,7 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
