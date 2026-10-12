@@ -30,10 +30,8 @@ jobs:
 
       - name: Run Real-Prober and Classifier (sing-box v1.14 全协议)
         run: |
-          # 运行脚本并将标准输出和错误同时重定向到 run.log，并实时打印在控制台
           python scripts/main_v2.py 2>&1 | tee run.log
         env:
-          # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
 
       - name: Upload test artifacts (调试用, 7天保留)
@@ -55,7 +53,6 @@ jobs:
             echo "没有节点变动与内容更新。"
           else
             git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
-            # 先拉取远程最新变动并变基合并，避免 reject
             git pull origin main --rebase || true
             git push origin main
           fi
@@ -81,7 +78,7 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           JOB_STATUS: ${{ job.status }}
         run: |
-          python - <<'EOF'
+          python - << 'EOF'
           import os
           import re
           import urllib.request
@@ -107,26 +104,21 @@ jobs:
                   with open(log_path, "r", encoding="utf-8", errors="ignore") as f:
                       content = f.read()
 
-                      # 提取 劫持高风险节点已剔除
                       match_risk = re.search(r"MITM\s+劫持高风险节点已剔除[^\d]*(\d+)", content)
                       if match_risk:
                           filtered_risk = int(match_risk.group(1))
 
-                      # 提取 家宽/移动网络节点 与 普通节点
                       match_net = re.search(r"家宽/移动网络节点[^\d]*(\d+)\s*\|\s*普通\(机房/CDN\)[^\d]*(\d+)", content)
                       if match_net:
                           residential_mobile = int(match_net.group(1))
                           normal_cdn = int(match_net.group(2))
 
-                      # 提取 导出完毕 全量 与 家宽
                       match_total = re.search(r"导出完毕[^\d]*全量[^\d]*(\d+)\s*\|\s*家宽[^\d]*(\d+)", content)
                       if match_total:
                           total = int(match_total.group(1))
                           residential = int(match_total.group(2))
               except Exception as e:
                   print(f"[!] 解析日志出错: {e}")
-          else:
-              print(f"[!] 未找到日志文件 {log_path}")
 
           status_icon = "✅ 成功" if job_status == "success" else "❌ 失败"
 
@@ -150,4 +142,8 @@ jobs:
 
           try:
               req = urllib.request.Request(url, data=data, method="POST")
-              with urllib.request.urlopen(req
+              with urllib.request.urlopen(req) as response:
+                  print("[+] Telegram 通知发送成功。")
+          except Exception as e:
+              print(f"[-] Telegram 通知发送失败: {e}")
+          EOF
