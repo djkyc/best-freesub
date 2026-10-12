@@ -4,8 +4,53 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - djkyc",
+      "server": "45.138.103.238",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - djkyc",
+      "server": "62.60.159.81",
+      "server_port": 2053,
+      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
+          "short_id": "d0ea1847066af5a6"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpce5bb9e71"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - djkyc",
       "server": "77.110.96.201",
       "server_port": 36264,
       "password": "Telegram-vpnjey",
@@ -21,8 +66,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - djkyc",
-      "server": "se3.h1cloud.net",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - djkyc",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - djkyc",
+      "server": "136.148.223.212",
       "server_port": 25119,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "flow": "xtls-rprx-vision",
@@ -31,7 +96,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -42,40 +107,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - djkyc",
-      "server": "45.138.103.238",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - djkyc",
+      "server": "5.129.206.155",
       "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "uuid": "c9c219dc-50da-4135-8e5b-67020291f0ec",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
+        "server_name": "p92e5mc7t.zenaltra-hub95.cyou",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
+          "public_key": "esjSMExL6v40ksVJD5urvmQD4XZVWfBOCvStdk-q4DE",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - djkyc",
-      "server": "svip.skycon808.com",
-      "server_port": 60005,
-      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
-      "tls": {
-        "enabled": true,
-        "server_name": "xjp18.2uuzhe.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - djkyc",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - djkyc",
       "server": "swe.wizard.select",
       "server_port": 443,
       "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
@@ -96,23 +149,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - djkyc",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - djkyc",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - djkyc",
       "server": "specific3.kandnet.com",
       "server_port": 443,
       "uuid": "621bcb9e-7df5-427b-a9d4-6e87223c8bca",
@@ -122,7 +159,7 @@
         "server_name": "specific3.kandnet.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -132,15 +169,27 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - djkyc",
+      "server": "svip.skycon808.com",
+      "server_port": 60005,
+      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp18.2uuzhe.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - djkyc",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - djkyc",
       "server": "sweedenqfds777.qcloud.surf",
       "server_port": 21223,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
+      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
       "tls": {
         "enabled": true,
         "server_name": "sweedenqfds777.qcloud.surf",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -155,7 +204,9 @@
         "🇸🇪 瑞典 (Sweden) 05 - djkyc",
         "🇸🇪 瑞典 (Sweden) 06 - djkyc",
         "🇸🇪 瑞典 (Sweden) 07 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 08 - djkyc"
+        "🇸🇪 瑞典 (Sweden) 08 - djkyc",
+        "🇸🇪 瑞典 (Sweden) 09 - djkyc",
+        "🇸🇪 瑞典 (Sweden) 10 - djkyc"
       ]
     },
     {
@@ -169,7 +220,9 @@
         "🇸🇪 瑞典 (Sweden) 05 - djkyc",
         "🇸🇪 瑞典 (Sweden) 06 - djkyc",
         "🇸🇪 瑞典 (Sweden) 07 - djkyc",
-        "🇸🇪 瑞典 (Sweden) 08 - djkyc"
+        "🇸🇪 瑞典 (Sweden) 08 - djkyc",
+        "🇸🇪 瑞典 (Sweden) 09 - djkyc",
+        "🇸🇪 瑞典 (Sweden) 10 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

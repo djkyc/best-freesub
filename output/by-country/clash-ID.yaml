@@ -5,31 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - djkyc
-  server: 103.172.197.2
-  port: 29172
-  udp: true
-  type: vless
-  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
-  servername: aws.amazon.com
-  client-fingerprint: firefox
-- name: 🇮🇩 印尼 (Indonesia) 02 - djkyc
-  server: 154.21.203.106
-  port: 46984
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
-    short-id: 9c3c0f8ec8b4af12
-  servername: www.lamer.com.sg
-  client-fingerprint: random
-- name: 🇮🇩 印尼 (Indonesia) 03 - djkyc
   server: 103.172.197.3
   port: 16006
   udp: true
@@ -40,8 +15,8 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇮🇩 印尼 (Indonesia) 04 - djkyc
+  client-fingerprint: chrome
+- name: 🇮🇩 印尼 (Indonesia) 02 - djkyc
   server: 188.114.97.6
   port: 443
   udp: true
@@ -52,6 +27,18 @@ proxies:
   network: ws
   ws-opts:
     path: /trojan
+- name: 🇮🇩 印尼 (Indonesia) 03 - djkyc
+  server: 103.172.197.2
+  port: 29172
+  udp: true
+  type: vless
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+  servername: aws.amazon.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +47,6 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 01 - djkyc
   - 🇮🇩 印尼 (Indonesia) 02 - djkyc
   - 🇮🇩 印尼 (Indonesia) 03 - djkyc
-  - 🇮🇩 印尼 (Indonesia) 04 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +55,5 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 01 - djkyc
   - 🇮🇩 印尼 (Indonesia) 02 - djkyc
   - 🇮🇩 印尼 (Indonesia) 03 - djkyc
-  - 🇮🇩 印尼 (Indonesia) 04 - djkyc
 rules:
 - MATCH,PROXIES

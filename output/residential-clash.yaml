@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - djkyc
+  server: 104.19.150.163
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
+  tls: true
+  servername: vlesss.xttd.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=proxyip.fxxk.dedyn.io
+    headers:
+      Host: vlesss.xttd.eu.org
+- name: 🇺🇸 美国 (United States) 02 (家宽) - djkyc
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,8 +29,22 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
-  server: hinet1.2yly.com
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
+  server: 118.167.248.243
   port: 24215
   udp: true
   type: vless
@@ -24,21 +53,30 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  server: p141.panda001.net
-  port: 4652
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - djkyc
+  server: 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc
+  type: hysteria2
+  password: 28a5ce18-e7a1-11ec-91b2-f23c91cfbbc9
+  sni: 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - djkyc
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
+- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - djkyc
+  server: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  sni: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
   server: 24864168545164.d6f54hd1j.cc
   port: 443
   udp: true
@@ -54,7 +92,7 @@ proxies:
     path: /
     headers:
       Host: 24864168545164.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc
+- name: 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - djkyc
   server: 654168416355441.d6f54hd1j.cc
   port: 443
   udp: true
@@ -68,29 +106,35 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 654168416355441.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 02 (家宽) - djkyc
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 02 (家宽) - djkyc
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - djkyc
 rules:
 - MATCH,PROXIES

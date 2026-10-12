@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - djkyc
+  server: 5.188.181.201
+  port: 9014
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+- name: 🇪🇸 西班牙 (Spain) 02 - djkyc
   server: 185.174.137.172
   port: 8446
   udp: true
@@ -12,13 +19,6 @@ proxies:
   password: e9dc02d400b67c727aca1620
   sni: 185.174.137.172
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 02 - djkyc
-  server: 5.188.181.201
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
 - name: 🇪🇸 西班牙 (Spain) 03 - djkyc
   server: 212.227.235.66
   port: 2053
@@ -32,6 +32,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - djkyc
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇪🇸 西班牙 (Spain) 05 - djkyc
   server: 83.147.18.3
   port: 443
   udp: true
@@ -44,13 +57,6 @@ proxies:
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - djkyc
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 06 - djkyc
   server: es2.h1cloud.net
   port: 25535
@@ -64,42 +70,20 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 07 - djkyc
-  server: 46.28.71.247
-  port: 443
+  server: 5.188.181.201
+  port: 9054
   udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
 - name: 🇪🇸 西班牙 (Spain) 08 - djkyc
-  server: spainspeedboostjbl88.qcloud.surf
-  port: 27313
+  server: 108.181.121.226
+  port: 8388
   udp: true
-  type: hysteria2
-  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-  sni: spainspeedboostjbl88.qcloud.surf
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 09 - djkyc
-  server: 104.21.19.76
-  port: 2096
-  udp: true
-  type: vless
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
-  tls: true
-  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 10 - djkyc
   server: 193.238.154.78
   port: 443
   udp: true
@@ -112,6 +96,14 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 10 - djkyc
+  server: spainspeedboostjbl88.qcloud.surf
+  port: 27313
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: spainspeedboostjbl88.qcloud.surf
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
