@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - djkyc
-  server: 104.19.150.163
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
-  tls: true
-  servername: vlesss.xttd.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=proxyip.fxxk.dedyn.io
-    headers:
-      Host: vlesss.xttd.eu.org
-- name: 🇺🇸 美国 (United States) 02 (家宽) - djkyc
   server: 155.117.19.17
   port: 443
   udp: true
@@ -35,13 +20,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
-  - 🇺🇸 美国 (United States) 02 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
-  - 🇺🇸 美国 (United States) 02 (家宽) - djkyc
 rules:
 - MATCH,PROXIES
