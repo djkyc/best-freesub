@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 01 - djkyc",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 02 - djkyc",
       "server": "149.22.95.183",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -21,62 +13,79 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - djkyc",
-      "server": "51.222.141.125",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 04 - djkyc",
-      "server": "188.114.96.8",
-      "server_port": 443,
-      "uuid": "eb24c3b4-7936-45e2-a253-e54fd1955a7f",
-      "tls": {
-        "enabled": true,
-        "server_name": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/Sltu36eJc3zvD9Npaxsj2vJ",
-        "headers": {
-          "Host": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - djkyc",
+      "tag": "🇨🇦 加拿大 (Canada) 02 - djkyc",
       "server": "51.79.85.185",
       "server_port": 8118,
       "method": "aes-256-gcm",
       "password": "cdBIDV42DCwnfIN"
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - djkyc",
-      "server": "134.195.196.211",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - djkyc",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - djkyc",
       "server": "51.222.136.236",
       "server_port": 8882,
       "method": "aes-256-gcm",
       "password": "kDWvXYZoTBcGkC4"
     },
     {
-      "type": "vless",
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 04 - djkyc",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 05 - djkyc",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 06 - djkyc",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 07 - djkyc",
+      "server": "51.79.64.198",
+      "server_port": 8119,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 08 - djkyc",
+      "server": "ca225.vpnbook.com",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 09 - djkyc",
+      "server": "3.97.11.240",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 10 - djkyc",
+      "server": "138.197.141.58",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 11 - djkyc",
       "server": "66.70.179.198",
       "server_port": 2053,
       "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
@@ -95,123 +104,30 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 09 - djkyc",
-      "server": "ca225.vpnbook.com",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 10 - djkyc",
-      "server": "148.113.196.75",
-      "server_port": 8443,
-      "uuid": "08f96221-9b7b-4e6f-8ffe-aee8b9c9b504",
-      "tls": {
-        "enabled": true,
-        "server_name": "ov-canada1.09vpn.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 11 - djkyc",
-      "server": "51.222.12.127",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
-    },
-    {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 12 - djkyc",
-      "server": "172.64.80.1",
+      "server": "104.21.70.22",
       "server_port": 443,
-      "uuid": "49c0ae46-767c-47d1-9703-8740e0c4b15a",
+      "uuid": "efe19c5a-0ea1-4666-8a4c-4a33f4670775",
       "tls": {
         "enabled": true,
-        "server_name": "flat-night-edd0.hosein9saleazhuongooyeh87.workers.dev",
+        "server_name": "brightlux.forum",
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiZU1pQlVqNTBYVmpTeDlCIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+        "path": "/raccoonwsvless",
         "headers": {
-          "Host": "flat-night-edd0.hosein9saleazhuongooyeh87.workers.dev"
+          "Host": "brightlux.forum"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 13 - djkyc",
-      "server": "188.114.96.3",
-      "server_port": 2087,
-      "uuid": "756e8f39-04e8-436d-b5c6-905d37d9562c",
-      "tls": {
-        "enabled": true,
-        "server_name": "Ez-98919A.MOtoRicb.Workers.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ",
-        "headers": {
-          "Host": "ez-98919a.motoricb.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 14 - djkyc",
-      "server": "104.21.70.21",
-      "server_port": 443,
-      "uuid": "fee1da7e-a258-4456-8e5e-8ecf6518ed12",
-      "tls": {
-        "enabled": true,
-        "server_name": "ez-82c7e7.abobaba.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "ez-82c7e7.abobaba.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 15 - djkyc",
-      "server": "138.197.141.58",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 16 - djkyc",
       "server": "209.200.246.148",
       "server_port": 443,
       "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -231,274 +147,51 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 17 - djkyc",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "ededaf7e-ad86-40bc-b837-b1403c56f311",
-      "tls": {
-        "enabled": true,
-        "server_name": "bazyepc.aminrazavi1384.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoid2tkV0g2R3kxYlNTIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
-        "headers": {
-          "Host": "bazyepc.aminrazavi1384.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 14 - djkyc",
+      "server": "51.222.155.32",
+      "server_port": 5003,
+      "method": "aes-256-gcm",
+      "password": "g5MeD6Ft3CWlJId"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 15 - djkyc",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 18 - djkyc",
-      "server": "35.183.81.9",
+      "tag": "🇨🇦 加拿大 (Canada) 16 - djkyc",
+      "server": "15.175.220.220",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 19 - djkyc",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "fee1da7e-a258-4456-8e5e-8ecf6518ed12",
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "ez-82c7e7.abobaba.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 20 - djkyc",
-      "server": "cf.130519.xyz",
-      "server_port": 443,
-      "uuid": "9784bb19-3833-43ad-83b0-27ef8fc04ef2",
-      "tls": {
-        "enabled": true,
-        "server_name": "20664.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048 ",
-        "headers": {
-          "Host": "20664.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 21 - djkyc",
-      "server": "xstack.mahanfixe.workers.dev",
-      "server_port": 443,
-      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
-      "tls": {
-        "enabled": true,
-        "server_name": "xstack.mahanfixe.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/xiron"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 22 - djkyc",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "fee1da7e-a258-4456-8e5e-8ecf6518ed12",
-      "tls": {
-        "enabled": true,
-        "server_name": "ez-82c7e7.abobaba.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "ez-82c7e7.abobaba.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 23 - djkyc",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 24 - djkyc",
-      "server": "104.21.88.201",
-      "server_port": 443,
-      "uuid": "07f9bc85-613f-4a33-8da1-191973c43c0a",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-q0zc4t.user-4gfyh5.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ ",
-        "headers": {
-          "Host": "app-q0zc4t.user-4gfyh5.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 25 (家宽) - djkyc",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
-      "transport": {
-        "type": "ws",
-        "path": "/xiron",
-        "headers": {
-          "Host": "xstack.mahanfixe.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 26 - djkyc",
+      "tag": "🇨🇦 加拿大 (Canada) 17 - djkyc",
       "server": "milo.rubinaz.xyz",
       "server_port": 8080,
       "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇦 加拿大 (Canada) 27 - djkyc",
-      "server": "app-538961.user-y0o4gm.workers.dev",
-      "server_port": 443,
-      "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-538961.user-y0o4gm.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 28 - djkyc",
-      "server": "172.67.152.162",
-      "server_port": 443,
-      "uuid": "07f9bc85-613f-4a33-8da1-191973c43c0a",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-q0zc4t.user-4gfyh5.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "app-q0zc4t.user-4gfyh5.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 29 - djkyc",
-      "server": "789156.xyz",
-      "server_port": 443,
-      "uuid": "5f11c240-89df-494c-9c81-8b619023bb58",
-      "tls": {
-        "enabled": true,
-        "server_name": "789156.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 30 - djkyc",
-      "server": "172.67.167.179",
-      "server_port": 443,
-      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
-      "tls": {
-        "enabled": true,
-        "server_name": "xstack.mahanfixe.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/xiron ",
-        "headers": {
-          "Host": "xstack.mahanfixe.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 18 - djkyc",
+      "server": "51.222.12.127",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 31 - djkyc",
-      "server": "51.79.49.116",
-      "server_port": 8882,
+      "tag": "🇨🇦 加拿大 (Canada) 19 - djkyc",
+      "server": "51.222.141.125",
+      "server_port": 445,
       "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 32 - djkyc",
-      "server": "51.79.64.198",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 33 - djkyc",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "password": "zDNVedRFPQexG9v"
     },
     {
       "type": "selector",
@@ -523,21 +216,7 @@
         "🇨🇦 加拿大 (Canada) 16 - djkyc",
         "🇨🇦 加拿大 (Canada) 17 - djkyc",
         "🇨🇦 加拿大 (Canada) 18 - djkyc",
-        "🇨🇦 加拿大 (Canada) 19 - djkyc",
-        "🇨🇦 加拿大 (Canada) 20 - djkyc",
-        "🇨🇦 加拿大 (Canada) 21 - djkyc",
-        "🇨🇦 加拿大 (Canada) 22 - djkyc",
-        "🇨🇦 加拿大 (Canada) 23 - djkyc",
-        "🇨🇦 加拿大 (Canada) 24 - djkyc",
-        "🇨🇦 加拿大 (Canada) 25 (家宽) - djkyc",
-        "🇨🇦 加拿大 (Canada) 26 - djkyc",
-        "🇨🇦 加拿大 (Canada) 27 - djkyc",
-        "🇨🇦 加拿大 (Canada) 28 - djkyc",
-        "🇨🇦 加拿大 (Canada) 29 - djkyc",
-        "🇨🇦 加拿大 (Canada) 30 - djkyc",
-        "🇨🇦 加拿大 (Canada) 31 - djkyc",
-        "🇨🇦 加拿大 (Canada) 32 - djkyc",
-        "🇨🇦 加拿大 (Canada) 33 - djkyc"
+        "🇨🇦 加拿大 (Canada) 19 - djkyc"
       ]
     },
     {
@@ -562,21 +241,7 @@
         "🇨🇦 加拿大 (Canada) 16 - djkyc",
         "🇨🇦 加拿大 (Canada) 17 - djkyc",
         "🇨🇦 加拿大 (Canada) 18 - djkyc",
-        "🇨🇦 加拿大 (Canada) 19 - djkyc",
-        "🇨🇦 加拿大 (Canada) 20 - djkyc",
-        "🇨🇦 加拿大 (Canada) 21 - djkyc",
-        "🇨🇦 加拿大 (Canada) 22 - djkyc",
-        "🇨🇦 加拿大 (Canada) 23 - djkyc",
-        "🇨🇦 加拿大 (Canada) 24 - djkyc",
-        "🇨🇦 加拿大 (Canada) 25 (家宽) - djkyc",
-        "🇨🇦 加拿大 (Canada) 26 - djkyc",
-        "🇨🇦 加拿大 (Canada) 27 - djkyc",
-        "🇨🇦 加拿大 (Canada) 28 - djkyc",
-        "🇨🇦 加拿大 (Canada) 29 - djkyc",
-        "🇨🇦 加拿大 (Canada) 30 - djkyc",
-        "🇨🇦 加拿大 (Canada) 31 - djkyc",
-        "🇨🇦 加拿大 (Canada) 32 - djkyc",
-        "🇨🇦 加拿大 (Canada) 33 - djkyc"
+        "🇨🇦 加拿大 (Canada) 19 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

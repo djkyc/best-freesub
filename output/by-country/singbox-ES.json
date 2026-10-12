@@ -16,8 +16,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - djkyc",
+      "server": "5.188.181.201",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - djkyc",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -37,7 +45,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - djkyc",
+      "server": "83.147.18.3",
+      "server_port": 443,
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - djkyc",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - djkyc",
       "server": "es2.h1cloud.net",
       "server_port": 25535,
       "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
@@ -57,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - djkyc",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -67,7 +104,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -77,16 +114,46 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - djkyc",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 08 - djkyc",
+      "server": "spainspeedboostjbl88.qcloud.surf",
+      "server_port": 27313,
+      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
+      "tls": {
+        "enabled": true,
+        "server_name": "spainspeedboostjbl88.qcloud.surf",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 09 - djkyc",
+      "server": "104.21.19.76",
+      "server_port": 2096,
+      "uuid": "fee1da7e-a258-4456-8e5e-8ecf6518ed12",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-82c7e7.aBoBaBA.WorkeRS.dEv",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "ez-82c7e7.abobaba.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 10 - djkyc",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -106,38 +173,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - djkyc",
-      "server": "spainspeedboostjbl88.qcloud.surf",
-      "server_port": 27313,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "spainspeedboostjbl88.qcloud.surf",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - djkyc",
-      "server": "es3.h1cloud.net",
-      "server_port": 25136,
-      "uuid": "c1c13ef7-affa-47e1-8967-25cc67679c10",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w",
-          "short_id": "f78838fbd85e59ae"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -149,7 +184,9 @@
         "🇪🇸 西班牙 (Spain) 05 - djkyc",
         "🇪🇸 西班牙 (Spain) 06 - djkyc",
         "🇪🇸 西班牙 (Spain) 07 - djkyc",
-        "🇪🇸 西班牙 (Spain) 08 - djkyc"
+        "🇪🇸 西班牙 (Spain) 08 - djkyc",
+        "🇪🇸 西班牙 (Spain) 09 - djkyc",
+        "🇪🇸 西班牙 (Spain) 10 - djkyc"
       ]
     },
     {
@@ -163,7 +200,9 @@
         "🇪🇸 西班牙 (Spain) 05 - djkyc",
         "🇪🇸 西班牙 (Spain) 06 - djkyc",
         "🇪🇸 西班牙 (Spain) 07 - djkyc",
-        "🇪🇸 西班牙 (Spain) 08 - djkyc"
+        "🇪🇸 西班牙 (Spain) 08 - djkyc",
+        "🇪🇸 西班牙 (Spain) 09 - djkyc",
+        "🇪🇸 西班牙 (Spain) 10 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
