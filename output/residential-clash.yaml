@@ -4,7 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - djkyc
+- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - djkyc
+  server: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  tls: true
+  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /js/cHlpcC55Z2tray5kcGRucy5vcmc=/
+    headers:
+      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇺🇸 美国 (United States) 03 (家宽) - djkyc
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,66 +34,28 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - djkyc
-  server: dog-hk.kunlun01dns.com
-  port: 21019
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  server: tw8.dexlos.com
-  port: 8080
-  udp: true
-  type: tuic
-  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw8.dexlos.com
-  skip-cert-verify: false
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - djkyc
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - djkyc
-  server: 24864168545164.d6f54hd1j.cc
+- name: 🇺🇸 美国 (United States) 05 (家宽) R40 - djkyc
+  server: 8.6.112.242
   port: 443
   udp: true
-  type: vmess
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 64726966-0000-4000-8000-740000000000
   tls: true
-  servername: 24864168545164.d6f54hd1j.cc
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc
+    path: /drift?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NETfp=firefox
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc
   server: 654168416355441.d6f54hd1j.cc
   port: 443
   udp: true
@@ -87,25 +69,68 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 654168416355441.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - djkyc
+  server: 118.167.248.243
+  port: 24215
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - djkyc
-  server: tw5.dexlos.com
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc
+  server: tw8.dexlos.com
   port: 8080
   udp: true
   type: tuic
   uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
   password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw5.dexlos.com
-  skip-cert-verify: true
+  sni: tw8.dexlos.com
+  skip-cert-verify: false
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - djkyc
+  server: 42.200.173.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: s3.ap-east-1.amazonaws.com
+  client-fingerprint: safari
+- name: 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - djkyc
+  server: 24864168545164.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 24864168545164.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - djkyc
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: false
   congestion-controller: bbr
   udp-relay-mode: native
   alpn:
@@ -115,30 +140,32 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - djkyc
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  - 🇺🇸 美国 (United States) 03 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 05 (家宽) R40 - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - djkyc
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  - 🇺🇸 美国 (United States) 03 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 05 (家宽) R40 - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - djkyc
 rules:
 - MATCH,PROXIES

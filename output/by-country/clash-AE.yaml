@@ -16,31 +16,84 @@ proxies:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02 - djkyc
-  server: 157.228.155.185
+  server: 162.159.153.4
   port: 443
   udp: true
   type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   tls: true
-  reality-opts:
-    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
-    short-id: 5ea112e8
-  servername: addons.mozilla.org
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 - name: 🇦🇪 阿联酋 (UAE) 03 - djkyc
-  server: hy2.aspidnet.xyz
+  server: 66.235.200.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 04 - djkyc
+  server: 172.67.221.230
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 05 - djkyc
+  server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - djkyc
+- name: 🇦🇪 阿联酋 (UAE) 06 - djkyc
+  server: 104.21.108.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  tls: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/sync '
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 07 - djkyc
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - djkyc
   server: 31.59.210.37
   port: 443
   udp: true
@@ -51,35 +104,11 @@ proxies:
     public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
     short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 05 - djkyc
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 06 - djkyc
-  server: 31.59.210.26
-  port: 2088
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
-  servername: www.yandex.ru
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 07 - djkyc
+- name: 🇦🇪 阿联酋 (UAE) 09 - djkyc
   server: 146.70.102.82
   port: 443
   udp: true
@@ -91,20 +120,22 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 08 - djkyc
-  server: 94.249.188.202
-  port: 43000
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 10 - djkyc
+  server: 31.59.210.26
+  port: 2088
   udp: true
   type: vless
-  uuid: f8842728-bf43-47e2-83bf-283e21f33664
-  flow: xtls-rprx-vision
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: TdLpPmh5-Tbcj3bUPp7uw9znQ_Asao8z9jG7Eccrhwk
-    short-id: 7887c27d
-  servername: 94.249.188.202
-  client-fingerprint: random
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
+  servername: www.yandex.ru
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,6 +149,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - djkyc
   - 🇦🇪 阿联酋 (UAE) 07 - djkyc
   - 🇦🇪 阿联酋 (UAE) 08 - djkyc
+  - 🇦🇪 阿联酋 (UAE) 09 - djkyc
+  - 🇦🇪 阿联酋 (UAE) 10 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -131,5 +164,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - djkyc
   - 🇦🇪 阿联酋 (UAE) 07 - djkyc
   - 🇦🇪 阿联酋 (UAE) 08 - djkyc
+  - 🇦🇪 阿联酋 (UAE) 09 - djkyc
+  - 🇦🇪 阿联酋 (UAE) 10 - djkyc
 rules:
 - MATCH,PROXIES

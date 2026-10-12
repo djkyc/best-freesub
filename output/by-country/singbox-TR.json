@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -30,21 +30,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - djkyc",
-      "server": "78.135.73.47",
+      "server": "85.192.48.142",
       "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.datadoghq.com",
+        "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
         }
       }
     },
@@ -71,41 +71,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-      "server": "85.192.48.142",
+      "server": "78.135.73.47",
       "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - djkyc",
-      "server": "best.valaiqm.ir",
-      "server_port": 3035,
-      "uuid": "a1fb63f7-a942-4010-a830-bc395703a9a4",
-      "tls": {
-        "enabled": true,
-        "server_name": "telewebion.ir",
+        "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Pi3B8-R1-lj8ScFPOTRRER709y9hJ0varDPpMzWhtAo",
-          "short_id": "f2fda64d24c4"
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
         }
       }
     },
@@ -117,8 +97,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - djkyc",
         "🇹🇷 土耳其 (Turkey) 02 - djkyc",
         "🇹🇷 土耳其 (Turkey) 03 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 - djkyc"
+        "🇹🇷 土耳其 (Turkey) 04 - djkyc"
       ]
     },
     {
@@ -128,8 +107,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - djkyc",
         "🇹🇷 土耳其 (Turkey) 02 - djkyc",
         "🇹🇷 土耳其 (Turkey) 03 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 - djkyc"
+        "🇹🇷 土耳其 (Turkey) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
