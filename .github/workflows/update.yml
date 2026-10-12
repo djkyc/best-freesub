@@ -30,7 +30,8 @@ jobs:
 
       - name: Run Real-Prober and Classifier (sing-box v1.14 全协议)
         run: |
-          python scripts/main_v2.py
+          # 运行脚本并将标准输出和错误同时重定向到 run.log，并实时打印在控制台
+          python scripts/main_v2.py 2>&1 | tee run.log
         env:
           # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
@@ -82,7 +83,7 @@ jobs:
         run: |
           python - <<'EOF'
           import os
-          import json
+          import re
           import urllib.request
           import urllib.parse
 
@@ -100,33 +101,32 @@ jobs:
           residential_mobile = 0
           normal_cdn = 0
 
-          # 读取 output/tgmsg.json
-          report_path = "output/tgmsg.json"
-          if os.path.exists(report_path):
+          log_path = "run.log"
+          if os.path.exists(log_path):
               try:
-                  with open(report_path, "r", encoding="utf-8") as f:
-                      report = json.load(f)
-                      print("[DEBUG] tgmsg.json content:", json.dumps(report, ensure_ascii=False, indent=2))
-                      
-                      # 兼容不同的 Key 命名写法
-                      total = (report.get("total") or report.get("total_nodes") or 
-                               report.get("all_nodes") or report.get("全量") or 0)
-                      
-                      residential = (report.get("residential") or report.get("residential_count") or 
-                                     report.get("家宽") or 0)
-                      
-                      filtered_risk = (report.get("filtered_risk") or report.get("risk_removed") or 
-                                       report.get("filtered_high_risk") or report.get("已剔除") or 0)
-                      
-                      residential_mobile = (report.get("residential_mobile") or report.get("residential_or_mobile") or 
-                                            report.get("家宽移动") or 0)
-                      
-                      normal_cdn = (report.get("normal_cdn") or report.get("normal_count") or 
-                                    report.get("normal") or report.get("普通") or 0)
+                  with open(log_path, "r", encoding="utf-8", errors="ignore") as f:
+                      content = f.read()
+
+                      # 提取 劫持高风险节点已剔除
+                      match_risk = re.search(r"MITM\s+劫持高风险节点已剔除[^\d]*(\d+)", content)
+                      if match_risk:
+                          filtered_risk = int(match_risk.group(1))
+
+                      # 提取 家宽/移动网络节点 与 普通节点
+                      match_net = re.search(r"家宽/移动网络节点[^\d]*(\d+)\s*\|\s*普通\(机房/CDN\)[^\d]*(\d+)", content)
+                      if match_net:
+                          residential_mobile = int(match_net.group(1))
+                          normal_cdn = int(match_net.group(2))
+
+                      # 提取 导出完毕 全量 与 家宽
+                      match_total = re.search(r"导出完毕[^\d]*全量[^\d]*(\d+)\s*\|\s*家宽[^\d]*(\d+)", content)
+                      if match_total:
+                          total = int(match_total.group(1))
+                          residential = int(match_total.group(2))
               except Exception as e:
-                  print(f"[!] 解析 tgmsg.json 失败: {e}")
+                  print(f"[!] 解析日志出错: {e}")
           else:
-              print(f"[!] 未找到文件 {report_path}")
+              print(f"[!] 未找到日志文件 {log_path}")
 
           status_icon = "✅ 成功" if job_status == "success" else "❌ 失败"
 
@@ -150,8 +150,4 @@ jobs:
 
           try:
               req = urllib.request.Request(url, data=data, method="POST")
-              with urllib.request.urlopen(req) as response:
-                  print("[+] Telegram 通知发送成功。")
-          except Exception as e:
-              print(f"[-] Telegram 通知发送失败: {e}")
-          EOF
+              with urllib.request.urlopen(req
