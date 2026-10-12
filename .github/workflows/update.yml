@@ -91,33 +91,43 @@ jobs:
           job_status = os.environ.get("JOB_STATUS")
 
           if not token or not chat_id:
-              print("[-] Telegram Secrets not configured, skipping notification.")
+              print("[-] Telegram Secrets 未配置，跳过通知发送。")
               exit(0)
 
-          # 默认统计数据初始化
           total = 0
           residential = 0
           filtered_risk = 0
           residential_mobile = 0
           normal_cdn = 0
 
-          # 尝试读取 e2e_test_report.json 获取统计数据
           try:
               with open("output/e2e_test_report.json", "r", encoding="utf-8") as f:
                   report = json.load(f)
-                  # 根据你的 main_v2.py 生成的 json 结构适配字段（如果没有这些字段会采用默认值）
-                  total = report.get("total", report.get("total_nodes", 0))
-                  residential = report.get("residential", report.get("residential_count", 0))
-                  filtered_risk = report.get("filtered_risk", report.get("risk_removed", 0))
-                  residential_mobile = report.get("residential_mobile", report.get("residential_or_mobile", 0))
-                  normal_cdn = report.get("normal_cdn", report.get("normal_count", 0))
+                  # 打印出完整的 JSON 结构，方便在 Action 日志中查看真实的 Key 名字
+                  print("[DEBUG] e2e_test_report.json content:", json.dumps(report, ensure_ascii=False, indent=2))
+                  
+                  # 尽可能多地罗列常见可能的键名变体
+                  total = (report.get("total") or report.get("total_nodes") or 
+                           report.get("count") or report.get("sum") or 0)
+                  
+                  residential = (report.get("residential") or report.get("residential_count") or 
+                                 report.get("home_broadband") or 0)
+                  
+                  filtered_risk = (report.get("filtered_risk") or report.get("risk_removed") or 
+                                   report.get("filtered_high_risk") or report.get("removed_risk") or 0)
+                  
+                  residential_mobile = (report.get("residential_mobile") or report.get("residential_or_mobile") or 
+                                        report.get("res_mobile") or 0)
+                  
+                  normal_cdn = (report.get("normal_cdn") or report.get("normal_count") or 
+                                report.get("datacenter_cdn") or report.get("normal") or 0)
           except Exception as e:
-              print(f"[!] 读取测试报告失败或格式不匹配: {e}")
+              print(f"[!] 读取测试报告 JSON 失败: {e}")
 
           status_icon = "✅ 成功" if job_status == "success" else "❌ 失败"
-          
+
           msg = (
-              f"<b>订阅更新通知: {status_icon}</b>\n"
+              f"<b>📢 订阅更新状态: {status_icon}</b>\n"
               f"━━━━━━━━━━━━━━━━━━━\n"
               f"📊 <b>全量节点:</b> <code>{total}</code>\n"
               f"🏠 <b>家宽节点:</b> <code>{residential}</code>\n"
@@ -137,7 +147,7 @@ jobs:
           try:
               req = urllib.request.Request(url, data=data, method="POST")
               with urllib.request.urlopen(req) as response:
-                  print("[+] Telegram notification sent successfully.")
+                  print("[+] Telegram 通知发送成功。")
           except Exception as e:
-              print(f"[-] Failed to send Telegram notification: {e}")
+              print(f"[-] Telegram 通知发送失败: {e}")
           EOF
