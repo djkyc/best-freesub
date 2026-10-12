@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
         "insecure": true
       }
     },
@@ -23,13 +23,57 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
+        "server_name": "vpn-tw-002.fastervpn.world\\u0026insecure=1\\u0026allowinsecure=1",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "tuic",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
+      "server": "tw3.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw3.dexlos.com",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - djkyc",
+      "server": "tw4.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw4.dexlos.com",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - djkyc",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -47,14 +91,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
-      "server": "dog-tw.kunlun01dns.com",
-      "server_port": 21036,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -62,7 +98,9 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 05 - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 06 - djkyc"
       ]
     },
     {
@@ -72,7 +110,9 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 05 - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 06 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

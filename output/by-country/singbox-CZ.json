@@ -25,18 +25,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
+      "server": "81.94.148.50",
+      "server_port": 7449,
+      "uuid": "7ac594a4-fabc-486c-9a91-5662c09e63cd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "passport.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbSuvgEeMrvFIV7C3tLaJhEADo_2RQdGvwFFrfJJQE0",
+          "short_id": "7abd137540629e9d"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - djkyc"
+        "🇨🇿 捷克 (Czech) 01 - djkyc",
+        "🇨🇿 捷克 (Czech) 02 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - djkyc"
+        "🇨🇿 捷克 (Czech) 01 - djkyc",
+        "🇨🇿 捷克 (Czech) 02 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
