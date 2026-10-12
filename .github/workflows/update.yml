@@ -100,29 +100,33 @@ jobs:
           residential_mobile = 0
           normal_cdn = 0
 
-          try:
-              with open("output/e2e_test_report.json", "r", encoding="utf-8") as f:
-                  report = json.load(f)
-                  # 打印出完整的 JSON 结构，方便在 Action 日志中查看真实的 Key 名字
-                  print("[DEBUG] e2e_test_report.json content:", json.dumps(report, ensure_ascii=False, indent=2))
-                  
-                  # 尽可能多地罗列常见可能的键名变体
-                  total = (report.get("total") or report.get("total_nodes") or 
-                           report.get("count") or report.get("sum") or 0)
-                  
-                  residential = (report.get("residential") or report.get("residential_count") or 
-                                 report.get("home_broadband") or 0)
-                  
-                  filtered_risk = (report.get("filtered_risk") or report.get("risk_removed") or 
-                                   report.get("filtered_high_risk") or report.get("removed_risk") or 0)
-                  
-                  residential_mobile = (report.get("residential_mobile") or report.get("residential_or_mobile") or 
-                                        report.get("res_mobile") or 0)
-                  
-                  normal_cdn = (report.get("normal_cdn") or report.get("normal_count") or 
-                                report.get("datacenter_cdn") or report.get("normal") or 0)
-          except Exception as e:
-              print(f"[!] 读取测试报告 JSON 失败: {e}")
+          # 读取 output/tgmsg.json
+          report_path = "output/tgmsg.json"
+          if os.path.exists(report_path):
+              try:
+                  with open(report_path, "r", encoding="utf-8") as f:
+                      report = json.load(f)
+                      print("[DEBUG] tgmsg.json content:", json.dumps(report, ensure_ascii=False, indent=2))
+                      
+                      # 兼容不同的 Key 命名写法
+                      total = (report.get("total") or report.get("total_nodes") or 
+                               report.get("all_nodes") or report.get("全量") or 0)
+                      
+                      residential = (report.get("residential") or report.get("residential_count") or 
+                                     report.get("家宽") or 0)
+                      
+                      filtered_risk = (report.get("filtered_risk") or report.get("risk_removed") or 
+                                       report.get("filtered_high_risk") or report.get("已剔除") or 0)
+                      
+                      residential_mobile = (report.get("residential_mobile") or report.get("residential_or_mobile") or 
+                                            report.get("家宽移动") or 0)
+                      
+                      normal_cdn = (report.get("normal_cdn") or report.get("normal_count") or 
+                                    report.get("normal") or report.get("普通") or 0)
+              except Exception as e:
+                  print(f"[!] 解析 tgmsg.json 失败: {e}")
+          else:
+              print(f"[!] 未找到文件 {report_path}")
 
           status_icon = "✅ 成功" if job_status == "success" else "❌ 失败"
 
