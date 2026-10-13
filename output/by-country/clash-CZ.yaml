@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - djkyc
+  server: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+  tls: true
+  servername: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0= '
+    headers:
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - djkyc
   server: 195.123.245.241
   port: 443
   udp: true
@@ -17,19 +32,6 @@ proxies:
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - djkyc
-  server: 81.94.148.50
-  port: 7449
-  udp: true
-  type: vless
-  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbSuvgEeMrvFIV7C3tLaJhEADo_2RQdGvwFFrfJJQE0
-    short-id: 7abd137540629e9d
-  servername: passport.yandex.ru
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
