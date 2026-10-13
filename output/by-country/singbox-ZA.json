@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 01 - djkyc",
-      "server": "102.133.165.160",
-      "server_port": 16233,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
-    },
-    {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 02 - djkyc",
+      "tag": "🇿🇦 南非 (South Africa) 01 - djkyc",
       "server": "34.35.186.228",
       "server_port": 443,
       "uuid": "8d65c8a7-4876-4556-bb6a-feccfb46ee81",
@@ -22,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -30,6 +22,14 @@
           "short_id": "89b3a20484eb43ec"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 02 - djkyc",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
     },
     {
       "type": "vless",
@@ -42,7 +42,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,

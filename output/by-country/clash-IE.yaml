@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - djkyc
+  server: 54.72.130.222
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: adapting-basilisk.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - djkyc
   server: master-possum.rooster465.autos
   port: 443
   udp: true
@@ -12,7 +20,7 @@ proxies:
   password: UX82473651
   sni: master-possum.rooster465.autos
   skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - djkyc
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - djkyc
   server: loved-shark.rooster465.autos
   port: 443
   udp: true
@@ -20,14 +28,6 @@ proxies:
   password: UX82473651
   sni: loved-shark.rooster465.autos
   skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - djkyc
-  server: adapting-basilisk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
