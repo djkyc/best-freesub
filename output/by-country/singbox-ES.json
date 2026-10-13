@@ -4,28 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - djkyc",
-      "server": "5.188.181.201",
-      "server_port": 9025,
-      "method": "aes-256-cfb",
-      "password": "XPtzA9sCug3SPR4c"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - djkyc",
-      "server": "185.174.137.172",
-      "server_port": 8446,
-      "password": "e9dc02d400b67c727aca1620",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.174.137.172",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - djkyc",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -34,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -45,27 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - djkyc",
-      "server": "es3.h1cloud.net",
-      "server_port": 25136,
-      "uuid": "c1c13ef7-affa-47e1-8967-25cc67679c10",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w",
-          "short_id": "f78838fbd85e59ae"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - djkyc",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -75,7 +35,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -86,28 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - djkyc",
-      "server": "185.76.241.87",
-      "server_port": 443,
-      "uuid": "9ee57d03-dcf5-488b-aff7-305301879353",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru-in-es-4vp.movietop24.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
-          "short_id": "861215e33e8dba4f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - djkyc",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - djkyc",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -127,6 +66,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - djkyc",
+      "server": "185.174.137.172",
+      "server_port": 8446,
+      "password": "e9dc02d400b67c727aca1620",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.174.137.172",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -134,10 +85,7 @@
         "🇪🇸 西班牙 (Spain) 01 - djkyc",
         "🇪🇸 西班牙 (Spain) 02 - djkyc",
         "🇪🇸 西班牙 (Spain) 03 - djkyc",
-        "🇪🇸 西班牙 (Spain) 04 - djkyc",
-        "🇪🇸 西班牙 (Spain) 05 - djkyc",
-        "🇪🇸 西班牙 (Spain) 06 - djkyc",
-        "🇪🇸 西班牙 (Spain) 07 - djkyc"
+        "🇪🇸 西班牙 (Spain) 04 - djkyc"
       ]
     },
     {
@@ -147,10 +95,7 @@
         "🇪🇸 西班牙 (Spain) 01 - djkyc",
         "🇪🇸 西班牙 (Spain) 02 - djkyc",
         "🇪🇸 西班牙 (Spain) 03 - djkyc",
-        "🇪🇸 西班牙 (Spain) 04 - djkyc",
-        "🇪🇸 西班牙 (Spain) 05 - djkyc",
-        "🇪🇸 西班牙 (Spain) 06 - djkyc",
-        "🇪🇸 西班牙 (Spain) 07 - djkyc"
+        "🇪🇸 西班牙 (Spain) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
