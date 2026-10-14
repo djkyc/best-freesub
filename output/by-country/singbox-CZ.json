@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - djkyc",
+      "server": "172.64.153.235",
+      "server_port": 8443,
+      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tls": {
+        "enabled": true,
+        "server_name": "socks5.revil-time3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/socks5://128.140.46.169:13482",
+        "headers": {
+          "Host": "socks5.revil-time3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
       "server": "5.39.202.125",
       "server_port": 443,
       "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638",
@@ -26,7 +49,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
+      "tag": "🇨🇿 捷克 (Czech) 03 - djkyc",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -51,7 +74,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - djkyc",
-        "🇨🇿 捷克 (Czech) 02 - djkyc"
+        "🇨🇿 捷克 (Czech) 02 - djkyc",
+        "🇨🇿 捷克 (Czech) 03 - djkyc"
       ]
     },
     {
@@ -59,7 +83,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - djkyc",
-        "🇨🇿 捷克 (Czech) 02 - djkyc"
+        "🇨🇿 捷克 (Czech) 02 - djkyc",
+        "🇨🇿 捷克 (Czech) 03 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

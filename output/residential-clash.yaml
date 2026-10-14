@@ -5,25 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
-  server: googol.wookshop.ir
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  server: 206.1.102.81
   port: 17915
   udp: true
   type: vless
   uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
   tls: true
   servername: googol.wookshop.ir
-  skip-cert-verify: false
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
+  server: yazhou09.twzq59.cc
+  port: 10688
+  udp: true
+  type: anytls
+  password: 13f0acfa-38c1-4e82-a758-583aa31740df
+  sni: yazhou09.twzq59.cc
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
 rules:
 - MATCH,PROXIES

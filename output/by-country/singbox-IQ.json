@@ -15,7 +15,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,70 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - djkyc",
+      "server": "188.114.97.8",
+      "server_port": 8443,
+      "uuid": "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66",
+      "tls": {
+        "enabled": true,
+        "server_name": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "crimson-leaf-7e45.hzhduuebfjdcb.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 03 - djkyc",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "uuid": "a43a9a45-7387-4faf-ad06-24b1ae181fdc",
+      "tls": {
+        "enabled": true,
+        "server_name": "snowy-glade-85fa.arshiatakalloo88.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "snowy-glade-85fa.arshiatakalloo88.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - djkyc"
+        "🇮🇶 IQ 01 - djkyc",
+        "🇮🇶 IQ 02 - djkyc",
+        "🇮🇶 IQ 03 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - djkyc"
+        "🇮🇶 IQ 01 - djkyc",
+        "🇮🇶 IQ 02 - djkyc",
+        "🇮🇶 IQ 03 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

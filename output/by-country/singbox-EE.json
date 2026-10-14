@@ -4,54 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - djkyc",
-      "server": "93.123.39.84",
-      "server_port": 443,
-      "uuid": "5298d5c5-0633-4989-95c8-68ee13cd507e",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee2x.global-cdn.org",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "content.v1.Feed"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - djkyc",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "109.206.241.10",
+        "server_name": "russiapower.accesscam.org",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc",
       "server": "5.181.201.37",
       "server_port": 443,
       "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638",
@@ -72,40 +38,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
-      "server": "ee.h1cloud.net",
-      "server_port": 25895,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
+      "server": "185.31.242.61",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "est.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
-          "short_id": "a73f0410d728c823"
+          "public_key": "7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0",
+          "short_id": "0da7e14db353e7d0"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
       "server": "94.183.170.135",
-      "server_port": 8443,
+      "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+      "transport": {
+        "type": "ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc",
-      "server": "ees92.shhflow.xyz",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
+      "server": "143.246.41.31",
       "server_port": 443,
       "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
       "flow": "xtls-rprx-vision",
@@ -124,6 +89,86 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc",
+      "server": "ee.h1cloud.net",
+      "server_port": 25895,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
+          "short_id": "a73f0410d728c823"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - djkyc",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-ee",
+        "headers": {
+          "Host": "tgmansion.site"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 09 - djkyc",
+      "server": "93.89.220.37",
+      "server_port": 443,
+      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ibm.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
+          "short_id": "e88cb983f3c97528"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -134,7 +179,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - djkyc"
       ]
     },
     {
@@ -147,7 +194,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - djkyc",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
