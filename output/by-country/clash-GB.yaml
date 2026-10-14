@@ -5,23 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - djkyc
-  server: 188.114.97.6
-  port: 8080
+  server: 51.77.225.200
+  port: 8388
   udp: true
-  type: vless
-  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
-  network: ws
-  ws-opts:
-    path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT
-    headers:
-      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
 - name: 🇬🇧 英国 (United Kingdom) 02 - djkyc
-  server: 13.40.42.59
+  server: 149.102.132.184
   port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 03 - djkyc
   server: 164.37.100.195
   port: 443
@@ -34,14 +30,14 @@ proxies:
     public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
     short-id: 2e124af254a65e7c
   servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 04 - djkyc
-  server: 13.40.25.145
+  server: 141.98.101.181
   port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 05 - djkyc
   server: 149.102.132.184
   port: 80
@@ -50,42 +46,6 @@ proxies:
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 06 - djkyc
-  server: 3.10.198.113
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 07 - djkyc
-  server: 188.114.96.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
-  tls: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/Dx6V42S2EK2zpfDrJrOZXj4MI5PnNOGr
-    headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 08 - djkyc
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇬🇧 英国 (United Kingdom) 09 - djkyc
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 10 - djkyc
   server: 23.81.34.204
   port: 443
   udp: true
@@ -97,151 +57,59 @@ proxies:
     public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 11 - djkyc
-  server: 149.102.132.184
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 12 - djkyc
-  server: 13.135.102.116
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 13 - djkyc
-  server: 3.10.142.119
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 14 - djkyc
-  server: 18.135.29.85
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 15 - djkyc
-  server: 45.141.118.213
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga16.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 16 - djkyc
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 17 - djkyc
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 07 - djkyc
   server: 146.70.61.18
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 18 - djkyc
-  server: 35.179.134.0
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 19 - djkyc
-  server: 45.155.69.230
+- name: 🇬🇧 英国 (United Kingdom) 08 - djkyc
+  server: 186.190.211.188
   port: 443
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-e033-8679-c4cb67e2e2cc
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 186.190.211.188
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 09 - djkyc
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇬🇧 英国 (United Kingdom) 10 - djkyc
+  server: 146.70.23.32
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 11 - djkyc
+  server: 95.85.224.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
     short-id: a696de84963656de
-  servername: amd.com
+  servername: max.ru
   client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 20 - djkyc
-  server: 5.199.0.226
-  port: 443
-  udp: true
-  type: vless
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-  tls: true
-  servername: rnxq-1lpi3m.linmeisoft.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-    headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
-- name: 🇬🇧 英国 (United Kingdom) 21 - djkyc
-  server: 16.60.8.87
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 22 - djkyc
-  server: 45.141.118.49
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lagad17.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 23 - djkyc
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vless
-  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇬🇧 英国 (United Kingdom) 24 - djkyc
-  server: 109.248.169.195
-  port: 43000
-  udp: true
-  type: vless
-  uuid: caed9423-a900-4704-9045-d207a8d4697b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc
-    short-id: 445b41ed
-  servername: 109.248.169.195
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 25 - djkyc
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: eb9ee088-57d8-4d68-ad00-da4ce09daca3
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 26 - djkyc
-  server: laga19.api3-max.ru
+- name: 🇬🇧 英国 (United Kingdom) 12 - djkyc
+  server: 206.245.166.173
   port: 443
   udp: true
   type: vless
@@ -250,90 +118,15 @@ proxies:
   tls: true
   servername: laga19.api3-max.ru
   skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 27 - djkyc
-  server: 51.89.194.151
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-  tls: true
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 28 - djkyc
-  server: 206.245.166.203
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga20.api3-max.ru
-  skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 29 - djkyc
-  server: 46.250.250.149
-  port: 2053
+- name: 🇬🇧 英国 (United Kingdom) 13 - djkyc
+  server: 146.70.61.37
+  port: 8080
   udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 30 - djkyc
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: 6329b7f9-4774-425d-be6b-592213917c65
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 31 - djkyc
-  server: 51.38.71.147
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  tls: true
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 32 - djkyc
-  server: laga18.api3-max.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga18.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 33 - djkyc
-  server: 46.250.240.80
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  tls: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-    short-id: 4cc9dc65f7770115
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 34 - djkyc
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 14 - djkyc
   server: 193.163.203.170
   port: 443
   udp: true
@@ -346,14 +139,18 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 35 - djkyc
-  server: 146.70.23.32
-  port: 8080
+- name: 🇬🇧 英国 (United Kingdom) 15 - djkyc
+  server: laga18.api3-max.ru
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 36 - djkyc
+  type: vless
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: laga18.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 16 - djkyc
   server: 23.81.36.148
   port: 1222
   udp: true
@@ -364,47 +161,94 @@ proxies:
     public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
     short-id: a25d0f
   servername: www.forvo.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 37 - djkyc
-  server: 107.181.151.241
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 17 - djkyc
+  server: lagad17.api3-max.ru
   port: 443
   udp: true
   type: vless
-  uuid: 106d20f6-d70a-40e2-b69b-8e82baf8d117
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
   flow: xtls-rprx-vision
   tls: true
+  servername: lagad17.api3-max.ru
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 18 - djkyc
+  server: 5.199.0.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+  tls: true
+  servername: rnxq-1lpi3m.linmeisoft.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+    headers:
+      Host: rnxq-1lpi3m.linmeisoft.com
+- name: 🇬🇧 英国 (United Kingdom) 19 - djkyc
+  server: 51.89.194.151
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  tls: true
   reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 60500a63ad12
-  servername: www.microsoft.com
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+    short-id: d051f678212f9d54
+  servername: www.apple.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 38 - djkyc
+- name: 🇬🇧 英国 (United Kingdom) 20 - djkyc
+  server: 46.250.240.80
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  tls: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+    short-id: 4cc9dc65f7770115
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 21 - djkyc
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 22 - djkyc
   server: 107.181.151.39
   port: 443
   udp: true
   type: vless
-  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 73a9e631a09b
+    short-id: bbcab8fa80a3
   servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 39 - djkyc
-  server: sql.popmintxo.cc
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 23 - djkyc
+  server: 107.181.151.241
   port: 443
   udp: true
   type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
+  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 40 - djkyc
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 225e930cfd4d
+  servername: www.hollywoodreporter.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 24 - djkyc
   server: 87.239.249.137
   port: 443
   udp: true
@@ -417,28 +261,33 @@ proxies:
     short-id: 91af08b1ce1f
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 41 - djkyc
-  server: webdisk.jaggyslawa.org
+- name: 🇬🇧 英国 (United Kingdom) 25 - djkyc
+  server: 104.238.2.82
   port: 443
   udp: true
   type: vless
-  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
+  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 87174b37ce3b
+    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
+    short-id: b558b9305a0b
   servername: www.microsoft.com
-  client-fingerprint: edge
-- name: 🇬🇧 英国 (United Kingdom) 42 - djkyc
-  server: v36.hdacd.com
-  port: 30836
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 26 - djkyc
+  server: 109.248.169.195
+  port: 43000
   udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 43 - djkyc
+  type: vless
+  uuid: caed9423-a900-4704-9045-d207a8d4697b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc
+    short-id: 445b41ed
+  servername: 109.248.169.195
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 27 - djkyc
   server: 94.156.250.148
   port: 7001
   udp: true
@@ -477,22 +326,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - djkyc
   - 🇬🇧 英国 (United Kingdom) 26 - djkyc
   - 🇬🇧 英国 (United Kingdom) 27 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 28 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 29 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 30 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 31 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 32 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 33 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 34 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 35 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 36 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 37 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 38 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 39 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 40 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 41 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 42 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 43 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -525,21 +358,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - djkyc
   - 🇬🇧 英国 (United Kingdom) 26 - djkyc
   - 🇬🇧 英国 (United Kingdom) 27 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 28 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 29 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 30 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 31 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 32 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 33 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 34 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 35 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 36 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 37 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 38 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 39 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 40 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 41 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 42 - djkyc
-  - 🇬🇧 英国 (United Kingdom) 43 - djkyc
 rules:
 - MATCH,PROXIES

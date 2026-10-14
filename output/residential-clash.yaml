@@ -4,43 +4,51 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
+- name: 🇺🇸 美国 (United States) 01 (家宽) - djkyc
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
-  server: 206.1.102.81
-  port: 17915
-  udp: true
-  type: vless
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  tls: true
-  servername: googol.wookshop.ir
-  skip-cert-verify: true
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  server: 218.237.185.234
+  server: p141.panda001.net
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
-  server: yazhou09.twzq59.cc
-  port: 10688
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
   udp: true
-  type: anytls
-  password: 13f0acfa-38c1-4e82-a758-583aa31740df
-  sni: yazhou09.twzq59.cc
-  skip-cert-verify: true
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: fujrdt.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
+  - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc
@@ -49,7 +57,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
+  - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - djkyc

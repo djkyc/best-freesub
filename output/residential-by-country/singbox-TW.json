@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - djkyc",
-      "server": "yazhou09.twzq59.cc",
-      "server_port": 10688,
-      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "yazhou09.twzq59.cc",
-        "insecure": true
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fujrdt.d6f54hd1j.cc"
+        }
       }
     },
     {

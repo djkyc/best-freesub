@@ -6,95 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - djkyc",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "12ad647b-fa22-4bad-b27f-f54cb92f962b",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - djkyc",
-      "server": "ch.srv.vbuste.ru",
-      "server_port": 444,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "tls": {
-        "enabled": true,
-        "server_name": "ch.srv.vbuste.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - djkyc",
-      "server": "208.69.78.217",
-      "server_port": 21021,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - djkyc",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - djkyc",
-      "server": "128.241.25.11",
-      "server_port": 30021,
-      "uuid": "37d6fe46-0e65-4dce-9024-b13abfd50f9d",
-      "tls": {
-        "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - djkyc",
       "server": "138.124.63.224",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -118,7 +29,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - djkyc",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - djkyc",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -130,68 +41,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - djkyc",
-      "server": "45.90.59.15",
-      "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - djkyc",
-      "server": "138.124.96.88",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - djkyc",
+      "server": "lte.homyak.app",
       "server_port": 41826,
       "uuid": "2eb3f6a0-df6e-49b6-994c-177acdd50a97",
       "tls": {
         "enabled": true,
         "server_name": "sweden.homyak.app",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "httpupgrade"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 10 - djkyc",
-      "server": "br.urobotix.tech",
-      "server_port": 443,
-      "uuid": "7b9b233c-c646-4859-88b2-2a55695c6487",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "br.urobotix.tech",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jQx41aPKBwFCRKregjdLMmwo4ShIYfjHWIMIl-0HJhc",
-          "short_id": "288d01b5"
         }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 11 - djkyc",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - djkyc",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -200,7 +70,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -210,27 +80,24 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 12 - djkyc",
-      "server": "129.151.64.169",
-      "server_port": 31867,
-      "uuid": "995647dd-614b-4efd-8147-5937f962e806",
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - djkyc",
+      "server": "208.69.78.217",
+      "server_port": 21090,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false
+        "server_name": "vpn.local",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 13 - djkyc",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - djkyc",
       "server": "208.69.78.217",
       "server_port": 21161,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -245,29 +112,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 14 - djkyc",
-      "server": "45.77.241.190",
-      "server_port": 8441,
-      "uuid": "45deab47-28e0-4048-b7a2-1ab672f684f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - djkyc",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 15 - djkyc",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - djkyc",
       "server": "208.69.78.217",
-      "server_port": 21054,
+      "server_port": 33042,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -277,6 +133,27 @@
       "obfs": {
         "type": "salamander",
         "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 - djkyc",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
+        }
       }
     },
     {
@@ -292,13 +169,7 @@
         "🇨🇭 瑞士 (Switzerland) 06 - djkyc",
         "🇨🇭 瑞士 (Switzerland) 07 - djkyc",
         "🇨🇭 瑞士 (Switzerland) 08 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 09 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 10 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 11 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 12 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 13 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 14 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 15 - djkyc"
+        "🇨🇭 瑞士 (Switzerland) 09 - djkyc"
       ]
     },
     {
@@ -313,13 +184,7 @@
         "🇨🇭 瑞士 (Switzerland) 06 - djkyc",
         "🇨🇭 瑞士 (Switzerland) 07 - djkyc",
         "🇨🇭 瑞士 (Switzerland) 08 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 09 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 10 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 11 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 12 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 13 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 14 - djkyc",
-        "🇨🇭 瑞士 (Switzerland) 15 - djkyc"
+        "🇨🇭 瑞士 (Switzerland) 09 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

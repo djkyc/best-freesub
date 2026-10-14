@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - djkyc
-  server: 178.17.57.120
+  server: arcturus.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -16,52 +16,18 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇮🇶 IQ 02 - djkyc
-  server: 188.114.97.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
-  tls: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇮🇶 IQ 03 - djkyc
-  server: chatgpt.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: a43a9a45-7387-4faf-ad06-24b1ae181fdc
-  tls: true
-  servername: snowy-glade-85fa.arshiatakalloo88.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: snowy-glade-85fa.arshiatakalloo88.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - djkyc
-  - 🇮🇶 IQ 02 - djkyc
-  - 🇮🇶 IQ 03 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - djkyc
-  - 🇮🇶 IQ 02 - djkyc
-  - 🇮🇶 IQ 03 - djkyc
 rules:
 - MATCH,PROXIES
