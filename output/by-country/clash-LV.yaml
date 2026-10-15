@@ -6,32 +6,33 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - djkyc
   server: 185.135.86.175
-  port: 9033
+  port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
+  password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - djkyc
-  server: 195.123.213.28
-  port: 443
+  server: 185.135.86.175
+  port: 9017
   udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - djkyc
   server: 185.135.86.175
-  port: 9034
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - djkyc
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - djkyc
   server: 138.124.180.137
   port: 443
   udp: true
@@ -44,7 +45,20 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - djkyc
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - djkyc
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - djkyc
   server: 195.123.208.32
   port: 443
   udp: true
@@ -67,6 +81,8 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 04 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 05 - djkyc
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - djkyc
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +93,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 04 - djkyc
   - 🇱🇻 拉脱维亚 (Latvia) 05 - djkyc
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - djkyc
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - djkyc
 rules:
 - MATCH,PROXIES
