@@ -15,7 +15,7 @@ proxies:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
     short-id: 56d4e7ae4f86fa39
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - djkyc
   server: 103.193.173.51
   port: 39485
@@ -30,13 +30,12 @@ proxies:
   servername: www.icloud.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - djkyc
-  server: 202.146.222.174
-  port: 443
+  server: 45.140.168.141
+  port: 50120
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - djkyc
   server: 82.29.36.250
   port: 443
@@ -49,8 +48,37 @@ proxies:
     public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
     short-id: ac3342a709db
   servername: aws.amazon.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - djkyc
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - djkyc
+  server: dog-hk.kunlun01dns.com
+  port: 21020
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - djkyc
+  server: hk3.oh-node.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zV4Sja0iajpdzkR1iBMbI7RRWL2nlpgwGOtirQSG-zc
+    short-id: b81edf7fdee4
+  servername: hk4e-launcher-static.hoyoverse.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - djkyc
   server: 34.150.46.137
   port: 443
   udp: true
@@ -58,29 +86,66 @@ proxies:
   password: e7438b3190e185e1a0e529673fc0588efc85070295f51a893a44b8ce7812c235
   sni: 34.150.46.137
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - djkyc
-  server: 8.6.112.242
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - djkyc
+  server: hk4.oh-node.com
   port: 443
   udp: true
   type: vless
-  uuid: 64726966-0000-4000-8000-740000000000
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  flow: xtls-rprx-vision
   tls: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /drift?ed
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - djkyc
-  server: 2.27.109.179
-  port: 45464
+  reality-opts:
+    public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
+    short-id: ea6b43
+  servername: hk4e-launcher-static.hoyoverse.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - djkyc
+  server: 207.56.137.51
+  port: 443
   udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - djkyc
+  type: vless
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - djkyc
+  server: hk6.oh-node.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2kl8isq7ajNv3BR6Z1EPag_LqJHmsfo2pn0dA7yetko
+    short-id: a2d13d677624197e
+  servername: www.hsbc.com.hk
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - djkyc
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - djkyc
+  server: 530.150333.xyz
+  port: 21003
+  udp: true
+  type: vless
+  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
+  tls: true
+  reality-opts:
+    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
+    short-id: a2993515115a7293
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - djkyc
   server: 154.37.216.186
   port: 443
   udp: true
@@ -93,17 +158,31 @@ proxies:
     short-id: f39ad9d9eb26df47
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - djkyc
-  server: nas.aizhzo.com
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - djkyc
+  server: yg1.ygkkk.dpdns.org
+  port: 443
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
+  type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: jmp1.907737.xyz
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - djkyc
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - djkyc
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - djkyc
   server: hk2.998998.best
   port: 443
   udp: true
@@ -119,31 +198,52 @@ proxies:
     path: /asivewritten
     headers:
       Host: server15.9966338.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - djkyc
-  server: 207.56.137.51
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - djkyc
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - djkyc
+  server: 530.150333.xyz
+  port: 21002
   udp: true
   type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
+  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
   tls: true
   reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
+    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
+    short-id: c6156c9d0e42e230
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - djkyc
-  server: 47.238.210.5
-  port: 13779
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - djkyc
+  server: 530.150333.xyz
+  port: 21004
   udp: true
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
   tls: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: qq
+    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
+    short-id: 081ef10da8394346
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 21 - djkyc
+  server: 530.150333.xyz
+  port: 21001
+  udp: true
+  type: vless
+  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
+  tls: true
+  reality-opts:
+    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
+    short-id: 2344dfc9d062ae22
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,6 +261,15 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 11 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 12 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 13 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 14 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 15 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 16 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 17 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 18 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 19 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 20 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 21 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,5 +287,14 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 11 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 12 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 13 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 14 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 15 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 16 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 17 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 18 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 19 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 20 - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 21 - djkyc
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
-  server: 218.237.185.234
-  port: 4652
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - djkyc
+  server: v4.hdacd.com
+  port: 30804
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+  - 🇮🇪 爱尔兰 (Ireland) 01 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+  - 🇮🇪 爱尔兰 (Ireland) 01 - djkyc
 rules:
 - MATCH,PROXIES
