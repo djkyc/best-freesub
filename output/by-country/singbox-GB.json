@@ -4,8 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - djkyc",
+      "server": "138.124.90.177",
+      "server_port": 10443,
+      "uuid": "3a0e4040-67cc-43e0-a9fb-98e15ddb0526"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - djkyc",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - djkyc",
       "server": "149.102.132.184",
       "server_port": 443,
       "method": "aes-256-gcm",
@@ -13,7 +28,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - djkyc",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - djkyc",
       "server": "149.102.132.184",
       "server_port": 80,
       "method": "aes-256-gcm",
@@ -21,42 +36,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - djkyc",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - djkyc",
       "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - djkyc",
-      "server": "31.76.246.39",
-      "server_port": 706,
-      "uuid": "e5544327-834c-455a-9db5-2454c788fa17",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6ABNRK-j4hVgo-DwsX3zxMSjMOuudrVZRxLde3XB530",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - djkyc",
-      "server": "141.98.101.181",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
@@ -69,6 +53,34 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 07 - djkyc",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - djkyc",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - djkyc",
       "server": "164.37.100.195",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -89,26 +101,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - djkyc",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - djkyc",
-      "server": "186.190.211.188",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "tls": {
-        "enabled": true,
-        "server_name": "186.190.211.188",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 10 - djkyc",
       "server": "146.70.23.32",
       "server_port": 8080,
@@ -116,24 +108,12 @@
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 11 - djkyc",
-      "server": "46.250.250.149",
-      "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
-        }
-      }
+      "server": "146.70.61.18",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
@@ -157,17 +137,16 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 13 - djkyc",
       "server": "57.129.132.223",
       "server_port": 80,
-      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-      "security": "auto",
+      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/vless/",
         "headers": {
-          "Host": "viber.com"
+          "Host": "google.com"
         }
       }
     },
@@ -194,68 +173,48 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 15 - djkyc",
-      "server": "uk2.oh-node.com",
+      "server": "107.181.151.241",
       "server_port": 443,
-      "uuid": "7cfd34ae-edad-4cc5-9d6f-066f7add7829",
+      "uuid": "594d466e-8ac3-4fda-b1d1-eeb817853518",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bp.com",
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk",
-          "short_id": "20"
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "5a018643df03"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 16 - djkyc",
-      "server": "51.89.194.151",
-      "server_port": 2053,
-      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+      "server": "107.181.151.39",
+      "server_port": 443,
+      "uuid": "1896c6c9-a941-4688-a865-29027bf7f8e6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
-          "short_id": "d051f678212f9d54"
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "6c825bc79850"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 17 - djkyc",
-      "server": "193.163.203.170",
-      "server_port": 443,
-      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
-          "short_id": "b28db60d77c50b4f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 18 - djkyc",
       "server": "87.239.249.137",
       "server_port": 443,
       "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
@@ -275,37 +234,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 19 - djkyc",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 20 - djkyc",
-      "server": "107.181.151.241",
-      "server_port": 443,
-      "uuid": "ee39fb11-56a3-4ee7-9e7c-35a4235bd30e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "b27ba098687b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 21 - djkyc",
+      "tag": "🇬🇧 英国 (United Kingdom) 18 - djkyc",
       "server": "104.238.2.82",
       "server_port": 443,
       "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
@@ -326,72 +256,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 22 - djkyc",
-      "server": "107.181.151.39",
+      "tag": "🇬🇧 英国 (United Kingdom) 19 - djkyc",
+      "server": "de1.wizard.select",
       "server_port": 443,
-      "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
+      "uuid": "143fc3c6-c807-11f1-b5bb-55ba72567166",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "bbcab8fa80a3"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 23 - djkyc",
-      "server": "82.38.31.205",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 24 - djkyc",
-      "server": "nl2.oh-node.com",
-      "server_port": 443,
-      "uuid": "7cfd34ae-edad-4cc5-9d6f-066f7add7829",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.philips.com",
+        "server_name": "de1.wizard.select",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM",
-          "short_id": "69cc4c0d5e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 25 - djkyc",
-      "server": "nl1.oh-node.com",
-      "server_port": 443,
-      "uuid": "7cfd34ae-edad-4cc5-9d6f-066f7add7829",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.philips.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw",
-          "short_id": "92dca6"
+          "public_key": "bh7oxfR5Z80ysdaZ-WurGfzR8rcXHEdKkxonpUtJLGk",
+          "short_id": "1760e3746d0697"
         }
       }
     },
@@ -418,13 +298,7 @@
         "🇬🇧 英国 (United Kingdom) 16 - djkyc",
         "🇬🇧 英国 (United Kingdom) 17 - djkyc",
         "🇬🇧 英国 (United Kingdom) 18 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 19 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 20 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 21 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 22 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 23 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 24 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 25 - djkyc"
+        "🇬🇧 英国 (United Kingdom) 19 - djkyc"
       ]
     },
     {
@@ -449,13 +323,7 @@
         "🇬🇧 英国 (United Kingdom) 16 - djkyc",
         "🇬🇧 英国 (United Kingdom) 17 - djkyc",
         "🇬🇧 英国 (United Kingdom) 18 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 19 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 20 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 21 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 22 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 23 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 24 - djkyc",
-        "🇬🇧 英国 (United Kingdom) 25 - djkyc"
+        "🇬🇧 英国 (United Kingdom) 19 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
