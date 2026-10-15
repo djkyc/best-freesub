@@ -23,22 +23,14 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "vpn-tw-002.fastervpn.world",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
-      "server": "59.125.69.23",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
+      "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
@@ -56,22 +48,41 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - djkyc",
-      "server": "207.56.137.51",
-      "server_port": 443,
-      "uuid": "01ada9fb-fa2f-45da-a0d0-bce80cdf433b",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
+      "server": "fi-p1.h1cloud.net",
+      "server_port": 25633,
+      "uuid": "ec572cf0-1337-4c51-b4ec-ff2f538c1f4c",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.icloud.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0",
-          "short_id": "f713561d"
+          "public_key": "YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE",
+          "short_id": "200811f031ae7463"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - djkyc",
+      "server": "fi-p1.h1cloud.net",
+      "server_port": 25633,
+      "uuid": "0c3ad9d5-cffd-4748-b8df-ab145288144b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE",
+          "short_id": "200811f031ae7463"
         }
       }
     },

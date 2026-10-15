@@ -11,15 +11,7 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
-  server: 206.1.102.64
-  port: 8080
-  udp: true
-  type: vmess
-  uuid: 184a0393-5c9e-403c-9be6-427b066308e1
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
   server: fujrdt.d6f54hd1j.cc
   port: 443
   udp: true
@@ -35,37 +27,19 @@ proxies:
     path: /
     headers:
       Host: fujrdt.d6f54hd1j.cc
-- name: 🇺🇸 美国 (United States) 04 (家宽) - djkyc
-  server: xstack.mahanfixe.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  tls: true
-  servername: xstack.mahanfixe.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /xiron
-    headers:
-      Host: xstack.mahanfixe.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc
-  - 🇺🇸 美国 (United States) 04 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc
-  - 🇺🇸 美国 (United States) 04 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc
 rules:
 - MATCH,PROXIES

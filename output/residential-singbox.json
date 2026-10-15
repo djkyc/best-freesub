@@ -13,15 +13,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
-      "server": "206.1.102.64",
-      "server_port": 8080,
-      "uuid": "184a0393-5c9e-403c-9be6-427b066308e1",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc",
       "server": "fujrdt.d6f54hd1j.cc",
       "server_port": 443,
       "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
@@ -40,33 +32,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (家宽) - djkyc",
-      "server": "xstack.mahanfixe.workers.dev",
-      "server_port": 443,
-      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
-      "tls": {
-        "enabled": true,
-        "server_name": "xstack.mahanfixe.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/xiron",
-        "headers": {
-          "Host": "xstack.mahanfixe.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
-        "🇺🇸 美国 (United States) 04 (家宽) - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc"
       ]
     },
     {
@@ -74,9 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
-        "🇺🇸 美国 (United States) 04 (家宽) - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
