@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - djkyc
-  server: platform106.golnamakcert.top
+  server: platform109.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform109
     headers:
-      Host: platform106.halalkhor.info
+      Host: platform109.halalkhor.info
 - name: 🇧🇷 巴西 (Brazil) 02 - djkyc
   server: platform107.golnamakcert.top
   port: 80
@@ -27,16 +27,16 @@ proxies:
     headers:
       Host: platform107.halalkhor.info
 - name: 🇧🇷 巴西 (Brazil) 03 - djkyc
-  server: platform108.golnamakcert.top
+  server: platform106.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform108
+    path: /platform106
     headers:
-      Host: platform108.halalkhor.info
+      Host: platform106.halalkhor.info
 - name: 🇧🇷 巴西 (Brazil) 04 - djkyc
   server: platform118.golnamakcert.top
   port: 80
@@ -49,16 +49,16 @@ proxies:
     headers:
       Host: platform118.halalkhor.info
 - name: 🇧🇷 巴西 (Brazil) 05 - djkyc
-  server: platform113.golnamakcert.top
+  server: platform108.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform113
+    path: /platform108
     headers:
-      Host: platform113.halalkhor.info
+      Host: platform108.halalkhor.info
 - name: 🇧🇷 巴西 (Brazil) 06 - djkyc
   server: platform101.golnamakcert.top
   port: 80
@@ -71,17 +71,6 @@ proxies:
     headers:
       Host: platform101.halalkhor.info
 - name: 🇧🇷 巴西 (Brazil) 07 - djkyc
-  server: platform102.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇧🇷 巴西 (Brazil) 08 - djkyc
   server: platform117.golnamakcert.top
   port: 80
   udp: true
@@ -92,29 +81,7 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇧🇷 巴西 (Brazil) 09 - djkyc
-  server: platform103.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇧🇷 巴西 (Brazil) 10 - djkyc
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇧🇷 巴西 (Brazil) 11 - djkyc
+- name: 🇧🇷 巴西 (Brazil) 08 - djkyc
   server: 137.131.171.249
   port: 20000
   udp: true
@@ -125,17 +92,39 @@ proxies:
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
   ports: 20000-30000
-- name: 🇧🇷 巴西 (Brazil) 12 - djkyc
-  server: platform109.golnamakcert.top
+- name: 🇧🇷 巴西 (Brazil) 09 - djkyc
+  server: platform113.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform113
     headers:
-      Host: platform109.halalkhor.info
+      Host: platform113.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 10 - djkyc
+  server: platform102.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 11 - djkyc
+  server: platform115.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,7 +141,6 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 09 - djkyc
   - 🇧🇷 巴西 (Brazil) 10 - djkyc
   - 🇧🇷 巴西 (Brazil) 11 - djkyc
-  - 🇧🇷 巴西 (Brazil) 12 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -169,6 +157,5 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 09 - djkyc
   - 🇧🇷 巴西 (Brazil) 10 - djkyc
   - 🇧🇷 巴西 (Brazil) 11 - djkyc
-  - 🇧🇷 巴西 (Brazil) 12 - djkyc
 rules:
 - MATCH,PROXIES

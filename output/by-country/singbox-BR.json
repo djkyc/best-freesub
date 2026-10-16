@@ -6,14 +6,14 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01 - djkyc",
-      "server": "platform106.golnamakcert.top",
+      "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform106",
+        "path": "/platform109",
         "headers": {
-          "Host": "platform106.halalkhor.info"
+          "Host": "platform109.halalkhor.info"
         }
       }
     },
@@ -34,14 +34,14 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 03 - djkyc",
-      "server": "platform108.golnamakcert.top",
+      "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform108",
+        "path": "/platform106",
         "headers": {
-          "Host": "platform108.halalkhor.info"
+          "Host": "platform106.halalkhor.info"
         }
       }
     },
@@ -62,14 +62,14 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 05 - djkyc",
-      "server": "platform113.golnamakcert.top",
+      "server": "platform108.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113",
+        "path": "/platform108",
         "headers": {
-          "Host": "platform113.halalkhor.info"
+          "Host": "platform108.halalkhor.info"
         }
       }
     },
@@ -90,20 +90,6 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 07 - djkyc",
-      "server": "platform102.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 08 - djkyc",
       "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -116,36 +102,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 09 - djkyc",
-      "server": "platform103.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 10 - djkyc",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 11 - djkyc",
+      "tag": "🇧🇷 巴西 (Brazil) 08 - djkyc",
       "server": "137.131.171.249",
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
@@ -163,15 +121,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 12 - djkyc",
-      "server": "platform109.golnamakcert.top",
+      "tag": "🇧🇷 巴西 (Brazil) 09 - djkyc",
+      "server": "platform113.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform109",
+        "path": "/platform113",
         "headers": {
-          "Host": "platform109.halalkhor.info"
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 10 - djkyc",
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 11 - djkyc",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115",
+        "headers": {
+          "Host": "platform115.halalkhor.info"
         }
       }
     },
@@ -190,8 +176,7 @@
         "🇧🇷 巴西 (Brazil) 08 - djkyc",
         "🇧🇷 巴西 (Brazil) 09 - djkyc",
         "🇧🇷 巴西 (Brazil) 10 - djkyc",
-        "🇧🇷 巴西 (Brazil) 11 - djkyc",
-        "🇧🇷 巴西 (Brazil) 12 - djkyc"
+        "🇧🇷 巴西 (Brazil) 11 - djkyc"
       ]
     },
     {
@@ -208,8 +193,7 @@
         "🇧🇷 巴西 (Brazil) 08 - djkyc",
         "🇧🇷 巴西 (Brazil) 09 - djkyc",
         "🇧🇷 巴西 (Brazil) 10 - djkyc",
-        "🇧🇷 巴西 (Brazil) 11 - djkyc",
-        "🇧🇷 巴西 (Brazil) 12 - djkyc"
+        "🇧🇷 巴西 (Brazil) 11 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
