@@ -28,6 +28,17 @@ proxies:
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
   ports: 20000-30000
 - name: 🇧🇷 巴西 (Brazil) 03 - djkyc
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 04 - djkyc
   server: platform101.golnamakcert.top
   port: 80
   udp: true
@@ -46,6 +57,7 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - djkyc
   - 🇧🇷 巴西 (Brazil) 02 - djkyc
   - 🇧🇷 巴西 (Brazil) 03 - djkyc
+  - 🇧🇷 巴西 (Brazil) 04 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +66,6 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - djkyc
   - 🇧🇷 巴西 (Brazil) 02 - djkyc
   - 🇧🇷 巴西 (Brazil) 03 - djkyc
+  - 🇧🇷 巴西 (Brazil) 04 - djkyc
 rules:
 - MATCH,PROXIES
