@@ -4,106 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - djkyc",
-      "server": "platform109.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109",
-        "headers": {
-          "Host": "platform109.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - djkyc",
-      "server": "platform107.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107",
-        "headers": {
-          "Host": "platform107.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - djkyc",
-      "server": "platform106.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform106",
-        "headers": {
-          "Host": "platform106.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 04 - djkyc",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 05 - djkyc",
-      "server": "platform108.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform108",
-        "headers": {
-          "Host": "platform108.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 06 - djkyc",
-      "server": "platform101.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform101",
-        "headers": {
-          "Host": "platform101.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 07 - djkyc",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117",
-        "headers": {
-          "Host": "platform117.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 08 - djkyc",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - djkyc",
       "server": "137.131.171.249",
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
@@ -120,80 +22,18 @@
       ]
     },
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 09 - djkyc",
-      "server": "platform113.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113",
-        "headers": {
-          "Host": "platform113.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 10 - djkyc",
-      "server": "platform102.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 11 - djkyc",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - djkyc",
-        "🇧🇷 巴西 (Brazil) 02 - djkyc",
-        "🇧🇷 巴西 (Brazil) 03 - djkyc",
-        "🇧🇷 巴西 (Brazil) 04 - djkyc",
-        "🇧🇷 巴西 (Brazil) 05 - djkyc",
-        "🇧🇷 巴西 (Brazil) 06 - djkyc",
-        "🇧🇷 巴西 (Brazil) 07 - djkyc",
-        "🇧🇷 巴西 (Brazil) 08 - djkyc",
-        "🇧🇷 巴西 (Brazil) 09 - djkyc",
-        "🇧🇷 巴西 (Brazil) 10 - djkyc",
-        "🇧🇷 巴西 (Brazil) 11 - djkyc"
+        "🇧🇷 巴西 (Brazil) 01 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - djkyc",
-        "🇧🇷 巴西 (Brazil) 02 - djkyc",
-        "🇧🇷 巴西 (Brazil) 03 - djkyc",
-        "🇧🇷 巴西 (Brazil) 04 - djkyc",
-        "🇧🇷 巴西 (Brazil) 05 - djkyc",
-        "🇧🇷 巴西 (Brazil) 06 - djkyc",
-        "🇧🇷 巴西 (Brazil) 07 - djkyc",
-        "🇧🇷 巴西 (Brazil) 08 - djkyc",
-        "🇧🇷 巴西 (Brazil) 09 - djkyc",
-        "🇧🇷 巴西 (Brazil) 10 - djkyc",
-        "🇧🇷 巴西 (Brazil) 11 - djkyc"
+        "🇧🇷 巴西 (Brazil) 01 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
