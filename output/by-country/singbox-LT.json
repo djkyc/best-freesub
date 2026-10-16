@@ -7,29 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - djkyc",
       "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - djkyc",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
-      "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
       "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - djkyc",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
@@ -37,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
       "server": "84.32.109.20",
       "server_port": 443,
       "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
@@ -47,7 +39,7 @@
         "server_name": "litv.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -64,8 +56,7 @@
         "🇱🇹 立陶宛 (Lithuania) 01 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 02 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 05 - djkyc"
+        "🇱🇹 立陶宛 (Lithuania) 04 - djkyc"
       ]
     },
     {
@@ -75,8 +66,7 @@
         "🇱🇹 立陶宛 (Lithuania) 01 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 02 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 05 - djkyc"
+        "🇱🇹 立陶宛 (Lithuania) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,34 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "tuic",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
-      "server": "tw4.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "tw4.dexlos.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "160.187.100.109",
+        "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
       "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
       "server": "tw8.dexlos.com",
       "server_port": 8080,
       "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
@@ -49,14 +35,32 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "t.me",
         "insecure": true
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
+      "server": "tw4.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw4.dexlos.com",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
@@ -79,15 +83,21 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "tuic",
       "tag": "🇹🇼 中国台湾 (Taiwan) 06 - djkyc",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "tw3.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
-        "insecure": true
+        "server_name": "tw3.dexlos.com",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
@@ -109,24 +119,6 @@
       }
     },
     {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 08 - djkyc",
-      "server": "tw3.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw3.dexlos.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -137,8 +129,7 @@
         "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 05 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 06 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 07 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 08 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 07 - djkyc"
       ]
     },
     {
@@ -151,8 +142,7 @@
         "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 05 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 06 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 07 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 08 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 07 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
