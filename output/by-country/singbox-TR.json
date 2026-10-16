@@ -38,7 +38,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -48,43 +48,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - djkyc",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - djkyc",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - djkyc",
       "server": "me17.msjia8844.site",
       "server_port": 7443,
       "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
         "server_name": "me17.msjia8844.site",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -93,7 +65,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - djkyc",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - djkyc",
       "server": "104.21.48.18",
       "server_port": 2053,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
@@ -112,22 +84,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - djkyc",
-      "server": "85.192.48.142",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - djkyc",
+      "server": "78.135.73.47",
       "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nvidia.com",
+        "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
         }
       }
     },
@@ -140,9 +112,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - djkyc",
         "🇹🇷 土耳其 (Turkey) 03 - djkyc",
         "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 06 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 07 - djkyc"
+        "🇹🇷 土耳其 (Turkey) 05 - djkyc"
       ]
     },
     {
@@ -153,9 +123,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - djkyc",
         "🇹🇷 土耳其 (Turkey) 03 - djkyc",
         "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 06 - djkyc",
-        "🇹🇷 土耳其 (Turkey) 07 - djkyc"
+        "🇹🇷 土耳其 (Turkey) 05 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
