@@ -46,43 +46,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
-      "server": "137.23.2.56",
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
-    },
-    {
       "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
       "server": "172.67.195.146",
       "server_port": 443,
       "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
@@ -102,7 +67,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - djkyc",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
       "server": "137.23.2.56",
       "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
@@ -124,9 +89,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 06 - djkyc"
+        "🇦🇺 澳大利亚 (Australia) 04 - djkyc"
       ]
     },
     {
@@ -136,9 +99,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 06 - djkyc"
+        "🇦🇺 澳大利亚 (Australia) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

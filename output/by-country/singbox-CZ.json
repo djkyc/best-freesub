@@ -25,16 +25,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
-      "server": "67.159.18.34",
-      "server_port": 17001,
-      "method": "aes-256-gcm",
-      "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - djkyc",
+      "tag": "🇨🇿 捷克 (Czech) 02 - djkyc",
       "server": "cl-glb6e059ee.gcdn.co",
       "server_port": 443,
       "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
@@ -64,8 +56,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - djkyc",
-        "🇨🇿 捷克 (Czech) 02 - djkyc",
-        "🇨🇿 捷克 (Czech) 03 - djkyc"
+        "🇨🇿 捷克 (Czech) 02 - djkyc"
       ]
     },
     {
@@ -73,8 +64,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - djkyc",
-        "🇨🇿 捷克 (Czech) 02 - djkyc",
-        "🇨🇿 捷克 (Czech) 03 - djkyc"
+        "🇨🇿 捷克 (Czech) 02 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
