@@ -4,14 +4,113 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
+- name: 🇺🇸 美国 (United States) 01 (家宽) - djkyc
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - djkyc
+  server: 172.66.47.45
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: wk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - djkyc
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - djkyc
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16116
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 05 (家宽) - djkyc
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇺🇸 美国 (United States) 06 (家宽) - djkyc
+  server: 104.21.35.17
+  port: 443
+  udp: true
+  type: vless
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  tls: true
+  servername: xstack.mahanfixe.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - djkyc
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - djkyc
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
+  server: svip.skycon808.com
+  port: 47531
+  udp: true
+  type: anytls
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+  sni: tw15.swiftrelay.cc
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - djkyc
+  server: 56481.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: ec74bb6a86c2
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11 (家宽) - djkyc
   server: 183.109.131.75
   port: 20086
   udp: true
@@ -22,21 +121,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
-  server: 118.167.219.24
+- name: 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - djkyc
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -45,26 +131,50 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 13 (家宽) - djkyc
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - djkyc
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - djkyc
+  - 🇩🇪 德国 (Germany) 05 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 06 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 11 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 13 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 01 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - djkyc
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - djkyc
+  - 🇩🇪 德国 (Germany) 05 (家宽) - djkyc
+  - 🇺🇸 美国 (United States) 06 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - djkyc
+  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - djkyc
+  - 🇰🇷 韩国 (South Korea) 11 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - djkyc
+  - 🇹🇼 中国台湾 (Taiwan) 13 (家宽) - djkyc
 rules:
 - MATCH,PROXIES

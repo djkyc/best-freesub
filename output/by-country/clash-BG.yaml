@@ -20,11 +20,11 @@ proxies:
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - djkyc
   server: 213.183.63.60
-  port: 9030
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - djkyc
   server: 195.123.226.21
   port: 443
