@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
-  server: game.jafarghasemivip.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
-  tls: true
-  servername: game.jafarghasemivip.ir
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -25,13 +16,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,6 @@
     {
       "type": "vmess",
       "tag": "🇨🇳 CN 01 - djkyc",
-      "server": "39.108.113.127",
-      "server_port": 10086,
-      "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 02 - djkyc",
       "server": "120.48.133.162",
       "server_port": 10086,
       "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
@@ -31,16 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - djkyc",
-        "🇨🇳 CN 02 - djkyc"
+        "🇨🇳 CN 01 - djkyc"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - djkyc",
-        "🇨🇳 CN 02 - djkyc"
+        "🇨🇳 CN 01 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

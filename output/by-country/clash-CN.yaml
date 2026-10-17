@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - djkyc
-  server: 39.108.113.127
-  port: 10086
-  udp: true
-  type: vmess
-  uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇳 CN 02 - djkyc
   server: 120.48.133.162
   port: 10086
   udp: true
@@ -32,13 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇳 CN 01 - djkyc
-  - 🇨🇳 CN 02 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇳 CN 01 - djkyc
-  - 🇨🇳 CN 02 - djkyc
 rules:
 - MATCH,PROXIES
