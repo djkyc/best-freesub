@@ -11,26 +11,14 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2",
+        "server_name": "160.187.100.109",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
-      "server": "60.248.219.78",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
+      "server": "59.125.69.23",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
@@ -47,24 +35,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
-      "server": "tw0.zhujue.us",
-      "server_port": 11000,
-      "uuid": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "s0.awsstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
-          "short_id": ""
-        }
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
+        "insecure": true
       }
     },
     {
@@ -74,8 +53,7 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc"
       ]
     },
     {
@@ -84,8 +62,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
