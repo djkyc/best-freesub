@@ -6,14 +6,21 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - djkyc",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "uuid": "33ebe52d-cd35-4d0f-a3e9-14adb7ff1ff4",
-      "transport": {
-        "type": "ws",
-        "path": "/id-tksi",
-        "headers": {
-          "Host": "www.genflix.co.id.r3xxe.eu.cc"
+      "server": "103.172.197.2",
+      "server_port": 29172,
+      "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ",
+          "short_id": ""
         }
       }
     },
@@ -39,34 +46,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 03 - djkyc",
-      "server": "103.172.197.2",
-      "server_port": 29172,
-      "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇩 印尼 (Indonesia) 01 - djkyc",
-        "🇮🇩 印尼 (Indonesia) 02 - djkyc",
-        "🇮🇩 印尼 (Indonesia) 03 - djkyc"
+        "🇮🇩 印尼 (Indonesia) 02 - djkyc"
       ]
     },
     {
@@ -74,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇩 印尼 (Indonesia) 01 - djkyc",
-        "🇮🇩 印尼 (Indonesia) 02 - djkyc",
-        "🇮🇩 印尼 (Indonesia) 03 - djkyc"
+        "🇮🇩 印尼 (Indonesia) 02 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

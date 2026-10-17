@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - djkyc
-  server: 39.108.113.127
-  port: 10086
+- name: 🇲🇺 MU 01 - djkyc
+  server: 192.0.54.30
+  port: 8880
   udp: true
-  type: vmess
-  uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: vms.lifetime35.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - djkyc
+  - 🇲🇺 MU 01 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - djkyc
+  - 🇲🇺 MU 01 - djkyc
 rules:
 - MATCH,PROXIES

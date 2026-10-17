@@ -7,13 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - djkyc",
       "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - djkyc",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
+      "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
       "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -21,23 +37,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
       "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",
       "password": "y9VURyNzJWNRYEGQ"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
       "server": "84.32.109.20",
       "server_port": 443,
       "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
@@ -47,7 +55,7 @@
         "server_name": "litv.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -58,8 +66,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
-      "server": "b58e68t.lt1.h1clayd.click",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - djkyc",
+      "server": "212.24.105.101",
       "server_port": 443,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
@@ -67,7 +75,7 @@
         "server_name": "b58e68t.lt1.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -86,7 +94,8 @@
         "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 06 - djkyc"
+        "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
+        "🇱🇹 立陶宛 (Lithuania) 07 - djkyc"
       ]
     },
     {
@@ -98,7 +107,8 @@
         "🇱🇹 立陶宛 (Lithuania) 03 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 04 - djkyc",
         "🇱🇹 立陶宛 (Lithuania) 05 - djkyc",
-        "🇱🇹 立陶宛 (Lithuania) 06 - djkyc"
+        "🇱🇹 立陶宛 (Lithuania) 06 - djkyc",
+        "🇱🇹 立陶宛 (Lithuania) 07 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
