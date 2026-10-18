@@ -24,7 +24,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - djkyc
   server: 178.236.16.98
   port: 35728
@@ -49,18 +49,6 @@ proxies:
     short-id: fa
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - djkyc
-  server: 77.73.232.61
-  port: 19747
-  udp: true
-  type: vless
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  tls: true
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-    short-id: '2001'
-  servername: yahoo.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +58,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - djkyc
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - djkyc
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - djkyc
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +67,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - djkyc
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - djkyc
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - djkyc
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - djkyc
 rules:
 - MATCH,PROXIES

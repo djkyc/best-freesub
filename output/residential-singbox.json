@@ -21,31 +21,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 (家宽) - djkyc",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
+      "server": "206.1.100.148",
+      "server_port": 8443,
+      "uuid": "53373a04-2dd2-472e-af5d-d55fbffa7dbd",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
+        "server_name": "game.jafarghasemivip.ir",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
-      "server": "118.167.219.24",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -53,7 +46,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -63,19 +56,27 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc",
-      "server": "183.109.131.75",
-      "server_port": 20086,
-      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - djkyc",
+      "server": "56481.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.ctfassets.net",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - djkyc",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 (移动家宽) - djkyc",
       "server": "me17.msjia8844.site",
       "server_port": 7443,
       "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
@@ -90,30 +91,15 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc",
-      "server": "svip.skycon808.com",
-      "server_port": 47531,
-      "password": "87c6ad7b-e450-44a8-8088-bc2234d43de1",
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 (家宽) - djkyc",
+      "server": "s3.huhiuh.space",
+      "server_port": 18642,
+      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
       "tls": {
         "enabled": true,
-        "server_name": "tw15.swiftrelay.cc",
+        "server_name": "s3.huhiuh.space",
         "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc",
-      "server": "654968169.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
       }
     },
     {
@@ -121,7 +107,7 @@
       "tag": "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc",
       "server": "er8u54dh.df6h451rh.xin",
       "server_port": 443,
-      "password": "ec74bb6a86c2",
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
         "server_name": "px.ads.linkedin.com",
@@ -129,63 +115,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 (家宽) - djkyc",
-      "server": "152.70.253.44",
-      "server_port": 443,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 (家宽) - djkyc",
-      "server": "56481.df6h451rh.xin",
-      "server_port": 443,
-      "password": "ec74bb6a86c2",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 11 (移动家宽) - djkyc",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - djkyc",
-        "🇩🇪 德国 (Germany) 02 (家宽) - djkyc",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc",
-        "🇸🇬 新加坡 (Singapore) 09 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 10 (家宽) - djkyc",
-        "🇹🇷 土耳其 (Turkey) 11 (移动家宽) - djkyc"
+        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - djkyc",
+        "🇹🇷 土耳其 (Turkey) 06 (移动家宽) - djkyc",
+        "🇸🇬 新加坡 (Singapore) 07 (家宽) - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc"
       ]
     },
     {
@@ -193,16 +134,13 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - djkyc",
-        "🇩🇪 德国 (Germany) 02 (家宽) - djkyc",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - djkyc",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - djkyc",
-        "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc",
-        "🇸🇬 新加坡 (Singapore) 09 (家宽) - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 10 (家宽) - djkyc",
-        "🇹🇷 土耳其 (Turkey) 11 (移动家宽) - djkyc"
+        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - djkyc",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - djkyc",
+        "🇹🇷 土耳其 (Turkey) 06 (移动家宽) - djkyc",
+        "🇸🇬 新加坡 (Singapore) 07 (家宽) - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
