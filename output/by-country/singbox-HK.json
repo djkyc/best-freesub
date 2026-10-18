@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - djkyc",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - djkyc",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - djkyc",
       "server": "207.56.137.51",
       "server_port": 443,
       "uuid": "01ada9fb-fa2f-45da-a0d0-bce80cdf433b",
@@ -27,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -37,21 +25,17 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - djkyc",
-      "server": "2.27.109.179",
-      "server_port": 45464,
-      "password": "XuMweB2PWs",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.27.109.179.sslip.io",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - djkyc",
+      "server": "103.149.182.79",
+      "server_port": 8388,
+      "method": "chacha20-ietf",
+      "password": "asd123456"
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - djkyc",
-      "server": "nas.aizhzo.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - djkyc",
+      "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
@@ -65,8 +49,32 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - djkyc",
+      "server": "svip.skycon808.com",
+      "server_port": 24318,
+      "password": "87c6ad7b-e450-44a8-8088-bc2234d43de1",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk08.jdddyy01.cc",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - djkyc",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
       "server": "yg1.ygkkk.dpdns.org",
       "server_port": 443,
       "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
@@ -86,22 +94,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
-      "server": "8dwou5alze.chhbuv.cn",
-      "server_port": 34534,
-      "uuid": "d9109567-3fc3-4e08-9cac-4d9162ef5a9f",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - djkyc",
+      "server": "156.239.13.161",
+      "server_port": 51443,
+      "uuid": "3e4c67dd-eeaa-48ad-8066-0dca798cccb3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tue.nl",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "AavBPGGJUpyGWiriV_Fbx-SrAvR5t-9mHeQY8uIltyo",
-          "short_id": "41b9cb10b696"
+          "public_key": "WpfLIDfNGu5tmsHEa_mrZAgTDwPYD_9TK2zagNx3kgk",
+          "short_id": "aa5b653590725505"
         }
       }
     },
@@ -115,7 +123,8 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 04 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 05 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 06 - djkyc"
+        "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
+        "🇭🇰 中国香港 (Hong Kong) 07 - djkyc"
       ]
     },
     {
@@ -127,7 +136,8 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 04 - djkyc",
         "🇭🇰 中国香港 (Hong Kong) 05 - djkyc",
-        "🇭🇰 中国香港 (Hong Kong) 06 - djkyc"
+        "🇭🇰 中国香港 (Hong Kong) 06 - djkyc",
+        "🇭🇰 中国香港 (Hong Kong) 07 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
