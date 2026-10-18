@@ -12,11 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "109.206.241.10",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       }
     },
     {
@@ -43,34 +39,47 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
-      "server": "77.110.105.122",
-      "server_port": 443,
-      "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
+      "server": "196.198.111.107",
+      "server_port": 8443,
+      "uuid": "b3441cc7-1e5f-4eb6-8207-90788eeca21e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "co-es.speedtec.ru",
+        "server_name": "api-6ad3c751.adhil.uk",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
+      "server": "196.198.111.138",
+      "server_port": 8443,
+      "uuid": "b3441cc7-1e5f-4eb6-8207-90788eeca21e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-6ad3c751.adhil.uk",
+        "insecure": false,
+        "utls": {
           "enabled": true,
-          "public_key": "EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI",
-          "short_id": "226509f017e4c36d"
+          "fingerprint": "safari"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc",
       "server": "ees92.shhflow.xyz",
       "server_port": 5443,
       "password": "43212c32-01f2-4356-b216-67dc1c178262",
       "tls": {
         "enabled": true,
-        "server_name": "ees92.shhflow.xyz",
-        "insecure": false
+        "server_name": "127.0.0.1",
+        "insecure": true
       }
     },
     {
@@ -81,7 +90,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc"
       ]
     },
     {
@@ -91,7 +101,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
