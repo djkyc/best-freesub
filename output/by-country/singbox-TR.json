@@ -69,19 +69,23 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - djkyc",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
       "tls": {
         "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr"
       }
     },
     {

@@ -44,15 +44,18 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - djkyc
-  server: me17.msjia8844.site
-  port: 7443
+  server: 177.3.208.65
+  port: 443
   udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
 proxy-groups:
 - name: PROXIES
   type: select
