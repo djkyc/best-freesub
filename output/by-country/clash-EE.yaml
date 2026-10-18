@@ -26,28 +26,18 @@ proxies:
   servername: ees92.shhflow.xyz
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc
-  server: 196.198.111.107
-  port: 8443
+  server: ee.h1cloud.net
+  port: 25895
   udp: true
   type: vless
-  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
-  flow: xtls-rprx-vision
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   tls: true
-  servername: api-6ad3c751.adhil.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc
-  server: 196.198.111.138
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
-  flow: xtls-rprx-vision
-  tls: true
-  servername: api-6ad3c751.adhil.uk
-  skip-cert-verify: false
-  client-fingerprint: safari
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc
   server: ees92.shhflow.xyz
   port: 5443
   udp: true
@@ -64,7 +54,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +63,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - djkyc
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - djkyc
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - djkyc
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - djkyc
 rules:
 - MATCH,PROXIES

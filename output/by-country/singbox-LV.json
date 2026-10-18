@@ -7,13 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - djkyc",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - djkyc",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - djkyc",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - djkyc",
       "server": "185.220.223.25",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
@@ -33,53 +41,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - djkyc",
-      "server": "185.135.86.175",
-      "server_port": 9017,
-      "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
-    },
-    {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - djkyc",
-      "server": "185.135.86.175",
-      "server_port": 9007,
-      "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - djkyc",
-      "server": "185.220.223.24",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lv.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
-          "short_id": "3c6afdc4124d0560"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - djkyc",
-      "server": "185.135.86.175",
-      "server_port": 9033,
-      "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - djkyc",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -89,7 +52,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -99,16 +62,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - djkyc",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - djkyc",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - djkyc",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -128,6 +83,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - djkyc",
+      "server": "185.220.223.24",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
+          "short_id": "3c6afdc4124d0560"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -137,10 +113,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - djkyc",
         "🇱🇻 拉脱维亚 (Latvia) 04 - djkyc",
         "🇱🇻 拉脱维亚 (Latvia) 05 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - djkyc"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - djkyc"
       ]
     },
     {
@@ -152,10 +125,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - djkyc",
         "🇱🇻 拉脱维亚 (Latvia) 04 - djkyc",
         "🇱🇻 拉脱维亚 (Latvia) 05 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - djkyc",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - djkyc"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
