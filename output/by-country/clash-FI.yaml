@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - djkyc
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - djkyc
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -27,7 +16,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - djkyc
+- name: 🇫🇮 芬兰 (Finland) 02 - djkyc
   server: mci1.amir12.ir
   port: 1222
   udp: true
@@ -39,6 +28,29 @@ proxies:
     short-id: a25d0f
   servername: play.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - djkyc
+  server: mci.amir12.ir
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - djkyc
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +59,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - djkyc
   - 🇫🇮 芬兰 (Finland) 02 - djkyc
   - 🇫🇮 芬兰 (Finland) 03 - djkyc
+  - 🇫🇮 芬兰 (Finland) 04 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +68,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - djkyc
   - 🇫🇮 芬兰 (Finland) 02 - djkyc
   - 🇫🇮 芬兰 (Finland) 03 - djkyc
+  - 🇫🇮 芬兰 (Finland) 04 - djkyc
 rules:
 - MATCH,PROXIES
