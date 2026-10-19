@@ -4,32 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "https%3a",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
       "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - djkyc",
       "server": "207.56.137.51",
       "server_port": 443,
       "uuid": "01ada9fb-fa2f-45da-a0d0-bce80cdf433b",
@@ -55,7 +63,8 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc"
       ]
     },
     {
@@ -64,7 +73,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - djkyc",
         "🇹🇼 中国台湾 (Taiwan) 02 - djkyc",
-        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc"
+        "🇹🇼 中国台湾 (Taiwan) 03 - djkyc",
+        "🇹🇼 中国台湾 (Taiwan) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,54 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - djkyc
-  server: 13.140.91.117
-  port: 36154
+  server: dog-hk.kunlun01dns.com
+  port: 21041
   udp: true
   type: vmess
-  uuid: 54327b73-3ce6-437d-9d00-3d6398d9f9f5
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - djkyc
-  server: 13.140.91.117
-  port: 25111
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: jNyPnuL1dS5CZLfr6AeO8/CtbUvT3MIOWAaSwoJlTkc=:OpjCKODVTBraYcv12EFPOaral+oiAPdOTlA0Dv9O+fE=
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - djkyc
-  server: 13.140.91.117
-  port: 23808
-  udp: true
-  type: vless
-  uuid: b2fd9449-458a-4243-bbf9-5735070d6817
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - djkyc
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - djkyc
+  server: 8c05abce-tnhmo0-tohhws-zn8y.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  sni: 8c05abce-tnhmo0-tohhws-zn8y.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - djkyc
-  server: 47.238.210.5
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - djkyc
-  server: 103.141.221.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - djkyc
   server: 82.29.36.250
   port: 443
   udp: true
@@ -64,23 +48,18 @@ proxies:
     public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
     short-id: 09353d6dc5b789
   servername: aws.amazon.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - djkyc
-  server: 4c2d5151.266nets.com
-  port: 12001
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - djkyc
+  server: 152.32.254.68
+  port: 5010
   udp: true
-  type: trojan
-  password: bad06c3525a6eaee1757b34776b83892
-  sni: ixigua.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - djkyc
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - djkyc
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - djkyc
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -96,17 +75,15 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - djkyc
-  server: 152.32.254.68
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - djkyc
+  server: svip.skycon808.com
+  port: 24318
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - djkyc
+  type: anytls
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+  sni: hk08.jdddyy01.cc
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - djkyc
   server: 156.239.13.161
   port: 51443
   udp: true
@@ -133,9 +110,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 08 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 09 - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 10 - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 11 - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 12 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,8 +124,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 08 - djkyc
   - 🇭🇰 中国香港 (Hong Kong) 09 - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 10 - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 11 - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 12 - djkyc
 rules:
 - MATCH,PROXIES
