@@ -57,16 +57,16 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
     "https://github.com/Wboyx/foxy-exit/raw/refs/heads/main/v7qk2f.txt",
     "https://xget.xi-xu.me/gh/cbusifabcap/daily_free_vpn/raw/refs/heads/main/Z.txt",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-KR.txt",
+    
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-JP.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
-    "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
+   
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
+   
     "https://raw.githubusercontent.com/adop1344-bot/LetoVPN_free/main/configs.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
-    "https://xget.xi-xu.me/gh/svinakraft-maker/FlareFeed/raw/refs/heads/main/public/fastest.txt",
+   
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
