@@ -3,7 +3,7 @@ name: Update Subscriptions
 on:
   schedule:
     # 每 3 小时整点自动触发运行一次
-    - cron: '0 */3 * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch:  # 仅保留手动触发按钮
 
 jobs:
