@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
+      "server": "38.91.107.49",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
       "server": "45.63.30.142",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -21,7 +29,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -37,10 +45,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-      "server": "v1au.mateflora.com",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
+      "server": "50.6.54.163",
       "server_port": 443,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -51,6 +59,27 @@
         },
         "reality": {
           "enabled": true,
+          "public_key": "2vd1kmOeZpjjDpgN75FMhwFRzPjNfzvLoUM5LlLrm2U",
+          "short_id": "26b26357bfcd59a1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
+      "server": "v1au.mateflora.com",
+      "server_port": 443,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
           "public_key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
           "short_id": "54cca3c1c1c7"
         }
@@ -58,8 +87,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
-      "server": "doghkzf.zalolink.com",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - djkyc",
+      "server": "39.109.111.23",
       "server_port": 48158,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -85,7 +114,9 @@
         "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 04 - djkyc"
+        "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 06 - djkyc"
       ]
     },
     {
@@ -95,7 +126,9 @@
         "🇦🇺 澳大利亚 (Australia) 01 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 02 - djkyc",
         "🇦🇺 澳大利亚 (Australia) 03 - djkyc",
-        "🇦🇺 澳大利亚 (Australia) 04 - djkyc"
+        "🇦🇺 澳大利亚 (Australia) 04 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 05 - djkyc",
+        "🇦🇺 澳大利亚 (Australia) 06 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

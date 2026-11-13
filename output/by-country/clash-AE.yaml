@@ -5,21 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - djkyc
-  server: 151.241.19.29
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 02 - djkyc
   server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 02 - djkyc
+  server: 151.241.19.29
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - djkyc
-  server: 130.49.161.70
+  server: hy2.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
@@ -39,17 +39,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 05 - djkyc
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +48,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - djkyc
   - 🇦🇪 阿联酋 (UAE) 03 - djkyc
   - 🇦🇪 阿联酋 (UAE) 04 - djkyc
-  - 🇦🇪 阿联酋 (UAE) 05 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +57,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - djkyc
   - 🇦🇪 阿联酋 (UAE) 03 - djkyc
   - 🇦🇪 阿联酋 (UAE) 04 - djkyc
-  - 🇦🇪 阿联酋 (UAE) 05 - djkyc
 rules:
 - MATCH,PROXIES
