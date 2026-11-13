@@ -6,16 +6,9 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - djkyc",
-      "server": "5.253.29.254",
-      "server_port": 14430,
-      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.253.29.254"
-        }
-      }
+      "server": "45.86.60.174",
+      "server_port": 16443,
+      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
     },
     {
       "type": "selector",

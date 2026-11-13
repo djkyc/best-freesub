@@ -4,53 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
-  server: 78.135.77.110
-  port: 11700
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: BI2omXgXduu95xATu5uaU3jn2Lpb9-qK
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - djkyc
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - djkyc
-  server: dog-hk.kunlun01dns.com
-  port: 21020
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc
-  server: 654968169.df6h451rh.xin
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc
+  server: 112.120.123.140
   port: 443
   udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: images.ctfassets.net
-  skip-cert-verify: true
+  type: hysteria2
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: 11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - djkyc
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - djkyc
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - djkyc
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - djkyc
 rules:
 - MATCH,PROXIES

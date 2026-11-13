@@ -5,38 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - djkyc
-  server: 65.109.243.156
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - djkyc
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - djkyc
-  server: 2.26.3.75
+  server: 178.214.125.1
   port: 443
   udp: true
-  type: hysteria2
-  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  sni: fi.67chat.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 04 - djkyc
+  type: vless
+  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
+    short-id: 6172ba9cffe9c22f
+  servername: conf.emaar.ru
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 02 - djkyc
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -47,31 +28,62 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - djkyc
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 04 - djkyc
+  server: 188.225.46.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
+  tls: true
+  servername: filnex.baby
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: lalibobi.tw.de1.Connect
 - name: 🇫🇮 芬兰 (Finland) 05 - djkyc
-  server: 31.77.199.147
-  port: 4443
+  server: 146.103.118.189
+  port: 443
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
   tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 06 - djkyc
-  server: mci1.amir12.ir
-  port: 1222
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   tls: true
   reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - djkyc
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +95,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - djkyc
   - 🇫🇮 芬兰 (Finland) 05 - djkyc
   - 🇫🇮 芬兰 (Finland) 06 - djkyc
+  - 🇫🇮 芬兰 (Finland) 07 - djkyc
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,5 +107,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - djkyc
   - 🇫🇮 芬兰 (Finland) 05 - djkyc
   - 🇫🇮 芬兰 (Finland) 06 - djkyc
+  - 🇫🇮 芬兰 (Finland) 07 - djkyc
 rules:
 - MATCH,PROXIES
