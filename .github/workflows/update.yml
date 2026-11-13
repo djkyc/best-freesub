@@ -81,6 +81,7 @@ jobs:
           python - << 'EOF'
           import os
           import re
+          import html
           import urllib.request
           import urllib.parse
 
@@ -120,6 +121,73 @@ jobs:
               except Exception as e:
                   print(f"[!] 解析日志出错: {e}")
 
+          # 家宽地区：按 output/residential-by-country/<CC>.txt 统计，文件名即国家/地区代码
+          CC_NAMES = {
+              "HK": "中国香港", "TW": "中国台湾", "MO": "中国澳门",
+              "JP": "日本", "KR": "韩国", "SG": "新加坡", "MY": "马来西亚",
+              "TH": "泰国", "VN": "越南", "ID": "印度尼西亚", "PH": "菲律宾",
+              "IN": "印度", "AE": "阿联酋", "IL": "以色列", "TR": "土耳其",
+              "US": "美国", "CA": "加拿大", "MX": "墨西哥", "BR": "巴西",
+              "CL": "智利", "AR": "阿根廷",
+              "GB": "英国", "DE": "德国", "FR": "法国", "NL": "荷兰",
+              "PL": "波兰", "IT": "意大利", "ES": "西班牙", "SE": "瑞典",
+              "NO": "挪威", "FI": "芬兰", "CH": "瑞士", "AT": "奥地利",
+              "CZ": "捷克", "RO": "罗马尼亚", "BG": "保加利亚",
+              "RU": "俄罗斯", "UA": "乌克兰", "BY": "白俄罗斯",
+              "KZ": "哈萨克斯坦", "AU": "澳大利亚", "NZ": "新西兰",
+              "ZA": "南非", "SC": "塞舌尔", "IR": "伊朗",
+              "AL": "阿尔巴尼亚", "CY": "塞浦路斯", "LT": "立陶宛",
+              "LV": "拉脱维亚",
+          }
+          region_counts = {}
+          res_dir = "output/residential-by-country"
+          try:
+              if os.path.isdir(res_dir):
+                  for fn in sorted(os.listdir(res_dir)):
+                      if not fn.endswith(".txt") or fn.startswith(("clash-", "singbox-")):
+                          continue
+                      cc = fn[:-4].upper()
+                      with open(os.path.join(res_dir, fn), "r", encoding="utf-8", errors="ignore") as f:
+                          raw = f.read().strip()
+                      # 分地区 .txt 是 base64 订阅（单行），直接数行会永远是 1，必须解码后再数节点
+                      if "://" in raw:
+                          n = sum(1 for line in raw.splitlines() if line.strip())
+                      else:
+                          try:
+                              import base64
+                              decoded = base64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8", "ignore")
+                              n = sum(1 for line in decoded.splitlines() if line.strip())
+                          except Exception:
+                              n = sum(1 for line in raw.splitlines() if line.strip())
+                      if n:
+                          name = CC_NAMES.get(cc, cc)
+                          region_counts[name] = region_counts.get(name, 0) + n
+          except Exception as e:
+              print(f"[!] 统计家宽地区出错: {e}")
+          if not region_counts and residential:
+              # 兜底：分地区文件缺失时，从 residential.txt 的节点名里取地区
+              try:
+                  import base64
+                  with open("output/residential.txt", "r", encoding="utf-8", errors="ignore") as f:
+                      raw = f.read().strip()
+                  decoded = base64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8", "ignore")
+                  for line in decoded.splitlines():
+                      if "#" not in line:
+                          continue
+                      name = urllib.parse.unquote(line.rsplit("#", 1)[1]).strip()
+                      name = re.sub(r"^[^\u4e00-\u9fa5A-Za-z]+", "", name)
+                      region = re.split(r"[\s(（]", name, maxsplit=1)[0]
+                      if region:
+                          region_counts[region] = region_counts.get(region, 0) + 1
+              except Exception as e:
+                  print(f"[!] 从 residential.txt 解析地区出错: {e}")
+          if region_counts:
+              region_text = "、".join(f"{name}×{n}" if n > 1 else name for name, n in region_counts.items())
+          elif residential:
+              region_text = "未知"
+          else:
+              region_text = "无"
+
           status_icon = "✅ 成功" if job_status == "success" else "❌ 失败"
 
           msg = (
@@ -127,6 +195,7 @@ jobs:
               f"━━━━━━━━━━━━━━━━━━━\n"
               f"📊 <b>全量节点:</b> <code>{total}</code>\n"
               f"🏠 <b>家宽节点:</b> <code>{residential}</code>\n"
+              f"🌍 <b>家宽地区:</b> <code>{html.escape(region_text)}</code>\n"
               f"🛡️ <b>劫持高风险节点已剔除:</b> <code>{filtered_risk}</code>\n"
               f"📶 <b>家宽/移动网络节点:</b> <code>{residential_mobile}</code>\n"
               f"💻 <b>普通(机房/CDN):</b> <code>{normal_cdn}</code>\n"
