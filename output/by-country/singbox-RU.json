@@ -26,29 +26,6 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - djkyc",
-      "server": "200.102.183.50",
-      "server_port": 443,
-      "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
-      "tls": {
-        "enabled": true,
-        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "qi8ws15c7jv5q2fa"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - djkyc",
       "server": "193.228.128.230",
       "server_port": 443,
       "uuid": "de404269-a97c-4f49-9efb-43509c2afa09",
@@ -70,16 +47,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - djkyc",
-      "server": "185.22.153.117",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - djkyc",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - djkyc",
       "server": "201.24.121.243",
       "server_port": 443,
       "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
@@ -101,6 +70,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - djkyc",
+      "server": "185.39.204.117",
+      "server_port": 10002,
+      "uuid": "facb802c-de2e-11f1-9a22-a3404e852f3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr2.vpnjantit.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpnjantit"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -108,8 +97,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - djkyc",
         "🇷🇺 俄罗斯 (Russia) 02 - djkyc",
         "🇷🇺 俄罗斯 (Russia) 03 - djkyc",
-        "🇷🇺 俄罗斯 (Russia) 04 - djkyc",
-        "🇷🇺 俄罗斯 (Russia) 05 - djkyc"
+        "🇷🇺 俄罗斯 (Russia) 04 - djkyc"
       ]
     },
     {
@@ -119,8 +107,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - djkyc",
         "🇷🇺 俄罗斯 (Russia) 02 - djkyc",
         "🇷🇺 俄罗斯 (Russia) 03 - djkyc",
-        "🇷🇺 俄罗斯 (Russia) 04 - djkyc",
-        "🇷🇺 俄罗斯 (Russia) 05 - djkyc"
+        "🇷🇺 俄罗斯 (Russia) 04 - djkyc"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
